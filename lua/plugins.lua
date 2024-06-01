@@ -128,14 +128,42 @@ vim.opt.rtp:prepend(lazypath)
 		end
 	}
 	local telescope_plug = {'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim'}
+	local ale_plug = {
+		'dense-analysis/ale',
+		config = function()
+			-- Configuration goes here.
+			vim.g.ale_ruby_rubocop_auto_correct_all = 1
+			vim.g.ale_linters = {
+				lua = {'lua_language_server'}
+			}
+		end
+	}
 -- Colorscheme
 	-- main colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd([[let ayucolor="mirage"]])
 			vim.cmd([[colorscheme ayu]])
+			-- set ayucolor based on time
+			local time = tonumber(os.date("%H", os.time()))
+			if (time > 2 and time <= 8)
+			then
+				-- morning
+				vim.cmd([[let ayucolor="mirage"]])
+			elseif (time > 8 and time <= 14)
+			then
+				-- noon
+				vim.cmd([[let ayucolor="light"]])
+			elseif (time > 14 and time <= 20)
+			then
+				-- afternoon
+				vim.cmd([[let ayucolor="mirage"]])
+			elseif (time > 20 or time <= 2)
+			then
+				-- midnight
+				vim.cmd([[let ayucolor="dark"]])
+			end
 		end
 	}
 	-- other colorschemes
@@ -151,6 +179,7 @@ require("lazy").setup({
 	codeium_plug,
 	todo_comments_plug,
 	telescope_plug,
+	ale_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
