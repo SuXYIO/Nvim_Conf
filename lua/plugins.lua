@@ -138,6 +138,7 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end
 	}
+	dressing_plug = {'stevearc/dressing.nvim'}
 -- Colorscheme
 	-- main colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
@@ -180,6 +181,7 @@ require("lazy").setup({
 	todo_comments_plug,
 	telescope_plug,
 	ale_plug,
+	dressing_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
