@@ -3,7 +3,8 @@
 " Font: Nerdfont
 
 " source lua
-source lua/init.lua
+" WARN: might have to reset this in Windows or if you are using another config path
+source ~/.config/nvim/lua/init.lua
 
 " key map
 	let mapleader = ","
