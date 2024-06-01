@@ -12,7 +12,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Functional
+-- Plug
 	local vim_airline_plug = {'vim-airline/vim-airline', dependencies = 'vim-airline/vim-airline-themes'}
 	local nvim_treesitter_plug = {"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
@@ -127,7 +127,8 @@ vim.opt.rtp:prepend(lazypath)
 			vim.opt.termguicolors = true
 		end
 	}
--- Colorschemes
+	local telescope_plug = {'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim'}
+-- Colorscheme
 	-- main colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -142,12 +143,15 @@ vim.opt.rtp:prepend(lazypath)
 	local papercolor_colorscheme = {'NLKNguyen/papercolor-theme', lazy = true}
 
 require("lazy").setup({
+	-- plug
 	vim_airline_plug,
 	nvim_treesitter_plug,
 	nvim_tree_plug,
 	vim_floaterm_plug,
 	codeium_plug,
 	todo_comments_plug,
+	telescope_plug,
+	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
 	papercolor_colorscheme,

@@ -16,12 +16,13 @@ source ~/.config/nvim/lua/init.lua
 	" system clipboard
 		vmap <C-l> "+y
 	" other
-		nmap <esc> :noh<CR>
+		nmap <esc> <CMD>noh<CR>
+		nmap <C-o> <CMD>bn<CR>
+		nmap <C-i> <CMD>bd<CR>
 	" plugin key maps
-		nmap <C-n> :NvimTreeToggle<CR>
-		nmap <C-m> :FloatermNew<CR>
-		nmap <C-o> :bn<CR>
-		nmap <C-i> :bd<CR>
+		nmap <C-n> <CMD>NvimTreeToggle<CR>
+		nmap <C-m> <CMD>FloatermNew<CR>
+		nmap ff <CMD>Telescope find_files<CR>
 
 " self-defined commands
 	command Hex %!xxd
