@@ -23,6 +23,7 @@ source ~/.config/nvim/lua/init.lua
 		nmap <C-n> <CMD>NvimTreeToggle<CR>
 		nmap <C-m> <CMD>FloatermNew<CR>
 		nmap ff <CMD>Telescope find_files<CR>
+		nmap <C-p> <CMD>Lazy<CR>
 
 " self-defined commands
 	command Hex %!xxd
@@ -67,19 +68,3 @@ source ~/.config/nvim/lua/init.lua
 		let g:airline_right_sep = ''
 	" Codeium
 		let g:codeium_enabled = v:false
-
-" theme
-lua << EOF
-	-- set background based on time
-	local time = tonumber(os.date("%H", os.time()))
-	if (time > 5 and time <= 17)
-	then
-		-- day
-		vim.o.background = 'light'
-	end
-	if (time > 17 or time <= 5)
-	then
-		-- night
-		vim.o.background = 'dark'
-	end
-EOF
