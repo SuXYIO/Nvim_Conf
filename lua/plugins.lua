@@ -140,6 +140,7 @@ vim.opt.rtp:prepend(lazypath)
 	-- other colorschemes
 	local gruvbox_colorscheme = {'morhetz/gruvbox', lazy = true}
 	local papercolor_colorscheme = {'NLKNguyen/papercolor-theme', lazy = true}
+
 require("lazy").setup({
 	vim_airline_plug,
 	nvim_treesitter_plug,
