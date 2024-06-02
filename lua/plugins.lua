@@ -228,24 +228,25 @@ vim.opt.rtp:prepend(lazypath)
 			if (time > 2 and time <= 8)
 			then
 				-- morning
-				vim.cmd([[let ayucolor="mirage"]])
+				vim.cmd('let ayucolor="mirage"')
 			elseif (time > 8 and time <= 14)
 			then
 				-- noon
-				vim.cmd([[let ayucolor="light"]])
+				vim.cmd('let ayucolor="light"')
 			elseif (time > 14 and time <= 20)
 			then
 				-- afternoon
-				vim.cmd([[let ayucolor="mirage"]])
+				vim.cmd('let ayucolor="mirage"')
 			elseif (time > 20 or time <= 2)
 			then
 				-- midnight
-				vim.cmd([[let ayucolor="dark"]])
+				vim.cmd('let ayucolor="dark"')
 			end
 		end
 	}
 	-- other colorschemes
-	local gruvbox_colorscheme = {'morhetz/gruvbox', lazy = true}
+	local gruvbox_colorscheme = {'morhetz/gruvbox', lazy = false}
+	-- lazy colorschemes
 	local papercolor_colorscheme = {'NLKNguyen/papercolor-theme', lazy = true}
 
 require("lazy").setup({
