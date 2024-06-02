@@ -128,8 +128,7 @@ vim.opt.rtp:prepend(lazypath)
 		end
 	}
 	local telescope_plug = {'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim'}
-	local ale_plug = {
-		'dense-analysis/ale',
+	local ale_plug = {'dense-analysis/ale',
 		config = function()
 			-- Configuration goes here.
 			vim.g.ale_ruby_rubocop_auto_correct_all = 1
@@ -138,7 +137,66 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end
 	}
-	dressing_plug = {'stevearc/dressing.nvim'}
+	local dressing_plug = {'stevearc/dressing.nvim'}
+	local lualine_plug = {'nvim-lualine/lualine.nvim',
+		dependencies = 'nvim-tree/nvim-web-devicons',
+		config = function()
+			require('lualine').setup {
+				options = {
+					icons_enabled = true,
+					theme = 'auto',
+					component_separators = { left = '', right = ''},
+					section_separators = { left = '', right = ''},
+					disabled_filetypes = {
+						statusline = {},
+						winbar = {},
+					},
+					ignore_focus = {},
+					always_divide_middle = true,
+					globalstatus = false,
+					refresh = {
+						statusline = 1000,
+						tabline = 1000,
+						winbar = 1000,
+					}
+				},
+				sections = {
+					lualine_a = {'mode'},
+					lualine_b = {'branch', 'diff', 'diagnostics'},
+					lualine_c = {'filename'},
+					lualine_x = {'encoding', 'fileformat', 'filetype'},
+					lualine_y = {'progress'},
+					lualine_z = {'location'}
+				},
+				inactive_sections = {
+					lualine_a = {},
+					lualine_b = {},
+					lualine_c = {'filename'},
+					lualine_x = {'location'},
+					lualine_y = {},
+					lualine_z = {}
+				},
+				tabline = {
+					lualine_a = {"os.date('%Y-%m-%d | %H:%M:%S',os.time())", 'data', "require'lsp-status'.status()"},
+					lualine_b = {},
+					lualine_c = {},
+					lualine_x = {},
+					lualine_y = {'filesize'},
+					lualine_z = {'hostname'}
+				},
+				winbar = {
+					lualine_a = {'buffers'},
+					lualine_b = {},
+					lualine_c = {},
+					lualine_x = {},
+					lualine_y = {},
+					lualine_z = {}
+				},
+				inactive_winbar = {},
+				extensions = {}
+			}
+		end
+	}
 -- Colorscheme
 	-- main colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
@@ -173,7 +231,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	-- plug
-	vim_airline_plug,
 	nvim_treesitter_plug,
 	nvim_tree_plug,
 	vim_floaterm_plug,
@@ -182,6 +239,7 @@ require("lazy").setup({
 	telescope_plug,
 	ale_plug,
 	dressing_plug,
+	lualine_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
