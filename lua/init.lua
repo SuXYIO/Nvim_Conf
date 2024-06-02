@@ -2,19 +2,6 @@ require('plugins')
 
 -- set background based on time
 local time = tonumber(os.date("%H", os.time()))
-if (time > 5 and time <= 17)
-then
-	-- day
-	vim.cmd('colorscheme gruvbox')
-	vim.o.background = 'light'
-end
-if (time > 17 or time <= 5)
-then
-	-- night
-	vim.cmd('colorscheme ayu')
-	vim.o.background = 'dark'
-end
-
 if (time > 4 and time <= 10)
 then
 	-- morning
