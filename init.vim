@@ -23,6 +23,7 @@ source ~/.config/nvim/lua/init.lua
 		nmap <C-n> <CMD>NvimTreeToggle<CR>
 		nmap <C-m> <CMD>FloatermNew<CR>
 		nmap ff <CMD>Telescope find_files<CR>
+		nmap <C-h> <CMD>TodoTelescope<CR>
 		nmap <C-p> <CMD>Lazy<CR>
 
 " self-defined commands
