@@ -7,7 +7,7 @@
 source ~/.config/nvim/lua/init.lua
 
 " key map
-	let mapleader = ","
+	let mapleader = ";"
 	imap jk <Esc>
 	nmap <Space> :
 	" move line
@@ -25,6 +25,7 @@ source ~/.config/nvim/lua/init.lua
 		nmap ff <CMD>Telescope find_files<CR>
 		nmap <C-h> <CMD>TodoTelescope<CR>
 		nmap <C-p> <CMD>Lazy<CR>
+		nmap <C-y> <CMD>Dashboard<CR>
 
 " self-defined commands
 	command Hex %!xxd

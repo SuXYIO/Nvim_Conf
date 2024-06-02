@@ -146,7 +146,7 @@ vim.opt.rtp:prepend(lazypath)
 					icons_enabled = true,
 					theme = 'auto',
 					component_separators = { left = '', right = ''},
-					section_separators = { left = '', right = ''},
+					section_separators = { left = '', right = ''},
 					disabled_filetypes = {
 						statusline = {},
 						winbar = {},
@@ -177,7 +177,7 @@ vim.opt.rtp:prepend(lazypath)
 					lualine_z = {}
 				},
 				tabline = {
-					lualine_a = {"os.date('%Y-%m-%d | %H:%M:%S',os.time())", 'data', "require'lsp-status'.status()"},
+					lualine_a = {"os.date('%Y-%m-%d | %H:%M:%S | %a',os.time())", 'data', "require'lsp-status'.status()"},
 					lualine_b = {},
 					lualine_c = {},
 					lualine_x = {},
@@ -196,6 +196,25 @@ vim.opt.rtp:prepend(lazypath)
 				extensions = {}
 			}
 		end
+	}
+	local dashboard_plug = {'nvimdev/dashboard-nvim',
+		dependencies = 'nvim-tree/nvim-web-devicons',
+		event = 'VimEnter',
+		config = function()
+			require('dashboard').setup {
+				theme = 'hyper',
+				config = {
+					header = {' _______             ____   ____.__         ',' \\      \\   ____  ___\\   \\ /   /|__| _____  ',' /   |   \\_/ __ \\/  _ \\   Y   / |  |/     \\ ','/    |    \\  ___(  <_> )     /  |  |  Y Y  \\','\\____|__  /\\___  >____/ \\___/   |__|__|_|  /','        \\/     \\/                        \\/ '},
+					week_header = {enable = false},
+					shortcut = {
+						{desc = '󰚰 Update', group = '@property', action = 'Lazy update', key = 'u'},
+						{icon = ' ', icon_hl = '@variable', desc = 'Files', group = 'Label', action = 'Telescope find_files', key = 'f'}
+					},
+					packages = {enable = true},
+					footer = {''}
+				}
+			}
+		end,
 	}
 -- Colorscheme
 	-- main colorscheme
@@ -240,6 +259,7 @@ require("lazy").setup({
 	ale_plug,
 	dressing_plug,
 	lualine_plug,
+	dashboard_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
