@@ -25,6 +25,7 @@ source ~/.config/nvim/lua/init.lua
 		nmap <C-h> <CMD>TodoTelescope<CR>
 		nmap <C-p> <CMD>Lazy<CR>
 		nmap <C-y> <CMD>Dashboard<CR>
+		nmap <C-s> <CMD>ALEDetail<CR>
 
 " self-defined commands
 	command Hex %!xxd
