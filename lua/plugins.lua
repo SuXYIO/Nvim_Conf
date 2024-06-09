@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Plug
-	local vim_airline_plug = {'vim-airline/vim-airline', dependencies = 'vim-airline/vim-airline-themes'}
 	local nvim_treesitter_plug = {"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function () 
