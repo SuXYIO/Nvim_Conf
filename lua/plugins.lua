@@ -45,7 +45,9 @@ vim.opt.rtp:prepend(lazypath)
 		end
 	}
 	local vim_floaterm_plug = {'voldikss/vim-floaterm'}
-	local codeium_plug = {'Exafunction/codeium.vim'}
+	local codeium_plug = {'Exafunction/codeium.vim',
+		lazy = true
+	}
 	local todo_comments_plug = {'folke/todo-comments.nvim', 
 		dependencies = "nvim-lua/plenary.nvim",
 		config = function()
