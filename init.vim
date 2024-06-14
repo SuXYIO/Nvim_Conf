@@ -22,7 +22,7 @@ source ~/.config/nvim/lua/init.lua
 		nmap <C-n> <CMD>NvimTreeToggle<CR>
 		nmap <C-m> <CMD>FloatermNew<CR>
 		nmap ff <CMD>Telescope find_files<CR>
-		nmap <C-h> <CMD>TodoTelescope<CR>
+		nmap <C-h> <CMD>vs<CR>
 		nmap <C-p> <CMD>Lazy<CR>
 		nmap <C-y> <CMD>Dashboard<CR>
 		nmap <C-s> <CMD>ALEDetail<CR>
