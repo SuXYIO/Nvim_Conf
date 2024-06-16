@@ -18,11 +18,12 @@ source ~/.config/nvim/lua/init.lua
 		nmap <esc> <CMD>noh<CR>
 		nmap <C-o> <CMD>bn<CR>
 		nmap <C-i> <CMD>bd<CR>
+		nmap <C-h> <CMD>vs<CR>
+		nmap <C-m> <CMD>terminal<CR>
+		tmap jk <C-\><C-n>
 	" plugin key maps
 		nmap <C-n> <CMD>NvimTreeToggle<CR>
-		nmap <C-m> <CMD>FloatermNew<CR>
 		nmap ff <CMD>Telescope find_files<CR>
-		nmap <C-h> <CMD>vs<CR>
 		nmap <C-p> <CMD>Lazy<CR>
 		nmap <C-y> <CMD>Dashboard<CR>
 		nmap <C-s> <CMD>ALEDetail<CR>

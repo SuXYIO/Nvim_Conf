@@ -44,7 +44,6 @@ vim.opt.rtp:prepend(lazypath)
 			})
 		end
 	}
-	local vim_floaterm_plug = {'voldikss/vim-floaterm'}
 	local codeium_plug = {'Exafunction/codeium.vim',
 		lazy = true
 	}
@@ -262,7 +261,6 @@ require("lazy").setup({
 	-- plug
 	nvim_treesitter_plug,
 	nvim_tree_plug,
-	vim_floaterm_plug,
 	codeium_plug,
 	todo_comments_plug,
 	telescope_plug,
