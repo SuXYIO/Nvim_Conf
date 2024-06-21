@@ -9,24 +9,19 @@ source ~/.config/nvim/lua/init.lua
 	let mapleader = ";"
 	imap jk <Esc>
 	nmap <Space> :
-	" move line
-		nmap <C-k> ddkP
-		nmap <C-j> ddp
-	" system clipboard
-		vmap <C-l> "+y
-	" other
-		nmap <esc> <CMD>noh<CR>
-		nmap <C-o> <CMD>bn<CR>
-		nmap <C-i> <CMD>bd<CR>
-		nmap <C-h> <CMD>vs<CR>
-		nmap <C-m> <CMD>terminal<CR>
-		tmap jk <C-\><C-n>
+	nmap <C-k> ddkP
+	nmap <C-j> ddp
+	vmap <C-l> "+y
+	nmap <esc> <CMD>noh<CR>
+	nmap <C-o> <CMD>bn<CR>
+	nmap <C-i> <CMD>bd<CR>
+	nmap <C-h> <CMD>vs<CR>
+	nmap <C-m> <CMD>terminal<CR>
+	tmap jk <C-\><C-n>
 	" plugin key maps
-		nmap <C-n> <CMD>NvimTreeToggle<CR>
-		nmap ff <CMD>Telescope find_files<CR>
-		nmap <C-p> <CMD>Lazy<CR>
-		nmap <C-y> <CMD>Dashboard<CR>
-		nmap <C-s> <CMD>ALEDetail<CR>
+	nmap <C-n> <CMD>NvimTreeToggle<CR>
+	nmap ff <CMD>Telescope find_files<CR>
+	nmap <C-p> <CMD>ALEDetail<CR>
 
 " self-defined commands
 	command Hex %!xxd
