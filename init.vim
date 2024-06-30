@@ -35,9 +35,6 @@ source ~/.config/nvim/lua/init.lua
 		set history=64
 		set ttimeoutlen=0
 		syntax sync minlines=256
-		let g:codeium_filetypes = {
-			\ "text": v:false,
-		\ }
 	" indent
 		set autoindent
 		set tabstop=4
@@ -46,7 +43,7 @@ source ~/.config/nvim/lua/init.lua
 		set shiftwidth=4
 		set nofoldenable
 		filetype indent on
-		set list lcs=tab:\|\ 
+		set list lcs=tab:\󰤃\ 
 	" filetype
 		filetype on
 	" search
@@ -54,5 +51,3 @@ source ~/.config/nvim/lua/init.lua
 		set incsearch
 	" cache
 		set nobackup
-	" Codeium
-		let g:codeium_enabled = v:false
