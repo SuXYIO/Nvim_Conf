@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Plug
 	local nvim_treesitter_plug = {"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
-		config = function () 
+		config = function ()
 			local configs = require("nvim-treesitter.configs")
 			configs.setup({
 				ensure_installed = { 'c', 'markdown', 'lua', 'vim', 'vimdoc' },
@@ -27,6 +27,9 @@ vim.opt.rtp:prepend(lazypath)
 	}
 	local nvim_tree_plug = {'nvim-tree/nvim-tree.lua', 
 		dependencies = 'nvim-tree/nvim-web-devicons',
+		keys = {
+			{"<C-n>", "<CMD>NvimTreeToggle<CR>"}
+		},
 		config = function ()
 			require("nvim-tree").setup({
 				sort = {
@@ -127,7 +130,12 @@ vim.opt.rtp:prepend(lazypath)
 			vim.opt.termguicolors = true
 		end
 	}
-	local telescope_plug = {'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim'}
+	local telescope_plug = {'nvim-telescope/telescope.nvim',
+		dependencies = 'nvim-lua/plenary.nvim',
+		keys = {
+			{"ff", "<CMD>Telescope find_files<CR>"}
+		}
+	}
 	local ale_plug = {'dense-analysis/ale',
 		config = function()
 			-- Configuration goes here.
@@ -224,6 +232,24 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end,
 	}
+	local lazygit_plug = {'kdheepak/lazygit.nvim',
+		cmd = {
+			"LazyGit",
+			"LazyGitConfig",
+			"LazyGitCurrentFile",
+			"LazyGitFilter",
+			"LazyGitFilterCurrentFile",
+		},
+		-- optional for floating window border decoration
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		-- setting the keybinding for LazyGit with 'keys' is recommended in
+		-- order to load the plugin when the command is run for the first time
+		keys = {
+			{"<C-g>", "<cmd>LazyGit<cr>", desc = "LazyGit"}
+		}
+	}
 -- Colorscheme
 	-- main colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
@@ -268,6 +294,7 @@ require("lazy").setup({
 	dressing_plug,
 	lualine_plug,
 	dashboard_plug,
+	lazygit_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
