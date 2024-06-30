@@ -18,10 +18,6 @@ source ~/.config/nvim/lua/init.lua
 	nmap <C-h> <CMD>vs<CR>
 	nmap <C-m> <CMD>terminal<CR>
 	tmap jk <C-\><C-n>
-	" plugin key maps
-	nmap <C-n> <CMD>NvimTreeToggle<CR>
-	nmap ff <CMD>Telescope find_files<CR>
-	nmap <C-p> <CMD>ALEDetail<CR>
 
 " self-defined commands
 	command Hex %!xxd
