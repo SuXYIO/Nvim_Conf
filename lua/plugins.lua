@@ -13,12 +13,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Plug
+	local nvim_lspconfig = {'neovim/nvim-lspconfig'}
+	local nvim_lspinstaller_plug = {'williamboman/nvim-lsp-installer'}
 	local nvim_treesitter_plug = {'nvim-treesitter/nvim-treesitter',
 		build = ':TSUpdate',
 		config = function ()
 			local configs = require('nvim-treesitter.configs')
 			configs.setup({
-				ensure_installed = { 'c', 'markdown', 'lua', 'vim', 'vimdoc' },
+				ensure_installed = {'c', 'python', 'lua', 'vim'},
 				sync_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
@@ -46,9 +48,6 @@ vim.opt.rtp:prepend(lazypath)
 				},
 			})
 		end
-	}
-	local codeium_plug = {'Exafunction/codeium.vim',
-		lazy = true
 	}
 	local todo_comments_plug = {'folke/todo-comments.nvim', 
 		dependencies = 'nvim-lua/plenary.nvim',
@@ -250,6 +249,9 @@ vim.opt.rtp:prepend(lazypath)
 			{'<C-g>', '<cmd>LazyGit<cr>', desc = 'LazyGit'}
 		}
 	}
+	local vsnip_plug = {'hrsh7th/vim-vsnip',
+		dependencies = {'hrsh7th/vim-vsnip-integ'}
+	}
 	local cmp_plug = {'hrsh7th/nvim-cmp',
 		dependencies = {
 			'neovim/nvim-lspconfig',
@@ -257,13 +259,14 @@ vim.opt.rtp:prepend(lazypath)
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-path',
 			'hrsh7th/cmp-cmdline',
+			'hrsh7th/vim-vsnip'
 		},
 		config = function()
 			cmp = require('cmp')
 			cmp.setup({
 				snippet = {
 					expand = function(args)
-						vim.snippet.expand(args.body)
+						vim.fn["vsnip#anonymous"](args.body)
 					end,
 				},
 				mapping = cmp.mapping.preset.insert({
@@ -271,6 +274,7 @@ vim.opt.rtp:prepend(lazypath)
 				}),
 				sources = cmp.config.sources({
 						{name = 'nvim_lsp'},
+						{name = 'vsnip'}
 					},
 					{
 						{name = 'buffer'},
@@ -311,9 +315,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 	-- plug
+	nvim_lspconfig,
+	nvim_lspinstaller_plug,
 	nvim_treesitter_plug,
 	nvim_tree_plug,
-	codeium_plug,
 	todo_comments_plug,
 	telescope_plug,
 	ale_plug,
@@ -321,9 +326,10 @@ require('lazy').setup({
 	lualine_plug,
 	dashboard_plug,
 	lazygit_plug,
+	vsnip_plug,
 	cmp_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
-	papercolor_colorscheme,
 })
+
