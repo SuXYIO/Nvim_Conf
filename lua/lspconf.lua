@@ -25,5 +25,8 @@ local lspconfig = require("lspconfig")
 lspconfig.clangd.setup({
 	capabilities = M.capabilities,
 })
+lspconfig.pyright.setup({
+	capabilities = M.capabilities,
+})
 
 return M
