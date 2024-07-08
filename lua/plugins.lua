@@ -152,10 +152,7 @@ vim.opt.rtp:prepend(lazypath)
 					theme = 'auto',
 					component_separators = { left = '', right = ''},
 					section_separators = { left = '', right = ''},
-					disabled_filetypes = {
-						statusline = {},
-						winbar = {},
-					},
+					disabled_filetypes = {},
 					ignore_focus = {},
 					always_divide_middle = true,
 					globalstatus = false,
@@ -167,22 +164,14 @@ vim.opt.rtp:prepend(lazypath)
 				},
 				sections = {
 					lualine_a = {'mode'},
-					lualine_b = {'branch', 'diff', 'diagnostics'},
-					lualine_c = {'filename'},
+					lualine_b = {'branch', 'diff'},
+					lualine_c = {'filename', 'searchcount', 'diagnostics'},
 					lualine_x = {'encoding', 'fileformat', 'filetype'},
 					lualine_y = {'progress'},
 					lualine_z = {'location'}
 				},
-				inactive_sections = {
-					lualine_a = {},
-					lualine_b = {},
-					lualine_c = {'filename'},
-					lualine_x = {'location'},
-					lualine_y = {},
-					lualine_z = {}
-				},
 				tabline = {
-					lualine_a = {'os.date("%Y-%m-%d | %H:%M:%S | %a",os.time())', 'data', 'require\'lsp-status\'.status()'},
+					lualine_a = {'os.date("%Y-%m-%d | %H:%M:%S | %a",os.time())'},
 					lualine_b = {},
 					lualine_c = {},
 					lualine_x = {},
@@ -195,7 +184,7 @@ vim.opt.rtp:prepend(lazypath)
 					lualine_c = {},
 					lualine_x = {},
 					lualine_y = {},
-					lualine_z = {}
+					lualine_z = {'tabs'}
 				},
 				inactive_winbar = {},
 				extensions = {}
@@ -287,7 +276,6 @@ vim.opt.rtp:prepend(lazypath)
 		config = true
 	}
 -- Colorscheme
-	-- main colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
 		priority = 1000,
@@ -295,27 +283,47 @@ vim.opt.rtp:prepend(lazypath)
 			vim.cmd([[colorscheme ayu]])
 			-- set ayucolor based on time
 			local time = tonumber(os.date('%H', os.time()))
-			if (time > 2 and time <= 8)
-			then
+			if time > 2 and time <= 8 then
 				-- morning
 				vim.cmd('let ayucolor=\'mirage\'')
-			elseif (time > 8 and time <= 14)
-			then
+			elseif time <= 14 then
 				-- noon
 				vim.cmd('let ayucolor=\'light\'')
-			elseif (time > 14 and time <= 20)
-			then
+			elseif time <= 20 then
 				-- afternoon
 				vim.cmd('let ayucolor=\'mirage\'')
-			elseif (time > 20 or time <= 2)
-			then
+			else
 				-- midnight
 				vim.cmd('let ayucolor=\'dark\'')
 			end
 		end
 	}
-	-- other colorschemes
-	local gruvbox_colorscheme = {'morhetz/gruvbox', lazy = false}
+	local gruvbox_colorscheme = {'morhetz/gruvbox',
+		lazy = false,
+		config = function()
+			vim.cmd([[colorscheme gruvbox]])
+		end
+	}
+	local tokyonight_colorscheme = {'folke/tokyonight.nvim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+			local time = tonumber(os.date('%H', os.time()))
+			if time > 2 and time <= 8 then
+				-- morning
+				vim.cmd[[colorscheme tokyonight-storm]]
+			elseif time <= 14 then
+				-- noon
+				vim.cmd[[colorscheme tokyonight-day]]
+			elseif time <= 20 then
+				-- afternoon
+				vim.cmd[[colorscheme tokyonight-moon]]
+			else
+				-- midnight
+				vim.cmd[[colorscheme tokyonight-night]]
+			end
+		end
+	}
 
 require('lazy').setup({
 	-- plug
@@ -335,5 +343,6 @@ require('lazy').setup({
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
+	tokyonight_colorscheme,
 })
 

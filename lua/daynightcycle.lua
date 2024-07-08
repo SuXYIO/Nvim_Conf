@@ -1,23 +1,19 @@
 -- set background based on time
 local time = tonumber(os.date("%H", os.time()))
-if (time > 3 and time <= 9)
-then
-	-- morning
-	vim.cmd('colorscheme gruvbox')
-	vim.o.background = 'light'
-elseif (time > 9 and time <= 15)
-then
-	-- noon
-	vim.cmd('colorscheme ayu')
-	vim.o.background = 'light'
-elseif (time > 15 and time <= 21)
-then
-	-- afternoon
-	vim.cmd('colorscheme ayu')
+
+if time <= 4 or time >= 20 then
+	vim.cmd('colorscheme tokyonight')
 	vim.o.background = 'dark'
-elseif (time > 21 or time <= 3)
-then
-	-- midnight
+elseif time <= 8 then
 	vim.cmd('colorscheme gruvbox')
+	vim.o.background = 'dark'
+elseif time <= 12 then
+	vim.cmd('colorscheme tokyonight')
+	vim.o.background = 'light'
+elseif time <= 16 then
+	vim.cmd('colorscheme ayu')
+	vim.o.background = 'light'
+else
+	vim.cmd('colorscheme tokyonight')
 	vim.o.background = 'dark'
 end
