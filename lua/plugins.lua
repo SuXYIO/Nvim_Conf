@@ -137,14 +137,12 @@ vim.opt.rtp:prepend(lazypath)
 	}
 	local ale_plug = {'dense-analysis/ale',
 		config = function()
-			-- Configuration goes here.
 			vim.g.ale_ruby_rubocop_auto_correct_all = 1
 			vim.g.ale_linters = {
 				lua = {'lua_language_server'}
 			}
 		end
 	}
-	local dressing_plug = {'stevearc/dressing.nvim'}
 	local lualine_plug = {'nvim-lualine/lualine.nvim',
 		dependencies = 'nvim-tree/nvim-web-devicons',
 		config = function()
@@ -250,9 +248,11 @@ vim.opt.rtp:prepend(lazypath)
 		}
 	}
 	local vsnip_plug = {'hrsh7th/vim-vsnip',
+		event = "InsertEnter",
 		dependencies = {'hrsh7th/vim-vsnip-integ'}
 	}
 	local cmp_plug = {'hrsh7th/nvim-cmp',
+		event = "InsertEnter",
 		dependencies = {
 			'neovim/nvim-lspconfig',
 			'hrsh7th/cmp-nvim-lsp',
@@ -281,6 +281,10 @@ vim.opt.rtp:prepend(lazypath)
 				})
 			})
 		end,
+	}
+	local autopairs_plug = {'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		config = true
 	}
 -- Colorscheme
 	-- main colorscheme
@@ -322,12 +326,12 @@ require('lazy').setup({
 	todo_comments_plug,
 	telescope_plug,
 	ale_plug,
-	dressing_plug,
 	lualine_plug,
 	dashboard_plug,
 	lazygit_plug,
 	vsnip_plug,
 	cmp_plug,
+	autopairs_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
