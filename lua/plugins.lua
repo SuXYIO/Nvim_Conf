@@ -171,7 +171,7 @@ vim.opt.rtp:prepend(lazypath)
 					lualine_z = {'location'}
 				},
 				tabline = {
-					lualine_a = {'os.date("%Y-%m-%d | %H:%M:%S | %a",os.time())'},
+					lualine_a = {'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'},
 					lualine_b = {},
 					lualine_c = {},
 					lualine_x = {},
@@ -260,6 +260,7 @@ vim.opt.rtp:prepend(lazypath)
 				},
 				mapping = cmp.mapping.preset.insert({
 					['<CR>'] = cmp.mapping.confirm({select = true}),
+					['<Tab>'] = cmp.mapping.abort(),
 				}),
 				sources = cmp.config.sources({
 						{name = 'nvim_lsp'},
