@@ -25,21 +25,11 @@ if timecycle == true then
 	end
 end
 
+bglist = {'dark'}	--{'light', 'dark'}
+schemelist = {'ayu', 'tokyonight', 'material'}
+
 if timecycle == false then
 	math.randomseed(os.time())
-	if math.random(0, 1) == 0 then
-		vim.o.background = 'light'
-	else
-		vim.o.background = 'dark'
-	end
-	local scheme = math.random(0, 3)
-	if scheme == 0 then
-		vim.cmd('colorscheme ayu')
-	elseif scheme == 1 then
-		vim.cmd('colorscheme gruvbox')
-	elseif scheme == 2 then
-		vim.cmd('colorscheme tokyonight')
-	elseif scheme == 3 then
-		vim.cmd('colorscheme material')
-	end
+	vim.o.background = bglist[math.random(1, #bglist)]
+	vim.cmd(string.format('colorscheme %s', schemelist[math.random(1, #schemelist)]))
 end
