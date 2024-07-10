@@ -15,18 +15,6 @@ vim.opt.rtp:prepend(lazypath)
 -- Plug
 	local nvim_lspconfig = {'neovim/nvim-lspconfig'}
 	local nvim_lspinstaller_plug = {'williamboman/nvim-lsp-installer'}
-	local nvim_treesitter_plug = {'nvim-treesitter/nvim-treesitter',
-		build = ':TSUpdate',
-		config = function ()
-			local configs = require('nvim-treesitter.configs')
-			configs.setup({
-				ensure_installed = {'c', 'python', 'lua', 'vim'},
-				sync_install = false,
-				highlight = { enable = true },
-				indent = { enable = true },
-			})
-		end
-	}
 	local nvim_tree_plug = {'nvim-tree/nvim-tree.lua', 
 		dependencies = 'nvim-tree/nvim-web-devicons',
 		keys = {
@@ -34,18 +22,22 @@ vim.opt.rtp:prepend(lazypath)
 		},
 		config = function ()
 			require('nvim-tree').setup({
-				sort = {
-					sorter = 'case_sensitive',
+				git = {
+					enable = true,
 				},
 				view = {
-					width = 30,
+					side = "left",
+					number = false,
+					relativenumber = false,
+					signcolumn = "yes",
+					width = 30
 				},
 				renderer = {
-					group_empty = true,
+					group_empty = true
 				},
-				filters = {
-					dotfiles = true,
-				},
+				diagnostics = {
+					enable = true,
+				}
 			})
 		end
 	}
@@ -152,7 +144,8 @@ vim.opt.rtp:prepend(lazypath)
 						statusline = 1000,
 						tabline = 1000,
 						winbar = 1000,
-					}
+					},
+					disabled_filetypes = {'NvimTree'},
 				},
 				sections = {
 					lualine_a = {'mode'},
@@ -210,28 +203,6 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end,
 	}
-	local lazygit_plug = {'kdheepak/lazygit.nvim',
-		cmd = {
-			'LazyGit',
-			'LazyGitConfig',
-			'LazyGitCurrentFile',
-			'LazyGitFilter',
-			'LazyGitFilterCurrentFile',
-		},
-		-- optional for floating window border decoration
-		dependencies = {
-			'nvim-lua/plenary.nvim',
-		},
-		-- setting the keybinding for LazyGit with 'keys' is recommended in
-		-- order to load the plugin when the command is run for the first time
-		keys = {
-			{'<C-g>', '<cmd>LazyGit<cr>', desc = 'LazyGit'}
-		}
-	}
-	local vsnip_plug = {'hrsh7th/vim-vsnip',
-		event = "InsertEnter",
-		dependencies = {'hrsh7th/vim-vsnip-integ'}
-	}
 	local cmp_plug = {'hrsh7th/nvim-cmp',
 		event = "InsertEnter",
 		dependencies = {
@@ -255,11 +226,10 @@ vim.opt.rtp:prepend(lazypath)
 					['<Tab>'] = cmp.mapping.abort(),
 				}),
 				sources = cmp.config.sources({
-						{name = 'nvim_lsp'},
-						{name = 'vsnip'}
-					},
-					{
-						{name = 'buffer'},
+					{name = 'nvim_lsp'},
+					{name = 'vsnip'}
+				}, {
+					{name = 'buffer'},
 				})
 			})
 		end,
@@ -268,7 +238,39 @@ vim.opt.rtp:prepend(lazypath)
 		event = "InsertEnter",
 		config = true
 	}
-
+	local smoothcursor_plug = {'gen740/SmoothCursor.nvim',
+		config = function()
+			require('smoothcursor').setup({
+				type = "matrix",
+				cursor = "",
+				texthl = "SmoothCursorBlack",
+				linehl = nil,
+				matrix = {
+					head = {
+						cursor = require('smoothcursor.matrix_chars'),
+						texthl = {
+							'SmoothCursorBlack',
+						},
+						linehl = nil,
+					},
+					body = {
+						length = 6,
+						cursor = require('smoothcursor.matrix_chars'),
+						texthl = {
+							'SmoothCursorGreen',
+						},
+					},
+					tail = {
+						cursor = nil,
+						texthl = {
+							'SmoothCursorGreen',
+						},
+					},
+					unstop = false,
+				}
+			})
+		end
+	}
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -277,13 +279,13 @@ vim.opt.rtp:prepend(lazypath)
 			vim.cmd([[colorscheme ayu]])
 			-- set ayucolor based on time
 			local time = tonumber(os.date('%H', os.time()))
-			if time > 2 and time <= 8 then
+			if time > tsep4[1] and time <= tsep4[2] then
 				-- morning
 				vim.cmd('let ayucolor=\'mirage\'')
-			elseif time <= 14 then
+			elseif time <= tsep4[3] then
 				-- noon
 				vim.cmd('let ayucolor=\'light\'')
-			elseif time <= 20 then
+			elseif time <= tsep4[4] then
 				-- afternoon
 				vim.cmd('let ayucolor=\'mirage\'')
 			else
@@ -303,13 +305,13 @@ vim.opt.rtp:prepend(lazypath)
 		priority = 1000,
 		config = function()
 			local time = tonumber(os.date('%H', os.time()))
-			if time > 2 and time <= 8 then
+			if time > tsep4[1] and time <= tsep4[2] then
 				-- morning
 				vim.cmd[[colorscheme tokyonight-storm]]
-			elseif time <= 14 then
+			elseif time <= tsep4[3] then
 				-- noon
 				vim.cmd[[colorscheme tokyonight-day]]
-			elseif time <= 20 then
+			elseif time <= tsep4[4] then
 				-- afternoon
 				vim.cmd[[colorscheme tokyonight-moon]]
 			else
@@ -318,23 +320,43 @@ vim.opt.rtp:prepend(lazypath)
 			end
 		end
 	}
+	local material_colorscheme = {'marko-cerovac/material.nvim',
+		lazy = false,
+		config = function()
+			local time = tonumber(os.date('%H', os.time()))
+			if time > tsep4[1] and time <= tsep4[2] then
+				-- morning
+				vim.g.material_style = "oceanic"
+			elseif time <= tsep4[3] then
+				-- noon
+				vim.g.material_style = "palenight"
+			elseif time <= tsep4[4] then
+				-- afternoon
+				vim.g.material_style = "darker"
+			else
+				-- midnight
+				vim.g.material_style = "deep ocean"
+			end
+		end
+	}
+	local matrix_colorscheme = {'iruzo/matrix-nvim', lazy = true}
 
 require('lazy').setup({
 	-- plug
 	nvim_lspconfig,
 	nvim_lspinstaller_plug,
-	nvim_treesitter_plug,
 	nvim_tree_plug,
 	todo_comments_plug,
 	telescope_plug,
 	lualine_plug,
 	dashboard_plug,
-	lazygit_plug,
-	vsnip_plug,
 	cmp_plug,
 	autopairs_plug,
+	smoothcursor_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
 	tokyonight_colorscheme,
+	material_colorscheme,
+	matrix_colorscheme,
 })
