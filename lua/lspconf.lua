@@ -14,19 +14,21 @@ end
 
 M.capabilities = vim.lsp.protocol.make_client_capabilities()
 local status_cmp_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
-if not status_cmp_ok then
-	return
+if status_cmp_ok then
+	M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
 end
-M.capabilities.textDocument.completion.completionItem.snippetSupport = true
-M.capabilities = cmp_nvim_lsp.default_capabilities(M.capabilities)
-M.setup = function()
+
+M.setup_lsp_clients = function()
+	local lspconfig = require("lspconfig")
+	lspconfig.clangd.setup({
+		capabilities = M.capabilities,
+	})
+	lspconfig.pyright.setup({
+		capabilities = M.capabilities,
+	})
 end
-local lspconfig = require("lspconfig")
-lspconfig.clangd.setup({
-	capabilities = M.capabilities,
-})
-lspconfig.pyright.setup({
-	capabilities = M.capabilities,
-})
+
+M.setup()
+M.setup_lsp_clients()
 
 return M
