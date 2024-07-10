@@ -1,3 +1,3 @@
 require('plugins')
-require('lspconf').setup()
+require('lspconf')
 require('daynightcycle')

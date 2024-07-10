@@ -135,14 +135,6 @@ vim.opt.rtp:prepend(lazypath)
 			{'ff', '<CMD>Telescope find_files<CR>'}
 		}
 	}
-	local ale_plug = {'dense-analysis/ale',
-		config = function()
-			vim.g.ale_ruby_rubocop_auto_correct_all = 1
-			vim.g.ale_linters = {
-				lua = {'lua_language_server'}
-			}
-		end
-	}
 	local lualine_plug = {'nvim-lualine/lualine.nvim',
 		dependencies = 'nvim-tree/nvim-web-devicons',
 		config = function()
@@ -276,6 +268,7 @@ vim.opt.rtp:prepend(lazypath)
 		event = "InsertEnter",
 		config = true
 	}
+
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -334,7 +327,6 @@ require('lazy').setup({
 	nvim_tree_plug,
 	todo_comments_plug,
 	telescope_plug,
-	ale_plug,
 	lualine_plug,
 	dashboard_plug,
 	lazygit_plug,
@@ -346,4 +338,3 @@ require('lazy').setup({
 	gruvbox_colorscheme,
 	tokyonight_colorscheme,
 })
-
