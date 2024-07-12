@@ -26,7 +26,7 @@ if timecycle == true then
 end
 
 bglist = {'dark'}	--{'light', 'dark'}
-schemelist = {'ayu', 'tokyonight', 'material'}
+schemelist = {'tokyonight', 'material'}
 
 if timecycle == false then
 	math.randomseed(os.time())
