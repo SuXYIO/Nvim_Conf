@@ -35,6 +35,7 @@ source ~/.config/nvim/lua/init.lua
 		set history=64
 		set ttimeoutlen=0
 		syntax sync minlines=256
+		set spelllang=en,cjk
 	" indent
 		set autoindent
 		set tabstop=4
@@ -42,10 +43,16 @@ source ~/.config/nvim/lua/init.lua
 		set softtabstop=4
 		set shiftwidth=4
 		set nofoldenable
-		filetype indent on
 		set list lcs=tab:\󰤃\ 
 	" filetype
 		filetype on
+		filetype indent on
+		filetype plugin on
+	" spellcheck
+		augroup SpellCheck
+			autocmd!
+			autocmd FileType text setlocal spell
+		augroup END
 	" search
 		set hlsearch
 		set incsearch
