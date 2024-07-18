@@ -323,6 +323,22 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end
 	}
+	local gdb_plug = {'sakhnik/nvim-gdb',
+		config = function()
+			vim.g.nvimgdb_config_override = {
+				key_next = '<Leader>n',
+				key_step = '<Leader>s',
+				key_finish = '<Leader>f',
+				key_continue = '<Leader>c',
+				key_until = '<Leader>u',
+				key_breakpoint = '<Leader>b',
+				key_frameup = '<Leader>u',
+				key_framedown = '<Leader>d',
+				key_eval = '<Leader>e',
+				key_quit = '<Leader>q'
+			}
+		end
+	}
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -406,6 +422,7 @@ require('lazy').setup({
 	autopairs_plug,
 	smoothcursor_plug,
 	gitsign_plug,
+	gdb_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
