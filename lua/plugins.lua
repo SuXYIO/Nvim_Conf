@@ -339,6 +339,31 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end
 	}
+	local notify_plug = {'rcarriga/nvim-notify'}
+	local leetcode_plug = {'kawre/leetcode.nvim',
+		cmd = "Leet",
+		build = ":TSUpdate html",
+		dependencies = {
+			"nvim-telescope/telescope.nvim",
+			"nvim-lua/plenary.nvim",
+			"MunifTanjim/nui.nvim",
+			-- optional
+			"nvim-treesitter/nvim-treesitter",
+			"rcarriga/nvim-notify",
+			"nvim-tree/nvim-web-devicons",
+		},
+		lazy = "lc" ~= vim.fn.argv()[1],
+		opts = {
+			arg = "lc",
+			lang = c,
+			cn = {
+				enabled = true,
+				translator = false,
+				translate_problems = false,
+			},
+			image_support = true
+		},
+	}
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -423,6 +448,8 @@ require('lazy').setup({
 	smoothcursor_plug,
 	gitsign_plug,
 	gdb_plug,
+	notify_plug,
+	leetcode_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
