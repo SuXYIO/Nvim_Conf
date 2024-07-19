@@ -361,7 +361,7 @@ vim.opt.rtp:prepend(lazypath)
 				translator = false,
 				translate_problems = false,
 			},
-			image_support = true
+			image_support = false
 		},
 	}
 -- Colorscheme
