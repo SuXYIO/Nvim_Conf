@@ -355,7 +355,7 @@ vim.opt.rtp:prepend(lazypath)
 		lazy = "lc" ~= vim.fn.argv()[1],
 		opts = {
 			arg = "lc",
-			lang = c,
+			lang = "c",
 			cn = {
 				enabled = true,
 				translator = false,
