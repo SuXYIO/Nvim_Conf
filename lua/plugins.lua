@@ -156,21 +156,14 @@ vim.opt.rtp:prepend(lazypath)
 					lualine_z = {'location'}
 				},
 				tabline = {
-					lualine_a = {'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'},
-					lualine_b = {},
-					lualine_c = {},
-					lualine_x = {},
-					lualine_y = {'filesize'},
-					lualine_z = {'hostname'}
-				},
-				winbar = {
 					lualine_a = {'buffers'},
 					lualine_b = {},
 					lualine_c = {},
-					lualine_x = {},
-					lualine_y = {},
-					lualine_z = {'tabs'}
+					lualine_x = {'filesize'},
+					lualine_y = {'hostname'},
+					lualine_z = {'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
 				},
+				winbar = {},
 				inactive_winbar = {},
 				extensions = {}
 			}
@@ -202,6 +195,29 @@ vim.opt.rtp:prepend(lazypath)
 				}
 			}
 		end,
+	}
+	local lspsaga_plug = {'nvimdev/lspsaga.nvim',
+		config = function()
+			require('lspsaga').setup({
+				ui = {
+					border = 'single',
+					devicon = true,
+					title = true,
+					expand = '',
+					collapse = '',
+					code_action = '',
+					actionfix = '󰁨 ',
+					imp_sign = ' '
+				}
+			})
+			vim.keymap.set('n', '[e', '<CMD>Lspsaga diagnostic_jump_next<CR>')
+			vim.keymap.set('n', '[E', '<CMD>Lspsaga diagnostic_jump_prev<CR>')
+			vim.keymap.set('n', '<C-s>', '<CMD>Lspsaga outline<CR>')
+			vim.keymap.set('n', '<C-a>', '<CMD>Lspsaga code_action<CR>')
+		end,
+		dependencies = {
+			'nvim-tree/nvim-web-devicons',
+		}
 	}
 	local cmp_plug = {'hrsh7th/nvim-cmp',
 		event = "InsertEnter",
@@ -323,23 +339,6 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end
 	}
-	local gdb_plug = {'sakhnik/nvim-gdb',
-		config = function()
-			vim.g.nvimgdb_config_override = {
-				key_next = '<Leader>n',
-				key_step = '<Leader>s',
-				key_finish = '<Leader>f',
-				key_continue = '<Leader>c',
-				key_until = '<Leader>u',
-				key_breakpoint = '<Leader>b',
-				key_frameup = '<Leader>u',
-				key_framedown = '<Leader>d',
-				key_eval = '<Leader>e',
-				key_quit = '<Leader>q'
-			}
-		end
-	}
-	local notify_plug = {'rcarriga/nvim-notify'}
 	local leetcode_plug = {'kawre/leetcode.nvim',
 		cmd = "Leet",
 		build = ":TSUpdate html",
@@ -443,12 +442,11 @@ require('lazy').setup({
 	telescope_plug,
 	lualine_plug,
 	dashboard_plug,
+	lspsaga_plug,
 	cmp_plug,
 	autopairs_plug,
 	smoothcursor_plug,
 	gitsign_plug,
-	gdb_plug,
-	notify_plug,
 	leetcode_plug,
 	-- colorscheme
 	ayu_colorscheme,
