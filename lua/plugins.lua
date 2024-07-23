@@ -243,7 +243,8 @@ vim.opt.rtp:prepend(lazypath)
 				}),
 				sources = cmp.config.sources({
 					{name = 'nvim_lsp'},
-					{name = 'vsnip'}
+					{name = 'vsnip'},
+					{name = 'codeium'}
 				}, {
 					{name = 'buffer'},
 				})
@@ -363,6 +364,16 @@ vim.opt.rtp:prepend(lazypath)
 			image_support = false
 		},
 	}
+	local codeium_plug = {'Exafunction/codeium.nvim',
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"hrsh7th/nvim-cmp",
+		},
+		config = function()
+			require("codeium").setup({
+			})
+		end
+	}
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -448,6 +459,7 @@ require('lazy').setup({
 	smoothcursor_plug,
 	gitsign_plug,
 	leetcode_plug,
+	codeium_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
