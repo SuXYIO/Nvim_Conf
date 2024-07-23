@@ -1,6 +1,6 @@
 -- set background & colorscheme
 
-timecycle = false
+local timecycle = false
 
 if timecycle == true then
 	local timeh = tonumber(os.date("%H", os.time()))
@@ -25,8 +25,8 @@ if timecycle == true then
 	end
 end
 
-bglist = {'dark'}	--{'light', 'dark'}
-schemelist = {'tokyonight', 'material'}
+local bglist = {'dark'}	--{'light', 'dark'}
+local schemelist = {'tokyonight', 'material'}
 
 if timecycle == false then
 	math.randomseed(os.time())
