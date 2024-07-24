@@ -14,7 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plug
 	local nvim_lspconfig = {'neovim/nvim-lspconfig'}
-	local nvim_lspinstaller_plug = {'williamboman/nvim-lsp-installer'}
 	local nvim_tree_plug = {'nvim-tree/nvim-tree.lua', 
 		dependencies = 'nvim-tree/nvim-web-devicons',
 		keys = {
@@ -387,6 +386,20 @@ vim.opt.rtp:prepend(lazypath)
 			})
 		end
 	}
+	local mason_plug = {'williamboman/mason.nvim',
+		dependencies = {
+			"williamboman/mason-lspconfig.nvim",
+			"neovim/nvim-lspconfig"
+		},
+		config = function()
+			require("mason").setup()
+			require("mason-lspconfig").setup_handlers {
+				function (server_name)
+					require("lspconfig")[server_name].setup {}
+				end,
+			}
+		end
+	}
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -459,7 +472,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 	-- plug
 	nvim_lspconfig,
-	nvim_lspinstaller_plug,
 	nvim_tree_plug,
 	todo_comments_plug,
 	telescope_plug,
@@ -472,6 +484,7 @@ require('lazy').setup({
 	gitsign_plug,
 	leetcode_plug,
 	codeium_plug,
+	mason_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
