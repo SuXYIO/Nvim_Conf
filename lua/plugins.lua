@@ -228,7 +228,8 @@ vim.opt.rtp:prepend(lazypath)
 			'hrsh7th/cmp-buffer',
 			'hrsh7th/cmp-path',
 			'hrsh7th/cmp-cmdline',
-			'hrsh7th/vim-vsnip'
+			'hrsh7th/vim-vsnip',
+			'onsails/lspkind.nvim',
 		},
 		config = function()
 			cmp = require('cmp')
@@ -248,7 +249,16 @@ vim.opt.rtp:prepend(lazypath)
 					{name = 'codeium'}
 				}, {
 					{name = 'buffer'},
-				})
+				}),
+				formatting = {
+					format = require('lspkind').cmp_format({
+						mode = 'symbol_text',
+						maxwidth = 50,
+						ellipsis_char = '...',
+						preset = 'codicons',
+						symbol_map = {Codeium = " "}
+					})
+				}
 			})
 		end,
 	}
@@ -366,12 +376,14 @@ vim.opt.rtp:prepend(lazypath)
 		},
 	}
 	local codeium_plug = {'Exafunction/codeium.nvim',
+		event = "InsertEnter",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"hrsh7th/nvim-cmp",
 		},
 		config = function()
 			require("codeium").setup({
+				enable_chat = true;
 			})
 		end
 	}
@@ -443,7 +455,6 @@ vim.opt.rtp:prepend(lazypath)
 			end
 		end
 	}
-	local matrix_colorscheme = {'iruzo/matrix-nvim', lazy = true}
 
 require('lazy').setup({
 	-- plug
@@ -466,5 +477,4 @@ require('lazy').setup({
 	gruvbox_colorscheme,
 	tokyonight_colorscheme,
 	material_colorscheme,
-	matrix_colorscheme,
 })
