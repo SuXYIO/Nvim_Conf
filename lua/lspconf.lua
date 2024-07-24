@@ -23,7 +23,7 @@ end
 -- Setup servers
 require("nvim-lsp-installer").setup {}
 local lspconfig = require('lspconfig')
-local servers = {'clangd', 'pyright', 'tsserver', 'lua_ls'}
+local servers = {'clangd', 'pyright', 'tsserver', 'lua_ls', 'rust_analyzer'}
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
 		on_attach = on_attach,
