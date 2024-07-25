@@ -400,6 +400,22 @@ vim.opt.rtp:prepend(lazypath)
 			}
 		end
 	}
+	local transparent_plug = {'xiyaowong/transparent.nvim',
+		config = function()
+			require("transparent").setup({
+				groups = {
+					'Normal', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
+					'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
+					'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
+					'SignColumn', 'CursorLine', 'CursorLineNr', 'StatusLine', 'StatusLineNC',
+					'EndOfBuffer',
+				},
+				extra_groups = {},
+				exclude_groups = {},
+			})
+			vim.keymap.set('n', 'T', '<CMD>TransparentToggle<CR>')
+		end
+	}
 -- Colorscheme
 	local ayu_colorscheme = {'Luxed/ayu-vim',
 		lazy = false,
@@ -485,6 +501,7 @@ require('lazy').setup({
 	leetcode_plug,
 	codeium_plug,
 	mason_plug,
+	transparent_plug,
 	-- colorscheme
 	ayu_colorscheme,
 	gruvbox_colorscheme,
