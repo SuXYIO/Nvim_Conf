@@ -1,19 +1,14 @@
--- time seperation
-tsep4 = {2, 8, 14, 20}
-tsep6 = {4, 8, 12, 16, 20}
+-- Neovim Config
+-- By SuXYIO
 
--- requires
+-- Requires
+require('base')
+require('timeseps')
 require('pluginit')
 require('lspconf')
 require('colorcycle')
 
--- setup keymaps
-vim.keymap.set('v', '<D-c>', '"+y')
-vim.keymap.set('n', '<D-v>', '"+P')
-vim.keymap.set('i', '<D-v>', '<ESC>"+Pi')
-vim.keymap.set('n', '<D-s>', '<CMD>w<CR>')
-
--- setup for neovide
+-- Setup for neovide
 if vim.g.neovide then
 	vim.o.guifont = "JetbrainsMono Nerd Font:h16"
 	vim.g.neovide_transparency = 0.95
