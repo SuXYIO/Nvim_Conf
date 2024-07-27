@@ -22,7 +22,6 @@ require("plugins/dashboard")
 require("plugins/lspsaga")
 require("plugins/cmp")
 require("plugins/autopairs")
-require("plugins/smoothcursor")
 require("plugins/gitsign")
 require("plugins/leetcode")
 require("plugins/codeium")
@@ -45,7 +44,6 @@ require('lazy').setup({
 	lspsaga,
 	cmp,
 	autopairs,
-	smoothcursor,
 	gitsign,
 	leetcode,
 	codeium,
