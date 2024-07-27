@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plug
 require("plugins/lspconfig")
-require("plugins/nvim_tree")
+require("plugins/tree")
 require("plugins/todo_comments")
 require("plugins/telescope")
 require("plugins/lualine")
@@ -35,23 +35,23 @@ require("colorschemes/material")
 
 require('lazy').setup({
 	-- plug
-	nvim_lspconfig,
-	nvim_tree,
-	todo_comments,
-	telescope,
-	lualine,
-	dashboard,
-	lspsaga,
-	cmp,
-	autopairs,
-	gitsign,
-	leetcode,
-	codeium,
-	mason,
-	transparent,
+	Lspconfig,
+	Tree,
+	Todo_comments,
+	Telescope,
+	Lualine,
+	Dashboard,
+	Lspsaga,
+	Cmp,
+	Autopairs,
+	Gitsign,
+	Leetcode,
+	Codeium,
+	Mason,
+	Transparent,
 	-- colorscheme
-	ayu,
-	gruvbox,
-	tokyonight,
-	material,
+	Ayu,
+	Gruvbox,
+	Tokyonight,
+	Material,
 })

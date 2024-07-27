@@ -1,4 +1,4 @@
-tokyonight = {'folke/tokyonight.nvim',
+Tokyonight = {'folke/tokyonight.nvim',
 	lazy = false,
 	priority = 1000,
 	config = function()

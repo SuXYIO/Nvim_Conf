@@ -1,4 +1,4 @@
-material = {'marko-cerovac/material.nvim',
+Material = {'marko-cerovac/material.nvim',
 	lazy = false,
 	config = function()
 		local time = tonumber(os.date('%H', os.time()))

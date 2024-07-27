@@ -1,4 +1,4 @@
-mason = {'williamboman/mason.nvim',
+Mason = {'williamboman/mason.nvim',
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig"

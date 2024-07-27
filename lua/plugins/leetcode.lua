@@ -1,4 +1,4 @@
-leetcode = {'kawre/leetcode.nvim',
+Leetcode = {'kawre/leetcode.nvim',
 	cmd = "Leet",
 	build = ":TSUpdate html",
 	dependencies = {

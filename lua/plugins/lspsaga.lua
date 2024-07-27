@@ -1,4 +1,4 @@
-lspsaga = {'nvimdev/lspsaga.nvim',
+Lspsaga = {'nvimdev/lspsaga.nvim',
 	config = function()
 		require('lspsaga').setup({
 			ui = {

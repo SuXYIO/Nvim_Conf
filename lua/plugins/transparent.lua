@@ -1,4 +1,4 @@
-transparent = {'xiyaowong/transparent.nvim',
+Transparent = {'xiyaowong/transparent.nvim',
 	config = function()
 		require("transparent").setup({
 			groups = {
