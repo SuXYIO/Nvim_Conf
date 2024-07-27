@@ -1,1 +1,1 @@
-nvim_lspconfig = {'neovim/nvim-lspconfig'}
+Lspconfig = {'neovim/nvim-lspconfig'}

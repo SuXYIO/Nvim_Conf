@@ -1,4 +1,4 @@
-ayu = {'Luxed/ayu-vim',
+Ayu = {'Luxed/ayu-vim',
 	lazy = false,
 	priority = 1000,
 	config = function()

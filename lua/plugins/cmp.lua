@@ -1,4 +1,4 @@
-cmp = {'hrsh7th/nvim-cmp',
+Cmp = {'hrsh7th/nvim-cmp',
 	event = "InsertEnter",
 	dependencies = {
 		'neovim/nvim-lspconfig',

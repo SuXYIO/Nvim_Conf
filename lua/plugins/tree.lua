@@ -1,4 +1,4 @@
-nvim_tree = {'nvim-tree/nvim-tree.lua', 
+Tree = {'nvim-tree/nvim-tree.lua', 
 	dependencies = 'nvim-tree/nvim-web-devicons',
 	keys = {
 		{'<C-n>', '<CMD>NvimTreeToggle<CR>'}

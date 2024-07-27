@@ -1,5 +1,5 @@
-codeium = {'Exafunction/codeium.nvim',
-	event = "InsertEnter",
+Codeium = {'Exafunction/codeium.nvim',
+	cmd = {"Codeium"},
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",
