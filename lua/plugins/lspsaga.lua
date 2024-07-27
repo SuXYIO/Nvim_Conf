@@ -7,7 +7,7 @@ lspsaga = {'nvimdev/lspsaga.nvim',
 				title = true,
 				expand = '',
 				collapse = '',
-				code_action = '',
+				code_action = '',
 				actionfix = '󰁨 ',
 				imp_sign = ' '
 			}
