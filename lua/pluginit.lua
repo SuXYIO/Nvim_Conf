@@ -27,6 +27,7 @@ require("plugins/leetcode")
 require("plugins/codeium")
 require("plugins/mason")
 require("plugins/transparent")
+require("plugins/mdpre")
 -- Colorscheme
 require("colorschemes/ayu")
 require("colorschemes/gruvbox")
@@ -49,6 +50,7 @@ require('lazy').setup({
 	Codeium,
 	Mason,
 	Transparent,
+	MDPre,
 	-- colorscheme
 	Ayu,
 	Gruvbox,
