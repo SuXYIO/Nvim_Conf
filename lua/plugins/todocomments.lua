@@ -1,5 +1,6 @@
 Todo_comments = {'folke/todo-comments.nvim', 
 	dependencies = 'nvim-lua/plenary.nvim',
+	event = 'VimEnter',
 	config = function()
 		require('todo-comments').setup {
 			signs = true, -- show icons in the signs column

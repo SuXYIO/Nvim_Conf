@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Plug
 require("plugins/lspconfig")
 require("plugins/tree")
-require("plugins/todo_comments")
+require("plugins/todocomments")
 require("plugins/telescope")
 require("plugins/lualine")
 require("plugins/dashboard")

@@ -3,7 +3,7 @@ Tree = {'nvim-tree/nvim-tree.lua',
 	keys = {
 		{'<C-n>', '<CMD>NvimTreeToggle<CR>'}
 	},
-	config = function ()
+	config = function()
 		require('nvim-tree').setup({
 			git = {
 				enable = true,
