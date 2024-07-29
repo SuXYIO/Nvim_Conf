@@ -1,1 +1,3 @@
-Lspconfig = {'neovim/nvim-lspconfig'}
+Lspconfig = {'neovim/nvim-lspconfig',
+	event = 'VimEnter',
+}
