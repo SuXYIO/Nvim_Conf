@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Plug
-require("plugins/lspconfig")
 require("plugins/tree")
 require("plugins/todocomments")
 require("plugins/telescope")
@@ -36,7 +35,6 @@ require("colorschemes/material")
 
 require('lazy').setup({
 	-- plug
-	Lspconfig,
 	Tree,
 	Todo_comments,
 	Telescope,
