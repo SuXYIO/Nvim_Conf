@@ -1,7 +1,7 @@
 Tree = {'nvim-tree/nvim-tree.lua',
 	dependencies = 'nvim-tree/nvim-web-devicons',
 	keys = {
-		{'<C-n>', '<CMD>NvimTreeToggle<CR>'}
+		{'<Leader>f', '<CMD>NvimTreeToggle<CR>'}
 	},
 	config = function()
 		require('nvim-tree').setup({
