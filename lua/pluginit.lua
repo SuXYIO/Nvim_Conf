@@ -27,6 +27,7 @@ require("plugins/codeium")
 require("plugins/mason")
 require("plugins/transparent")
 require("plugins/mdpre")
+require("plugins/lazygit")
 -- Colorscheme
 require("colorschemes/ayu")
 require("colorschemes/gruvbox")
@@ -49,6 +50,7 @@ require('lazy').setup({
 	Mason,
 	Transparent,
 	MDPre,
+	Lazygit,
 	-- colorscheme
 	Ayu,
 	Gruvbox,
