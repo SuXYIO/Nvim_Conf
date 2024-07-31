@@ -32,6 +32,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | Cmd `Codeium` |
 | [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ | Event `VimEnter` |
 | [GitSign](https://github.com/lewis6991/gitsigns.nvim) | Show __changes for git__ | Event `VimEnter` |
+| [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration | Keys <kbd>Ctrl</kbd>-<kbd>W</kbd>; Cmd `LazyGit` |
 | [LeetCode](https://github.com/kawre/leetcode.nvim) | __Leetcode__ inside nvim | Cmd `Leet` |
 | [LspConfig](https://github.com/neovim/nvim-lspconfig) | Provide __LSP configuration__ | Event `VimEnter` |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ | Event `VimEnter` |
@@ -81,16 +82,17 @@ The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
-| NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
-| NvimCmp | I | <kbd>Tab</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
+| LazyGit | N | <kbd>Ctrl</kbd>-<kbd>W</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
 | LspSaga | N | <kbd>[</kbd><kbd>Shift</kbd>-<kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to previous __diagnostic__ |
-| LspSaga | N | <kbd>Ctrl</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
 | LspSaga | N | <kbd>Ctrl</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
+| LspSaga | N | <kbd>Ctrl</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
 | MarkdownPreview | N | <kbd>Ctrl</kbd>-<kbd>B</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
+| NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
+| NvimCmp | I | <kbd>Tab</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
+| NvimTree | N | <kbd>Ctrl</kbd>-<kbd>N</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
 | Telescope | N | <kbd>f</kbd><kbd>f</kbd> | `<CMD>Telescope find_files<CR>` | __Telescope__ find files |
 | Transparent | N | <kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
-| NvimTree | N | <kbd>Ctrl</kbd>-<kbd>N</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
 
 </details>
 
