@@ -15,6 +15,9 @@ _SuXYIO_'s __Neovim__ config.
 > Editing a C source file and checking for _code actions_, with _code outline_ on, _material_ colorscheme. 
 ![Screenshot1](./media/Screenshot1.png)
 
+> Editing markdown with _lazygit_ window on, _material_ colorscheme. 
+![Screenshot2](./media/Screenshot2.png)
+
 </details>
 
 ## Info
@@ -32,7 +35,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | Cmd `Codeium` |
 | [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ | Event `VimEnter` |
 | [GitSign](https://github.com/lewis6991/gitsigns.nvim) | Show __changes for git__ | Event `VimEnter` |
-| [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration | Keys <kbd>Ctrl</kbd>-<kbd>W</kbd>; Cmd `LazyGit` |
+| [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration | Keys <kbd>Leader</kbd>-<kbd>D</kbd>; Cmd `LazyGit` |
 | [LeetCode](https://github.com/kawre/leetcode.nvim) | __Leetcode__ inside nvim | Cmd `Leet` |
 | [LspConfig](https://github.com/neovim/nvim-lspconfig) | Provide __LSP configuration__ | Event `VimEnter` |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ | Event `VimEnter` |
@@ -40,7 +43,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ | Event `VimEnter` |
 | [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files | Cmd `MarkdownPreviewToggle, MarkdownPreview, MarkdownPreviewStop`; Ft `markdown` |
 | [NvimCmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ | Event `InsertEnter` |
-| [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view | Keys <kbd>Ctrl</kbd>-<kbd>N</kbd> |
+| [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view | Keys <kbd>Ctrl</kbd>-<kbd>F</kbd> |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files | Cmd `Telescope` |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments | Event `VimEnter` |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim) | Provide __transparent__ background | Event `VimEnter` |
@@ -58,6 +61,8 @@ The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed
 <details>
 <summary>Keymap list</summary>
 
+__Note__: The single __characters__ here are all __capital__, which represents the key on the keyboard, capital key will be represented with <kbd>Shift</kbd>. 
+
 #### Base
 
 | Mode | Key | Map | Description |
@@ -72,25 +77,24 @@ The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed
 | N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
 | N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | __Move line__ down |
 | N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
-| N | <kbd>Ctrl</kbd>-<kbd>O</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
-| N | <kbd>Ctrl</kbd>-<kbd>I</kbd> | `<CMD>bd<CR>` | Close __buffer__ |
-| N | <kbd>Ctrl</kbd>-<kbd>H</kbd> | `<CMD>vs<CR>` | Vertical window __split__ |
-| N | <kbd>Ctrl</kbd>-<kbd>M</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
+| N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
+| N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Close __buffer__ |
+| N | <kbd>Ctrl</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
 | T | <kbd>J</kbd><kbd>K</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
 #### Plugin
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
-| LazyGit | N | <kbd>Ctrl</kbd>-<kbd>W</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
+| LazyGit | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
 | LspSaga | N | <kbd>[</kbd><kbd>Shift</kbd>-<kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to previous __diagnostic__ |
-| LspSaga | N | <kbd>Ctrl</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
-| LspSaga | N | <kbd>Ctrl</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
-| MarkdownPreview | N | <kbd>Ctrl</kbd>-<kbd>B</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
+| LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
+| LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
+| MarkdownPreview | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
 | NvimCmp | I | <kbd>Tab</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
-| NvimTree | N | <kbd>Ctrl</kbd>-<kbd>N</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
+| NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
 | Telescope | N | <kbd>f</kbd><kbd>f</kbd> | `<CMD>Telescope find_files<CR>` | __Telescope__ find files |
 | Transparent | N | <kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
 

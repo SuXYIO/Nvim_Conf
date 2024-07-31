@@ -15,8 +15,8 @@ Lspsaga = {'nvimdev/lspsaga.nvim',
 		})
 		vim.keymap.set('n', '[e', '<CMD>Lspsaga diagnostic_jump_next<CR>')
 		vim.keymap.set('n', '[E', '<CMD>Lspsaga diagnostic_jump_prev<CR>')
-		vim.keymap.set('n', '<C-s>', '<CMD>Lspsaga outline<CR>')
-		vim.keymap.set('n', '<C-a>', '<CMD>Lspsaga code_action<CR>')
+		vim.keymap.set('n', '<Leader>s', '<CMD>Lspsaga outline<CR>')
+		vim.keymap.set('n', '<Leader>a', '<CMD>Lspsaga code_action<CR>')
 	end,
 	dependencies = {
 		'nvim-tree/nvim-web-devicons',

@@ -9,10 +9,9 @@ vim.api.nvim_set_keymap("n", "<Space>", ":", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-k>", "ddkP", { noremap = true })
 vim.api.nvim_set_keymap("n", "<C-j>", "ddp", { noremap = true })
 vim.api.nvim_set_keymap("n", "<esc>", "<CMD>noh<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-o>", "<CMD>bn<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-i>", "<CMD>bd<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-h>", "<CMD>vs<CR>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<C-m>", "<CMD>terminal<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader>j", "<CMD>bn<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader>k", "<CMD>bd<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader>l", "<CMD>terminal<CR>", { noremap = true })
 vim.api.nvim_set_keymap("t", "jk", "<C-\\><C-n>", { noremap = true })
 
 -- Self defined commands
