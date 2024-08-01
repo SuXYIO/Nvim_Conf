@@ -80,6 +80,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Close __buffer__ |
 | N | <kbd>Ctrl</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
+| N | <kbd>Leader</kbd><kbd>W</kbd> | `<C-w>` | __Window__ control |
 | T | <kbd>J</kbd><kbd>K</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
 #### Plugin
