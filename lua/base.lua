@@ -28,6 +28,7 @@ vim.opt.cursorline = true
 vim.opt.showcmd = true
 vim.opt.history = 64
 vim.opt.ttimeoutlen = 0
+vim.opt.autochdir = true
 vim.opt.syntax = "sync"
 vim.cmd('language en_US')
 vim.opt.spelllang = "en,cjk"
