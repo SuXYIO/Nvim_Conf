@@ -21,7 +21,6 @@ require("plugins/dashboard")
 require("plugins/lspsaga")
 require("plugins/cmp")
 require("plugins/autopairs")
-require("plugins/gitsign")
 require("plugins/leetcode")
 require("plugins/codeium")
 require("plugins/mason")
@@ -33,6 +32,8 @@ require("colorschemes/ayu")
 require("colorschemes/gruvbox")
 require("colorschemes/tokyonight")
 require("colorschemes/material")
+require("colorschemes/kanagawa")
+require("colorschemes/nightfox")
 
 require('lazy').setup({
 	-- plug
@@ -44,7 +45,6 @@ require('lazy').setup({
 	Lspsaga,
 	Cmp,
 	Autopairs,
-	Gitsign,
 	Leetcode,
 	Codeium,
 	Mason,
@@ -56,4 +56,6 @@ require('lazy').setup({
 	Gruvbox,
 	Tokyonight,
 	Material,
+	Kanagawa,
+	Nightfox,
 })
