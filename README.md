@@ -9,14 +9,17 @@ _SuXYIO_'s __Neovim__ config.
 <details>
 <summary>Screenshots</summary>
 
-> Editing markdown with _tree view_, _code outline_, _telescope_ on, _tokyonight_ colorscheme. 
+> Editing Markdown with _tree view_, _code outline_, _telescope_ on, _tokyonight_ colorscheme. 
 ![Screenshot0](./media/Screenshot0.png)
 
-> Editing a C source file and checking for _code actions_, with _code outline_ on, _material_ colorscheme. 
+> Editing C source file and checking for _function definition_, _nightfox_ colorscheme. 
 ![Screenshot1](./media/Screenshot1.png)
 
-> Editing markdown with _lazygit_ window on, _material_ colorscheme. 
+> Editing Markdown with _lazygit_ window on, _material_ colorscheme. 
 ![Screenshot2](./media/Screenshot2.png)
+
+> Editing Lua with _code diagnostic_ on, _kanagawa_ colorscheme. 
+![Screenshot3](./media/Screenshot3.png)
 
 </details>
 
@@ -34,7 +37,6 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ | Event`InsertEnter` |
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | Cmd `Codeium` |
 | [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ | Event `VimEnter` |
-| [GitSign](https://github.com/lewis6991/gitsigns.nvim) | Show __changes for git__ | Event `VimEnter` |
 | [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration | Keys <kbd>Leader</kbd>-<kbd>D</kbd>; Cmd `LazyGit` |
 | [LeetCode](https://github.com/kawre/leetcode.nvim) | __Leetcode__ inside nvim | Cmd `Leet` |
 | [LspConfig](https://github.com/neovim/nvim-lspconfig) | Provide __LSP configuration__ | Event `VimEnter` |
@@ -109,11 +111,14 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 - [Tokyonight](https://github.com/folke/tokyonight.nvim)
 - [Ayu](https://github.com/Luxed/ayu-vim)
 - [Gruvbox](https://github.com/morhetz/gruvbox)
+- [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
+- [Nightfox](https://github.com/EdenEast/nightfox.nvim)
 
 #### Colorcycle
 
 The program does a __Colorcycle__ every time on startup.  
 You can choose between __`Choose by time`__ or __`Choose in list (random)`__ by modifying `lua/colorcycle.lua`.  
+Both __`bgtimecycle`__ and __`colorschemetimecycle`__ is configurable.  
 The __time seperation__ is defined in `lua/timeseps.lua`.  
 A few colorchemes also __change__ it's own __style__ by __time__, see lua files in `lua/colorschemes/`
 
