@@ -73,7 +73,8 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Cmd</kbd>-<kbd>C</kbd> | `"+y` | __Copy__ to system clipboard |
 | N | <kbd>Cmd</kbd>-<kbd>V</kbd> | `"+P` | __Paste__ from system clipboard in normal mode |
 | I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | __Paste__ from system clipboard in insert mode |
-| N | <kbd>Cmd</kbd>-<kbd>S</kbd> | `<CMD>w<CR>` | __Save__ file |
+| N | <kbd>Leader</kbd>-<kbd>q</kbd> | `<CMD>q<CR>` | __Quit__ |
+| N | <kbd>Leader</kbd>-<kbd>wq</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
 | I | <kbd>j</kbd><kbd>L</kbd> | `<Esc>` | __Escape__ from insert mode |
 | N | <kbd>Space</kbd> | `:` | Go to __command__ mode |
 | N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
