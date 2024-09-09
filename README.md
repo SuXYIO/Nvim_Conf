@@ -114,6 +114,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 - [Gruvbox](https://github.com/morhetz/gruvbox)
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
 - [Nightfox](https://github.com/EdenEast/nightfox.nvim)
+- [Lackluster](https://github.com/slugbyte/lackluster.nvim)
 
 #### Colorcycle
 

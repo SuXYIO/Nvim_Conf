@@ -34,6 +34,7 @@ require("colorschemes/tokyonight")
 require("colorschemes/material")
 require("colorschemes/kanagawa")
 require("colorschemes/nightfox")
+require("colorschemes/lackluster")
 
 require('lazy').setup({
 	-- plug
@@ -58,4 +59,5 @@ require('lazy').setup({
 	Material,
 	Kanagawa,
 	Nightfox,
+	Lackluster,
 })
