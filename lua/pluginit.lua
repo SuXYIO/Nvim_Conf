@@ -27,6 +27,7 @@ require("plugins/mason")
 require("plugins/transparent")
 require("plugins/mdpre")
 require("plugins/lazygit")
+require("plugins/nvim2048")
 -- Colorscheme
 require("colorschemes/ayu")
 require("colorschemes/gruvbox")
@@ -52,6 +53,7 @@ require('lazy').setup({
 	Transparent,
 	MDPre,
 	Lazygit,
+	Nvim2048,
 	-- colorscheme
 	Ayu,
 	Gruvbox,
