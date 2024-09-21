@@ -1,4 +1,4 @@
-Mason = {'williamboman/mason.nvim',
+return {'williamboman/mason.nvim',
 	event = 'VimEnter',
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",

@@ -1,4 +1,4 @@
-Todo_comments = {'folke/todo-comments.nvim', 
+return {'folke/todo-comments.nvim', 
 	dependencies = 'nvim-lua/plenary.nvim',
 	event = 'VimEnter',
 	config = function()
