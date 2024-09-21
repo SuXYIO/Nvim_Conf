@@ -1,4 +1,4 @@
-Telescope = {'nvim-telescope/telescope.nvim',
+return {'nvim-telescope/telescope.nvim',
 	dependencies = 'nvim-lua/plenary.nvim',
 	cmd = 'Telescope',
 	keys = {

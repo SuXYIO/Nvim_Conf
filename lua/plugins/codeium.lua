@@ -1,4 +1,4 @@
-Codeium = {'Exafunction/codeium.nvim',
+return {'Exafunction/codeium.nvim',
 	cmd = {"Codeium"},
 	dependencies = {
 		"nvim-lua/plenary.nvim",

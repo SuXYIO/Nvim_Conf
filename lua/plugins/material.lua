@@ -1,20 +1,19 @@
-Tokyonight = {'folke/tokyonight.nvim',
+return {'marko-cerovac/material.nvim',
 	lazy = false,
-	priority = 1000,
 	config = function()
 		local time = tonumber(os.date('%H', os.time()))
 		if time > tsep4[1] and time <= tsep4[2] then
 			-- morning
-			vim.cmd[[colorscheme tokyonight-storm]]
+			vim.g.material_style = "oceanic"
 		elseif time <= tsep4[3] then
 			-- noon
-			vim.cmd[[colorscheme tokyonight-day]]
+			vim.g.material_style = "palenight"
 		elseif time <= tsep4[4] then
 			-- afternoon
-			vim.cmd[[colorscheme tokyonight-moon]]
+			vim.g.material_style = "darker"
 		else
 			-- midnight
-			vim.cmd[[colorscheme tokyonight-night]]
+			vim.g.material_style = "deep ocean"
 		end
 	end
 }

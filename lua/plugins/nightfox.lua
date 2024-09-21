@@ -1,4 +1,4 @@
-Nightfox = {'EdenEast/nightfox.nvim',
+return {'EdenEast/nightfox.nvim',
 	lazy = false,
 	config = function()
 		vim.cmd('colorscheme nightfox')

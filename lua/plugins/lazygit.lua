@@ -1,4 +1,4 @@
-Lazygit = {'kdheepak/lazygit.nvim',
+return {'kdheepak/lazygit.nvim',
 	keys = {
 		{'<Leader>d', '<CMD>LazyGit<CR>'},
 	},

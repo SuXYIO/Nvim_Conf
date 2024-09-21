@@ -1,4 +1,4 @@
-Transparent = {'xiyaowong/transparent.nvim',
+return {'xiyaowong/transparent.nvim',
 	event = 'VimEnter',
 	config = function()
 		require("transparent").setup({
