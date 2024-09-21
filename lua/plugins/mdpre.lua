@@ -3,6 +3,6 @@ return {'iamcco/markdown-preview.nvim',
 	ft = { "markdown" },
 	build = function() vim.fn["mkdp#util#install"]() end,
 	config = function()
-		vim.keymap.set('n', '<Leader>c', '<CMD>MarkdownPreviewToggle<CR>')
+		vim.keymap.set('n', '<Leader>x', '<CMD>MarkdownPreviewToggle<CR>')
 	end
 }

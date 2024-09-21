@@ -9,16 +9,16 @@ _SuXYIO_'s __Neovim__ config.
 <details>
 <summary>Screenshots</summary>
 
-> Editing Markdown with _tree view_, _code outline_, _telescope_ on, _tokyonight_ colorscheme. 
+> Editing `Markdown` with _tree view_, _telescope_ on, _lackluster-hack_ colorscheme. 
 ![Screenshot0](./media/Screenshot0.png)
 
-> Editing C source file and checking for _function definition_, _nightfox_ colorscheme. 
+> Editing `C` source file checking for function _definition_, _duskfox_ colorscheme. 
 ![Screenshot1](./media/Screenshot1.png)
 
-> Editing Markdown with _lazygit_ window on, _material_ colorscheme. 
+> Editing `Lua` with _lazygit_ window on, _kanagawa-dragon_ colorscheme. 
 ![Screenshot2](./media/Screenshot2.png)
 
-> Editing Lua with _code diagnostic_ on, _kanagawa_ colorscheme. 
+> Editing `C` with _code diagnostic_ on, _carbonfox_ colorscheme. 
 ![Screenshot3](./media/Screenshot3.png)
 
 </details>
@@ -46,6 +46,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files | Cmd `MarkdownPreviewToggle, MarkdownPreview, MarkdownPreviewStop`; Ft `markdown` |
 | [NvimCmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ | Event `InsertEnter` |
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view | Keys <kbd>Ctrl</kbd>-<kbd>F</kbd> |
+| [Oil](https://github.com/stevearc/oil.nvim) | Provide __explorer__ | Event `VimEnter`; Cmd `Oil`; Keys <kbd>Leader</kbd>-<kbd>O</kbd> |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files | Cmd `Telescope` |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments | Event `VimEnter` |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim) | Provide __transparent__ background | Event `VimEnter` |
@@ -63,7 +64,7 @@ The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed
 <details>
 <summary>Keymap list</summary>
 
-__Note__: The single __characters__ here are all __capital__, which represents the key on the keyboard, capital key will be represented with <kbd>Shift</kbd>. 
+__Note__: The single __characters__ here are all __capital__, which represents the key on the keyboard, capital key presses will be represented with <kbd>Shift</kbd>. 
 
 #### Base
 
@@ -75,13 +76,15 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | __Paste__ from system clipboard in insert mode |
 | N | <kbd>Leader</kbd>-<kbd>q</kbd> | `<CMD>q<CR>` | __Quit__ |
 | N | <kbd>Leader</kbd>-<kbd>wq</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
-| I | <kbd>j</kbd><kbd>L</kbd> | `<Esc>` | __Escape__ from insert mode |
+| I | <kbd>J</kbd><kbd>K</kbd> | `<Esc>` | __Escape__ from insert mode |
 | N | <kbd>Space</kbd> | `:` | Go to __command__ mode |
 | N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
 | N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | __Move line__ down |
 | N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
+| N | <kbd>Leader</kbd>-<kbd>o</kbd> | `<CMD>Oil<CR>` | Open oil |
 | N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
-| N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Close __buffer__ |
+| N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Delete __buffer__ |
+| N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>K</kbd> | `<CMD>bd!<CR>` | Force delete __buffer__ |
 | N | <kbd>Ctrl</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
 | N | <kbd>Leader</kbd><kbd>W</kbd> | `<C-w>` | __Window__ control |
 | T | <kbd>J</kbd><kbd>K</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
@@ -96,7 +99,8 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>V</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek __definition__ |
-| MarkdownPreview | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
+| LspSaga | N | <kbd>Leader</kbd>-<kbd>C</kbd> | `<CMD>Lspsaga show_line_diagnostics<CR>` | Show __line diagnostics__ |
+| MarkdownPreview | N | <kbd>Leader</kbd>-<kbd>X</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
 | NvimCmp | I | <kbd>Tab</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
@@ -142,6 +146,10 @@ I personally like [JetbrainsMono](https://www.jetbrains.com/lp/mono/).
 | `Dehex` | `%!xxd -r` | Convert buffer hex code to __raw__ |
 
 </details>
+
+#### Grammar check
+
+Uses the built-in `SpellCheck`, enables when filetype is `text` or `markdown`.  
 
 #### Client support
 
