@@ -1,14 +1,6 @@
 return {'folke/todo-comments.nvim', 
 	dependencies = 'nvim-lua/plenary.nvim',
-	event = 'BufRead',
-	-- Test Style
-	-- FIX: Test Style
-	-- TODO: Test Style
-	-- HACK: Test Style
-	-- WARN: Test Style
-	-- PERF: Test Style
-	-- NOTE: Test Style
-	-- TEST: Test Style
+	event = 'User IceLoad',
 	opts = {
 		keywords = {
 			FIX = { icon = ' ', color = 'error', alt = { 'BUG', 'ERROR', 'ERRO' } },

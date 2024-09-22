@@ -1,6 +1,5 @@
 return {'slugbyte/lackluster.nvim',
-	lazy = false,
-	priority = 1000,
+	lazy = true,
 	config = function()
 		vim.cmd.colorscheme("lackluster")
 	end,

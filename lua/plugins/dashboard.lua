@@ -1,6 +1,6 @@
 return {'nvimdev/dashboard-nvim',
 	dependencies = 'nvim-tree/nvim-web-devicons',
-	event = 'VimEnter',
+	lazy = false,
 	config = function()
 			require('dashboard').setup {
 					theme = 'hyper',
