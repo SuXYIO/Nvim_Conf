@@ -1,6 +1,5 @@
 return {'folke/tokyonight.nvim',
-	lazy = false,
-	priority = 1000,
+	lazy = true,
 	config = function()
 		local time = tonumber(os.date('%H', os.time()))
 		if time > tsep4[1] and time <= tsep4[2] then

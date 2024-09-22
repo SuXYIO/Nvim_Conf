@@ -2,9 +2,8 @@
 -- By SuXYIO
 
 -- Requires
-require('base')
-require('client')
-require('timeseps')
+require('base.init')
 require('pluginit')
 require('lspconf')
 require('colorcycle')
+

@@ -32,24 +32,23 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 <details>
 <summary>Plugin list</summary>
 
-| Plugin | Description | Lazy |
-| ------ | ----------- | ---- |
-| [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ | Event`InsertEnter` |
-| [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | Cmd `Codeium` |
-| [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ | Event `VimEnter` |
-| [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration | Keys <kbd>Leader</kbd>-<kbd>D</kbd>; Cmd `LazyGit` |
-| [LeetCode](https://github.com/kawre/leetcode.nvim) | __Leetcode__ inside nvim | Cmd `Leet` |
-| [LspConfig](https://github.com/neovim/nvim-lspconfig) | Provide __LSP configuration__ | Event `VimEnter` |
-| [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ | Event `VimEnter` |
-| [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ | Event `VimEnter` |
-| [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ | Event `VimEnter` |
-| [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files | Cmd `MarkdownPreviewToggle, MarkdownPreview, MarkdownPreviewStop`; Ft `markdown` |
-| [NvimCmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ | Event `InsertEnter` |
-| [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view | Keys <kbd>Ctrl</kbd>-<kbd>F</kbd> |
-| [Oil](https://github.com/stevearc/oil.nvim) | Provide __explorer__ | Event `VimEnter`; Cmd `Oil`; Keys <kbd>Leader</kbd>-<kbd>O</kbd> |
-| [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files | Cmd `Telescope` |
-| [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments | Event `VimEnter` |
-| [Transparent](https://github.com/xiyaowong/transparent.nvim) | Provide __transparent__ background | Event `VimEnter` |
+| Plugin | Description |
+| ------ | ----------- |
+| [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ |
+| [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist |
+| [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ |
+| [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration |
+| [LeetCode](https://github.com/kawre/leetcode.nvim) | __Leetcode__ inside nvim |
+| [LspConfig](https://github.com/neovim/nvim-lspconfig) | Provide __LSP configuration__ |
+| [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ |
+| [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ |
+| [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ |
+| [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files |
+| [NvimCmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
+| [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view |
+| [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
+| [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
+| [Transparent](https://github.com/xiyaowong/transparent.nvim) | Provide __transparent__ background |
 
 </details>
 
@@ -81,7 +80,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
 | N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | __Move line__ down |
 | N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
-| N | <kbd>Leader</kbd>-<kbd>o</kbd> | `<CMD>Oil<CR>` | Open oil |
+| N | <kbd>Leader</kbd>-<kbd>o</kbd> | `<CMD>edit .<CR>` | Edit __pwd__ |
 | N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Delete __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>K</kbd> | `<CMD>bd!<CR>` | Force delete __buffer__ |
@@ -125,8 +124,8 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 The program does a __Colorcycle__ every time on startup.  
 You can choose between __`Choose by time`__ or __`Choose in list (random)`__ by modifying `lua/colorcycle.lua`.  
 Both __`bgtimecycle`__ and __`colorschemetimecycle`__ is configurable.  
-The __time seperation__ is defined in `lua/timeseps.lua`.  
-A few colorchemes also __change__ it's own __style__ by __time__, see lua files in `lua/colorschemes/`
+The __time seperation__ is defined in `lua/base/timeseps.lua`.  
+A few colorchemes also __change__ it's own __style__ by __time__.  
 
 ### Font
 

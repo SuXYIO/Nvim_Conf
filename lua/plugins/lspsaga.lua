@@ -1,5 +1,5 @@
 return {'nvimdev/lspsaga.nvim',
-	event = 'VeryLazy',
+	event = 'User IceLoad',
 	config = function()
 		require('lspsaga').setup({
 			ui = {
