@@ -70,3 +70,4 @@ vim.opt.incsearch = true
 
 -- Cache
 vim.opt.backup = false
+
