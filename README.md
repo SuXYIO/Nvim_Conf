@@ -73,14 +73,14 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Cmd</kbd>-<kbd>C</kbd> | `"+y` | __Copy__ to system clipboard |
 | N | <kbd>Cmd</kbd>-<kbd>V</kbd> | `"+P` | __Paste__ from system clipboard in normal mode |
 | I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | __Paste__ from system clipboard in insert mode |
-| N | <kbd>Leader</kbd>-<kbd>q</kbd> | `<CMD>q<CR>` | __Quit__ |
-| N | <kbd>Leader</kbd>-<kbd>wq</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
+| N | <kbd>Leader</kbd>-<kbd>Q</kbd> | `<CMD>q<CR>` | __Quit__ |
+| N | <kbd>Leader</kbd>-<kbd>WW</kbd> | `<CMD>w<CR>` | __Save__ |
+| N | <kbd>Leader</kbd>-<kbd>WQ</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
 | I | <kbd>J</kbd><kbd>K</kbd> | `<Esc>` | __Escape__ from insert mode |
 | N | <kbd>Space</kbd> | `:` | Go to __command__ mode |
 | N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
 | N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | __Move line__ down |
 | N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
-| N | <kbd>Leader</kbd>-<kbd>o</kbd> | `<CMD>edit .<CR>` | Edit __pwd__ |
 | N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Delete __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>K</kbd> | `<CMD>bd!<CR>` | Force delete __buffer__ |
@@ -111,10 +111,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 
 ### Colorscheme
 
-- [Material](https://github.com/marko-cerovac/material.nvim)
-- [Tokyonight](https://github.com/folke/tokyonight.nvim)
-- [Ayu](https://github.com/Luxed/ayu-vim)
-- [Gruvbox](https://github.com/morhetz/gruvbox)
+- [Ayu](https://github.com/Shatur/neovim-ayu)
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
 - [Nightfox](https://github.com/EdenEast/nightfox.nvim)
 - [Lackluster](https://github.com/slugbyte/lackluster.nvim)
