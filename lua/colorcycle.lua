@@ -4,7 +4,7 @@ local schemetimecycle = false
 local bgtimecycle = true
 
 local bglist = {'light', 'dark'}
-local schemelist = {'kanagawa', 'duskfox', 'carbonfox', 'lackluster'}
+local schemelist = {'kanagawa', 'duskfox', 'carbonfox', 'lackluster-hack', 'ayu-dark'}
 
 if timecycle == true then
 	local timeh = tonumber(os.date("%H", os.time()))
