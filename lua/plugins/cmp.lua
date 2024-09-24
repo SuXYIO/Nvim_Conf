@@ -6,20 +6,41 @@ return {'hrsh7th/nvim-cmp',
 		'hrsh7th/cmp-buffer',
 		'hrsh7th/cmp-path',
 		'hrsh7th/cmp-cmdline',
-		'hrsh7th/vim-vsnip',
 		'onsails/lspkind.nvim',
 	},
 	config = function()
-		cmp = require('cmp')
+		local cmp = require('cmp')
 		cmp.setup({
+			window = {
+				completion = cmp.config.window.bordered(),
+				documentation = cmp.config.window.bordered()
+			},
 			snippet = {
 				expand = function(args)
-					vim.fn["vsnip#anonymous"](args.body)
+					vim.snippet.expand(args.body)
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
 				['<CR>'] = cmp.mapping.confirm({select = true}),
-				['<Tab>'] = cmp.mapping.abort(),
+				['<Esc>'] = cmp.mapping.abort(),
+				['<Tab>'] = function(fallback)
+					if not cmp.select_next_item() then
+						if vim.bo.buftype ~= 'prompt' and has_words_before() then
+							cmp.complete()
+						else
+							fallback()
+						end
+					end
+				end,
+				['<S-Tab>'] = function(fallback)
+					if not cmp.select_prev_item() then
+						if vim.bo.buftype ~= 'prompt' and has_words_before() then
+							cmp.complete()
+						else
+							fallback()
+						end
+					end
+				end
 			}),
 			sources = cmp.config.sources({
 				{name = 'nvim_lsp'},
@@ -35,7 +56,7 @@ return {'hrsh7th/nvim-cmp',
 					ellipsis_char = '...',
 					preset = 'codicons',
 					symbol_map = {Codeium = " "}
-				})
+				}),
 			}
 		})
 	end,

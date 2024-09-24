@@ -7,17 +7,15 @@ return {'gelguy/wilder.nvim',
 		wilder.set_option('pipeline', {
 			wilder.branch(
 				wilder.cmdline_pipeline({
-					fuzzy = 0,
+					language = 'vim',
+					fuzzy = 2,
 				}),
 				wilder.python_file_finder_pipeline({
-					file_command = function(ctx, arg)
-						if string.find(arg, '.') ~= nil then
-							return {'fdfind', '-tf', '-H'}
-						else
-							return {'fdfind', '-tf'}
-						end
-					end,
+					language = 'vim',
+					fuzzy = 2,
+					file_command = {'fd', '-tf'},
 					dir_command = {'fd', '-td'},
+					filters = {}
 				})
 			),
 		})
