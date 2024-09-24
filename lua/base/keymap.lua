@@ -17,5 +17,6 @@ vim.api.nvim_set_keymap("n", "<Leader>k", "<CMD>bd<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<Leader>K", "<CMD>bd!<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<Leader>l", "<CMD>terminal<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<Leader>w", "<C-w>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<Leader>z", "<CMD>set spell!<CR>", { noremap = true })
 vim.api.nvim_set_keymap("t", "jk", "<C-\\><C-n>", { noremap = true })
 
