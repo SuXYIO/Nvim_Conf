@@ -22,7 +22,7 @@ return {'nvim-lualine/lualine.nvim',
 				lualine_a = {'mode'},
 				lualine_b = {'branch', 'diff'},
 				lualine_c = {'filename', 'searchcount', 'diagnostics'},
-				lualine_x = {function() return vim.fn.getcwd() end, 'filetype'},
+				lualine_x = {'filetype'},
 				lualine_y = {'progress'},
 				lualine_z = {'location'}
 			},
