@@ -35,20 +35,22 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | Plugin | Description |
 | ------ | ----------- |
 | [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ |
+| [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist |
 | [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ |
 | [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration |
-| [LeetCode](https://github.com/kawre/leetcode.nvim) | __Leetcode__ inside nvim |
-| [LspConfig](https://github.com/neovim/nvim-lspconfig) | Provide __LSP configuration__ |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ |
 | [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ |
 | [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files |
+| [Notify](https://github.com/rcarriga/nvim-notify) | Notice __UI__ |
+| [2048](https://github.com/NStefan002/2048.nvim) | Play __2048__ |
 | [NvimCmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim) | Provide __transparent__ background |
+| [Wilder](https://github.com/gelguy/wilder.nvim) | Provide __cmdline completion__ |
 
 </details>
 
@@ -117,13 +119,10 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 - [Nightfox](https://github.com/EdenEast/nightfox.nvim)
 - [Lackluster](https://github.com/slugbyte/lackluster.nvim)
 
-#### Colorcycle
+#### Colorscheme change
 
-The program does a __Colorcycle__ every time on startup.  
-You can choose between __`Choose by time`__ or __`Choose in list (random)`__ by modifying `lua/colorcycle.lua`.  
-Both __`bgtimecycle`__ and __`colorschemetimecycle`__ is configurable.  
-The __time seperation__ is defined in `lua/base/timeseps.lua`.  
-A few colorchemes also __change__ it's own __style__ by __time__.  
+By modifying `lua/color.lua`, you can change the colorscheme to choose on startup.  
+See `lua/color.lua`.  
 
 ### Font
 

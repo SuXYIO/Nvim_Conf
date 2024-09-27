@@ -1,9 +1,9 @@
 -- Key mappings
 
 vim.g.mapleader = ";"
-vim.keymap.set('v', '<D-c>', '"+y')
-vim.keymap.set('n', '<D-v>', '"+P')
-vim.keymap.set('i', '<D-v>', '<ESC>"+Pi')
+vim.keymap.set('v', '<Leader>i', '"+y')
+vim.keymap.set('n', '<Leader>o', '"+P')
+vim.keymap.set('i', '<Leader>o', '<ESC>"+Pi')
 vim.keymap.set('n', '<Leader>q', '<CMD>q<CR>')
 vim.keymap.set('n', '<Leader>ww', '<CMD>w<CR>')
 vim.keymap.set('n', '<Leader>wq', '<CMD>wq<CR>')
