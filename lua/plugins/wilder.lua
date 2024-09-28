@@ -36,5 +36,5 @@ return {'gelguy/wilder.nvim',
 		}))
 
 		wilder.setup({modes = {':'}})
-	end
+	end,
 }

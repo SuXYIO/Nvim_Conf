@@ -49,7 +49,6 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
-| [Transparent](https://github.com/xiyaowong/transparent.nvim) | Provide __transparent__ background |
 | [Wilder](https://github.com/gelguy/wilder.nvim) | Provide __cmdline completion__ |
 
 </details>
@@ -83,7 +82,8 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
 | N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | __Move line__ down |
 | N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
-| N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch __buffer__ |
+| N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch next __buffer__ |
+| N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>J</kbd> | `<CMD>bp<CR>` | Switch previous __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Delete __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>K</kbd> | `<CMD>bd!<CR>` | Force delete __buffer__ |
 | N | <kbd>Ctrl</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
@@ -95,6 +95,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
+| Codeium | N | <kbd>Leader</kbd>-<kbd>N</kbd> | `<CMD>Codeium Enable<CR>` | Enable __Codeium__ |
 | LazyGit | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
 | LspSaga | N | <kbd>[</kbd><kbd>Shift</kbd>-<kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to previous __diagnostic__ |
@@ -105,6 +106,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | MarkdownPreview | N | <kbd>Leader</kbd>-<kbd>X</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
 | NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
+| NvimCmp | I | <kbd>Leader</kbd>-<kbd>Space</kbd> | `cmp.mapping.complete()` | Start __completion__ |
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
 | Telescope | N | <kbd>f</kbd><kbd>f</kbd> | `<CMD>Telescope find_files<CR>` | __Telescope__ find files |
 | TodoComments | N | <kbd>[</kbd><kbd>T</kbd> | `require("todo-comments").jump_next()` | __Jump__ to next __todo__ |
