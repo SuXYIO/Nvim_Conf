@@ -18,7 +18,7 @@ _SuXYIO_'s __Neovim__ config.
 > Editing `Lua` with _lazygit_ window on, _kanagawa-dragon_ colorscheme. 
 ![Screenshot2](./media/Screenshot2.png)
 
-> Editing `C` with _code diagnostic_ on, _carbonfox_ colorscheme. 
+> Editing `C` with _code diagnostic_ on, _ayu-dark_ colorscheme. 
 ![Screenshot3](./media/Screenshot3.png)
 
 </details>
@@ -49,6 +49,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
+| [Transparent](https://github.com/xiyaowong/transparent.nvim) | __Transparent__ background |
 | [Wilder](https://github.com/gelguy/wilder.nvim) | Provide __cmdline completion__ |
 
 </details>
