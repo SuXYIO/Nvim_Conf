@@ -1,5 +1,5 @@
 return {'xiyaowong/transparent.nvim',
-	event = 'VeryLazy',
+	event = 'VimEnter',
 	keys = {
 		{'T', '<CMD>TransparentToggle<CR>'}
 	},
