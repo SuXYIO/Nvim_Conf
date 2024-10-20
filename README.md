@@ -35,6 +35,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 | Plugin | Description |
 | ------ | ----------- |
 | [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ |
+| [Bufferline](https://github.com/akinsho/bufferline.nvim) | Provide __bufferline__ |
 | [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist |
 | [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ |
@@ -122,10 +123,11 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 - [Nightfox](https://github.com/EdenEast/nightfox.nvim)
 - [Lackluster](https://github.com/slugbyte/lackluster.nvim)
 
-#### Colorscheme change
+#### theme change
 
-By modifying `lua/color.lua`, you can change the colorscheme to choose on startup.  
-See `lua/color.lua`.  
+The `colorscheme`, `background`, `lineseps` can be different on every startup over a certain rule.  
+(`random`, `time`, `random` is default)
+See `lua/theme.lua`.  
 
 ### Font
 

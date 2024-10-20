@@ -21,7 +21,7 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.foldenable = false
 vim.opt.list = true
-vim.opt.listchars = "tab:󰤃 "
+vim.opt.listchars = "tab:▎ "	-- or "tab:󰤃 "
 
 -- Filetype
 vim.cmd [[filetype on]]
