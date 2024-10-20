@@ -119,9 +119,10 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 ### Colorscheme
 
 - [Ayu](https://github.com/Shatur/neovim-ayu)
+- [Catppuccin](https://github.com/catppuccin-mocha)
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
-- [Nightfox](https://github.com/EdenEast/nightfox.nvim)
 - [Lackluster](https://github.com/slugbyte/lackluster.nvim)
+- [Nightfox](https://github.com/EdenEast/nightfox.nvim)
 
 #### theme change
 
