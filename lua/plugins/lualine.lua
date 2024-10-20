@@ -26,14 +26,17 @@ return {'nvim-lualine/lualine.nvim',
 				lualine_y = {'progress'},
 				lualine_z = {'location'}
 			},
+			-- tabline replaced by bufferline
+			--[[
 			tabline = {
 				lualine_a = {'buffers'},
 				lualine_b = {},
 				lualine_c = {},
 				lualine_x = {'filesize'},
 				lualine_y = {'hostname'},
-				lualine_z = {'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
+				lualine_z = {}
 			},
+			--]]
 			winbar = {},
 			inactive_winbar = {},
 			extensions = {}
