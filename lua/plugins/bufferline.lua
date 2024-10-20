@@ -15,7 +15,7 @@ return {'akinsho/bufferline.nvim',
 				middle_mouse_command = nil,
 				indicator = {
 					icon = '▎',
-					style = 'icon',
+					style = 'underline',
 				},
 				buffer_close_icon = '',
 				modified_icon = ' ',
@@ -69,7 +69,7 @@ return {'akinsho/bufferline.nvim',
 						if info ~= 0 then
 							table.insert(result, {text = "  " .. info, link = "DiagnosticInfo"})
 						end
-						table.insert(result, {text = os.date(" 󰤃 %Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time()), link = "DateTime"})
+						table.insert(result, {text = os.date("  %Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time()), link = "DateTime"})
 						return result
 					end,
 				}
