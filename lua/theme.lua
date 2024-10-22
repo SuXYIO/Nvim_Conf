@@ -20,7 +20,7 @@ local function getColorscheme()
 	-- return string of a colorscheme name i.e. 'default'
 
 	-- set using random
-	local bglist = {'duskfox', 'kanagawa-dragon', 'catppuccin-mocha','ayu-dark', 'lackluster-hack'}
+	local bglist = {'duskfox', 'kanagawa-dragon', 'catppuccin-mocha'}
 	return bglist[math.random(1, #bglist)]
 end
 
