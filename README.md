@@ -9,16 +9,16 @@ _SuXYIO_'s __Neovim__ config.
 <details>
 <summary>Screenshots</summary>
 
-> Editing `Markdown` with _tree view_, _telescope_ on, _lackluster-hack_ colorscheme. 
+> Editing with _tree view_, _telescope_ on, _kanagawa-dragon_ colorscheme. 
 ![Screenshot0](./media/Screenshot0.png)
 
-> Editing `C` source file checking for function _definition_, _duskfox_ colorscheme. 
+> Editing source checking for function _definition_, _outline_ on, _duskfox_ colorscheme. 
 ![Screenshot1](./media/Screenshot1.png)
 
-> Editing `Lua` with _lazygit_ window on, _kanagawa-dragon_ colorscheme. 
+> Editing with _lazygit_, _tree view_ on, _kanagawa-dragon_ colorscheme. 
 ![Screenshot2](./media/Screenshot2.png)
 
-> Editing `C` with _code diagnostic_ on, _ayu-dark_ colorscheme. 
+> Editing source with _code diagnostic_ on, _catppuccin-mocha_ colorscheme. 
 ![Screenshot3](./media/Screenshot3.png)
 
 </details>
@@ -118,11 +118,11 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 
 ### Colorscheme
 
-- [Ayu](https://github.com/Shatur/neovim-ayu)
-- [Catppuccin](https://github.com/catppuccin-mocha)
-- [Kanagawa](https://github.com/rebelot/kanagawa.nvim)
-- [Lackluster](https://github.com/slugbyte/lackluster.nvim)
-- [Nightfox](https://github.com/EdenEast/nightfox.nvim)
+| Colorscheme |
+| ----------- |
+| [Catppuccin](https://github.com/catppuccin-mocha) |
+| [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
+| [Nightfox](https://github.com/EdenEast/nightfox.nvim) |
 
 #### theme change
 
