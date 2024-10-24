@@ -1,33 +1,82 @@
 # Nvim_Conf
 
-## Intro
+## Intro :information_source:
 
 _SuXYIO_'s __Neovim__ config. 
 
-## Screenshots
+## Screenshots :fireworks:
 
 <details>
 <summary>Screenshots</summary>
 
-> Editing with _tree view_, _telescope_ on, _kanagawa-dragon_ colorscheme. 
+> Editing with _tree view_ :evergreen_tree:, _telescope_ :telescope: on, _kanagawa-dragon_ :japanese_goblin: colorscheme. 
 ![Screenshot0](./media/Screenshot0.png)
 
-> Editing source checking for function _definition_, _outline_ on, _duskfox_ colorscheme. 
+> Editing source checking for function _definition_ :microscope:, _outline_ :mag: on, _duskfox_ :blue_heart: colorscheme. 
 ![Screenshot1](./media/Screenshot1.png)
 
-> Editing with _lazygit_, _tree view_ on, _kanagawa-dragon_ colorscheme. 
+> Editing with _lazygit_ :pager:, _tree view_ :evergreen_tree: on, _kanagawa-dragon_ :japanese_goblin: colorscheme. 
 ![Screenshot2](./media/Screenshot2.png)
 
-> Editing source with _code diagnostic_ on, _catppuccin-mocha_ colorscheme. 
+> Editing source with _code diagnostic_ :syringe: on, _catppuccin-mocha_ :cat: colorscheme. 
 ![Screenshot3](./media/Screenshot3.png)
+
+Note that these screenshots may not represent the actual effect, which is dependent on the terminal / NeoVim client config :computer:.  
+Also, these screenshots might be outdated due to my laziness :sleeping:. 
 
 </details>
 
-## Info
+## Install :calling:
 
-### Plugin
+### Requirements :battery:
 
-Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
+Install __[NeoVim](https://github.com/neovim/neovim)__ (Which I assume you have done since you're browsing this repo :sweat_smile:).  
+Install __[Nerdfont](https://nerdfonts.com)__ for your _terminal_ or _NeoVim client_ :computer:.  
+__[Git](https://git-scm.com)__ is recommended for cloning the repo, but you can also use tools like __wget__ or __curl__ :wrench:.  
+
+### Simple :star:
+
+:exclamation: Make sure you backup your current __NeoVim__ config :floppy_disk:.  
+
+```bash
+git clone https://github.com/suxyio/Nvim_Conf ~/.config/nvim
+```
+
+### Detailed :star2:
+
+<details>
+
+<summary>This will be a bit verbose</summary>
+
+1. _Optional_  
+Backup your current __NeoVim__ config :floppy_disk:. 
+```bash
+mv ~/.config/nvim ~/.config/nvim.bak
+```
+
+1. Clone this repo :satellite:.  
+```bash
+git clone https://github.com/suxyio/Nvim_Conf ~/.config/nvim
+```
+</details>
+
+### Check Install :mag:
+
+You're done! :tada:  
+Startup __NeoVim__ to check if it works.  
+If installed correctly, a grey _Lazy_ window will show up to clone the plugins. 
+```bash
+nvim
+```
+If any help is needed, feel free to report it in __Issues__ :wink:. 
+
+Enjoy! :blush:
+
+## Features :bar_chart:
+
+### Plugin :electric_plug:
+
+Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 
 <details>
 <summary>Plugin list</summary>
@@ -55,20 +104,20 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__
 
 </details>
 
-### LSP
+### LSP :closed_book:
 
 Manager: __[Mason.nvim](https://github.com/williamboman/mason.nvim)__
 
-The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed, no need to config every single one. 
+The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed, no need to config every single one :relaxed:. 
 
-### Keymap
+### Keymap :musical_keyboard:
 
 <details>
 <summary>Keymap list</summary>
 
 __Note__: The single __characters__ here are all __capital__, which represents the key on the keyboard, capital key presses will be represented with <kbd>Shift</kbd>. 
 
-#### Base
+#### Base :star:
 
 | Mode | Key | Map | Description |
 | ---- | --- | --- | ----------- |
@@ -93,7 +142,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd><kbd>Z</kbd> | `<CMD>set spell!<CR>` | Toggle __spellcheck__ |
 | T | <kbd>J</kbd><kbd>K</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
-#### Plugin
+#### Plugin :electric_plug:
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
@@ -116,7 +165,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 
 </details>
 
-### Colorscheme
+### Colorscheme :rainbow:
 
 | Colorscheme |
 | ----------- |
@@ -124,20 +173,20 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
 | [Nightfox](https://github.com/EdenEast/nightfox.nvim) |
 
-#### theme change
+### theme change :traffic_light:
 
 The `colorscheme`, `background`, `lineseps` can be different on every startup over a certain rule.  
 (`random`, `time`, `random` is default)
 See `lua/theme.lua`.  
 
-### Font
+### Font :book:
 
 __Nerdfont__ is needed to show properly. 
-I personally like [JetbrainsMono](https://www.jetbrains.com/lp/mono/). 
+I personally like [JetbrainsMono](https://www.jetbrains.com/lp/mono/) :heart:. 
 
-### Misc
+### Misc :sparkles:
 
-#### Self-defined commands
+#### Self-defined commands :bookmark:
 
 <details>
 <summary>Self-defined command list</summary>
@@ -149,11 +198,11 @@ I personally like [JetbrainsMono](https://www.jetbrains.com/lp/mono/).
 
 </details>
 
-#### Grammar check
+#### Grammar check :abc:
 
-Uses the built-in `SpellCheck`, enables when filetype is `text` or `markdown`.  
+Uses the built-in `SpellCheck`.  
 
-#### Client support
+#### Client support :computer:
 
 The client __[Neovide](https://neovide.dev/)__ is supported, see `lua/client.lua`. 
 
