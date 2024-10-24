@@ -24,7 +24,7 @@ return {'nvim-lualine/lualine.nvim',
 				lualine_c = {'filename', 'searchcount', 'diagnostics'},
 				lualine_x = {'filetype'},
 				lualine_y = {'progress'},
-				lualine_z = {'location'}
+				lualine_z = {'location', 'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
 			},
 			-- tabline replaced by bufferline
 			--[[
@@ -34,7 +34,7 @@ return {'nvim-lualine/lualine.nvim',
 				lualine_c = {},
 				lualine_x = {'filesize'},
 				lualine_y = {'hostname'},
-				lualine_z = {}
+				lualine_z = {'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
 			},
 			--]]
 			winbar = {},
