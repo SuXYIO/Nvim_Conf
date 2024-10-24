@@ -31,8 +31,12 @@ local function getLineSep()
 	-- set using random
 	local lineseplist = {
 		{
-			component_separators = { left = '', right = '' },
+			component_separators = { left = '', right = '' },
 			section_separators = { left = '', right = '' },
+		},
+		{
+			component_separators = { left = '', right = '' },
+			section_separators = { left = '', right = '' },
 		},
 		{
 			component_separators = { left = '', right = '' },
