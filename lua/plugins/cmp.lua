@@ -37,7 +37,9 @@ return {'hrsh7th/nvim-cmp',
 					maxwidth = 50,
 					ellipsis_char = '...',
 					preset = 'codicons',
-					symbol_map = {Codeium = " "}
+					symbol_map = {
+						Codeium = " "
+					}
 				}),
 			}
 		})

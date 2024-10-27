@@ -6,10 +6,9 @@ return {'nvimdev/lspsaga.nvim',
 				border = 'single',
 				devicon = true,
 				title = true,
-				expand = '',
-				collapse = '',
-				code_action = '',
-				actionfix = '󰁨 ',
+				expand = ' ',
+				collapse = ' ',
+				code_action = '󰁨 ',
 				imp_sign = ' '
 			}
 		})
