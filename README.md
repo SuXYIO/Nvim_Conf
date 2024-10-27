@@ -94,8 +94,6 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ |
 | [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files |
 | [Notify](https://github.com/rcarriga/nvim-notify) | Notice __UI__ |
-| [2048](https://github.com/NStefan002/2048.nvim) | Play __2048__ |
-| [NvimCmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
