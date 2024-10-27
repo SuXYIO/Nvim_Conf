@@ -21,10 +21,10 @@ return {'nvim-lualine/lualine.nvim',
 			sections = {
 				lualine_a = {'mode'},
 				lualine_b = {'branch', 'diff'},
-				lualine_c = {'filename', 'searchcount', 'diagnostics'},
+				lualine_c = {'hostname', 'filename', 'filesize', 'searchcount'},
 				lualine_x = {'filetype'},
 				lualine_y = {'progress'},
-				lualine_z = {'location', 'os.date("%Y-%m-%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
+				lualine_z = {'location', 'os.date("%Y.%m.%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
 			},
 			-- tabline replaced by bufferline
 			--[[
