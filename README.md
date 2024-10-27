@@ -182,7 +182,7 @@ See `lua/theme.lua`.
 ### Font :book:
 
 __Nerdfont__ is needed to show properly. 
-I personally like [JetbrainsMono](https://www.jetbrains.com/lp/mono/) :heart:. 
+I personally like [JetbrainsMono](https://github.com/JetBrains/JetBrainsMono) :heart:. 
 
 ### Misc :sparkles:
 
@@ -205,4 +205,9 @@ Uses the built-in `SpellCheck`.
 #### Client support :computer:
 
 The client __[Neovide](https://neovide.dev/)__ is supported, see `lua/client.lua`. 
+
+## Todo
+
+- [ ] Reduce startup time
+- [ ] Add system status in lualine
 
