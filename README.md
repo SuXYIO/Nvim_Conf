@@ -30,9 +30,15 @@ Also, these screenshots might be outdated due to my laziness :sleeping:.
 
 ### Requirements :battery:
 
+#### Basic
+
 Install __[NeoVim](https://github.com/neovim/neovim)__ (Which I assume you have done since you're browsing this repo :sweat_smile:).  
 Install __[Nerdfont](https://nerdfonts.com)__ for your _terminal_ or _NeoVim client_ :computer:.  
 __[Git](https://git-scm.com)__ is recommended for cloning the repo, but you can also use tools like __wget__ or __curl__ :wrench:.  
+
+#### Plugins
+
+Please install __[LazyGit](https://github.com/jesseduffield/lazygit)__ for __LazyGit__ plugin to work.  
 
 ### Simple :star:
 
@@ -169,13 +175,13 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | ----------- |
 | [Catppuccin](https://github.com/catppuccin-mocha) |
 | [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
+| [Material](https://github.com/marko-cerovac/material.nvim) |
 | [Nightfox](https://github.com/EdenEast/nightfox.nvim) |
 
 ### theme change :traffic_light:
 
 The `colorscheme`, `background`, `lineseps` can be different on every startup over a certain rule.  
 (`random`, `time`, `random` is default)
-See `lua/theme.lua`.  
 
 ### Font :book:
 
