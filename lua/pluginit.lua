@@ -28,7 +28,7 @@ require('lazy').setup({
 				'tutor',
 				'editorconfig',
 				'rplugin',
-				'man',
+				-- 'man',
 				-- 'netrwPlugin',
 				-- 'spellfile',
 				-- 'shada',
