@@ -16,8 +16,8 @@ return {'nvimdev/dashboard-nvim',
 				},
 				week_header = {enable = false},
 				shortcut = {
-						{icon = ' ', icon_hl = '@variable', desc = 'Files', group = 'Label', action = 'Telescope find_files', key = 'f'},
-						{icon = ' ', icon_hl = '@variable', desc = 'Lazy', group = 'Label', action = 'Lazy', key = 'l'}
+						{icon = ' ', icon_hl = '@variable', desc = 'Tele', group = 'Label', action = 'Telescope', key = 'f'},
+						{icon = ' ', icon_hl = '@variable', desc = 'Lazy', group = 'Label', action = 'Lazy', key = 'd'}
 				},
 				packages = {enable = true},
 				footer = {}
