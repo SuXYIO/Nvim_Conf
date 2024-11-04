@@ -185,8 +185,7 @@ The `colorscheme`, `background`, `lineseps` can be different on every startup ov
 
 ### Font :book:
 
-__Nerdfont__ is needed to show properly. 
-I personally like [JetbrainsMono](https://github.com/JetBrains/JetBrainsMono) :heart:. 
+[Nerdfont](https://nerdfonts.com) is needed to show properly. 
 
 ### Misc :sparkles:
 
