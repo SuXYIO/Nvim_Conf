@@ -3,7 +3,6 @@ return {'gelguy/wilder.nvim',
 	event = {'VeryLazy', 'CmdlineEnter'},
 	config = function()
 		local wilder = require('wilder')
-
 		wilder.set_option('pipeline', {
 			wilder.branch(
 				wilder.cmdline_pipeline({
@@ -34,7 +33,6 @@ return {'gelguy/wilder.nvim',
 		wilder.set_option('renderer', wilder.renderer_mux({
 			[':'] = popupmenu_renderer,
 		}))
-
 		wilder.setup({modes = {':'}})
 	end,
 }
