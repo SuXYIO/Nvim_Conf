@@ -94,6 +94,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist |
 | [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ |
+| [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) | Well, __gitsigns__, literally |
 | [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ |
