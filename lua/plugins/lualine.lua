@@ -2,7 +2,7 @@ return {'nvim-lualine/lualine.nvim',
 	event = 'User IceLoad',
 	dependencies = 'nvim-tree/nvim-web-devicons',
 	config = function()
-		require('lualine').setup {
+		require('lualine').setup({
 			options = {
 				icons_enabled = true,
 				theme = 'auto',
@@ -30,6 +30,6 @@ return {'nvim-lualine/lualine.nvim',
 			winbar = {},
 			inactive_winbar = {},
 			extensions = {}
-		}
-	end
+		})
+	end,
 }

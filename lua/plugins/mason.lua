@@ -14,6 +14,5 @@ return {'williamboman/mason.nvim',
 				}
 			end,
 		}
-		vim.cmd("LspStart")
 	end
 }
