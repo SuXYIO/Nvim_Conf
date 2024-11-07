@@ -22,6 +22,11 @@ return {'nvim-tree/nvim-tree.lua',
 			},
 			diagnostics = {
 				enable = true,
+			},
+			renderer = {
+				indent_markers = {
+					enable = true
+				}
 			}
 		})
 		vim.keymap.set('n', '<Leader>f', '<CMD>NvimTreeToggle<CR>')

@@ -19,12 +19,28 @@ return {'nvim-lualine/lualine.nvim',
 				disabled_filetypes = {'NvimTree'},
 			},
 			sections = {
-				lualine_a = {'mode'},
-				lualine_b = {'branch', 'diff'},
-				lualine_c = {'hostname', 'filename', 'filesize', 'searchcount'},
-				lualine_x = {'filetype'},
-				lualine_y = {'progress'},
-				lualine_z = {'location', 'os.date("%Y.%m.%d 󰤃 %H:%M:%S 󰤃 %a",os.time())'}
+				lualine_a = {
+					{'mode', icon = '', fmt = function(str) return str:sub(1, 4) end}
+				},
+				lualine_b = {
+					{'branch', icon = '󰊢'},
+					'diff'
+				},
+				lualine_c = {
+					{'filename', icon = '󰈔', symbols = {modified = '', readonly = '󰈡', unnamed = '󰡯', newfile = '󰝒'}},
+					'filetype',
+					'filesize',
+					{'searchcount', icon = '', maxcount = 1024, timeout = 512}
+				},
+				lualine_x = {
+				},
+				lualine_y = {
+					{'progress', icon = '󰠞'},
+					{'location', icon = ''}
+				},
+				lualine_z = {
+					{'datetime', style = '%Y.%m.%d 󰤃 %H:%M:%S 󰤃 %a', icon = '󱑂'}
+				}
 			},
 			tabline = {},
 			winbar = {},
