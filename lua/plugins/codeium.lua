@@ -1,4 +1,5 @@
 return {'Exafunction/codeium.nvim',
+	lazy = true,
 	cmd = {"Codeium"},
 	keys = {
 		{'<Leader>n', '<CMD>Codeium Enable<CR>'}
