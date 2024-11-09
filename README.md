@@ -142,8 +142,10 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>J</kbd> | `<CMD>bp<CR>` | Switch previous __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Delete __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>K</kbd> | `<CMD>bd!<CR>` | Force delete __buffer__ |
-| N | <kbd>Leader</kbd><kbd>W</kbd> | `<C-w>` | __Window__ control |
-| N | <kbd>Leader</kbd><kbd>Z</kbd> | `<CMD>set spell!<CR>` | Toggle __spellcheck__ |
+| N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | __Window__ control |
+| N | <kbd>Leader</kbd>-<kbd>Z</kbd> | `<CMD>set spell!<CR>` | Toggle __spellcheck__ |
+| N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
+| N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle __split__ |
 | T | <kbd>J</kbd><kbd>K</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
 #### Plugin :electric_plug:
