@@ -5,14 +5,14 @@ vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.eb = false
 vim.opt.ruler = true
-vim.opt.cursorline = true
 vim.opt.showcmd = true
 vim.opt.history = 64
-vim.opt.ttimeoutlen = 0
 vim.opt.autochdir = true
+vim.opt.mouse = 'a'
+vim.opt.showmode = false
 vim.opt.syntax = "sync"
-vim.cmd('language en_US')
-vim.opt.spelllang = "en,cjk"
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
 -- Indentation
 vim.opt.autoindent = true
@@ -21,12 +21,12 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.foldenable = false
 vim.opt.list = true
-vim.opt.listchars = "tab:▎ "	-- or "tab:󰤃 "
+vim.opt.listchars = "tab:▎ ,trail:·,extends:󰞘"
 
 -- Filetype
-vim.cmd [[filetype on]]
-vim.cmd [[filetype indent on]]
-vim.cmd [[filetype plugin on]]
+vim.cmd('filetype on')
+vim.cmd('filetype indent on')
+vim.cmd('filetype plugin on')
 
 -- Search
 vim.opt.hlsearch = true
