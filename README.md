@@ -100,6 +100,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim) | __Transparent__ background |
+| [Twilight](https://github.com/folke/twilight.nvim) | __Dim__ code |
 | [Wilder](https://github.com/gelguy/wilder.nvim) | Provide __cmdline completion__ |
 
 </details>
