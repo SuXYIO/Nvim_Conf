@@ -1,6 +1,6 @@
 return {'folke/todo-comments.nvim',
 	dependencies = 'nvim-lua/plenary.nvim',
-	event = 'User IceLoad',
+	event = 'User LazyDash',
 	opts = {
 		keywords = {
 			FIX = { icon = ' ', color = 'error', alt = { 'BUG', 'ERROR', 'ERRO' } },

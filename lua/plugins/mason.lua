@@ -1,5 +1,5 @@
 return {'williamboman/mason.nvim',
-	event = 'User IceLoad',
+	event = 'User LazyDash',
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig"
@@ -14,5 +14,6 @@ return {'williamboman/mason.nvim',
 				}
 			end,
 		}
+		vim.cmd('LspStart')
 	end
 }
