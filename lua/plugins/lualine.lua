@@ -1,5 +1,5 @@
 return {'nvim-lualine/lualine.nvim',
-	event = 'User IceLoad',
+	event = 'User LazyDash',
 	dependencies = 'nvim-tree/nvim-web-devicons',
 	config = function()
 		require('lualine').setup({
@@ -16,7 +16,7 @@ return {'nvim-lualine/lualine.nvim',
 					tabline = 1000,
 					winbar = 1000,
 				},
-				disabled_filetypes = {'NvimTree'},
+				disabled_filetypes = { 'NvimTree', 'snacks_dashboard' },
 			},
 			sections = {
 				lualine_a = {
@@ -30,12 +30,23 @@ return {'nvim-lualine/lualine.nvim',
 					{'filename', icon = '󰈔', symbols = {modified = '', readonly = '󰈡', unnamed = '󰡯', newfile = '󰝒'}},
 					'filetype',
 					'filesize',
+					{
+						-- LSP status
+						function()
+							local clients = vim.lsp.get_active_clients()
+							if next(clients) == nil then
+								return 'None'
+							end
+							return table.concat(vim.tbl_map(function(client) return client.name end, clients), ',')
+						end,
+						icon = '',
+					},
 					{'searchcount', icon = '', maxcount = 1024, timeout = 512}
 				},
 				lualine_x = {
+					{'progress', icon = '󰠞'}
 				},
 				lualine_y = {
-					{'progress', icon = '󰠞'},
 					{'location', icon = ''}
 				},
 				lualine_z = {

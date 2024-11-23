@@ -36,10 +36,6 @@ Install __[NeoVim](https://github.com/neovim/neovim)__ (Which I assume you have 
 Install __[Nerdfont](https://nerdfonts.com)__ for your _terminal_ or _NeoVim client_ :computer:.  
 __[Git](https://git-scm.com)__ is recommended for cloning the repo, but you can also use tools like __wget__ or __curl__ :wrench:.  
 
-#### Plugins
-
-Please install __[LazyGit](https://github.com/jesseduffield/lazygit)__ for __LazyGit__ plugin to work.  
-
 ### Simple :star:
 
 :exclamation: Make sure you backup your current __NeoVim__ config :floppy_disk:.  
@@ -93,15 +89,14 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Bufferline](https://github.com/akinsho/bufferline.nvim) | Provide __bufferline__ |
 | [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ |
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist |
-| [Dashboard](https://github.com/nvimdev/dashboard-nvim) | Startup __dashboard__ |
 | [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) | Well, __gitsigns__, literally |
-| [LazyGit](https://github.com/kdheepak/lazygit.nvim) | Provide __LazyGit__ integration |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ |
 | [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ |
 | [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files |
 | [Notify](https://github.com/rcarriga/nvim-notify) | Notice __UI__ |
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view |
+| [Snacks](https://github.com/folke/snacks.nvim) | Provide __useful stuff__ |
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim) | __Transparent__ background |
@@ -132,6 +127,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | __Paste__ from system clipboard in insert mode |
 | N | <kbd>Leader</kbd>-<kbd>Q</kbd> | `<CMD>q<CR>` | __Quit__ |
 | N | <kbd>Leader</kbd>-<kbd>WW</kbd> | `<CMD>w<CR>` | __Save__ |
+| N | <kbd>Leader</kbd>-<kbd>WA</kbd> | `<CMD>wa<CR>` | __Save all__ |
 | N | <kbd>Leader</kbd>-<kbd>WQ</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
 | I | <kbd>J</kbd><kbd>K</kbd> | `<Esc>` | __Escape__ from insert mode |
 | N | <kbd>Space</kbd> | `:` | Go to __command__ mode |
@@ -146,14 +142,13 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd>-<kbd>Z</kbd> | `<CMD>set spell!<CR>` | Toggle __spellcheck__ |
 | N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
 | N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle __split__ |
-| T | <kbd>J</kbd><kbd>K</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
+| T | <kbd>Esc</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
 #### Plugin :electric_plug:
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
 | Codeium | N | <kbd>Leader</kbd>-<kbd>N</kbd> | `<CMD>Codeium Enable<CR>` | Enable __Codeium__ |
-| LazyGit | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
 | LspSaga | N | <kbd>[</kbd><kbd>Shift</kbd>-<kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to previous __diagnostic__ |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
@@ -166,6 +161,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
 | NvimCmp | I | <kbd>Leader</kbd>-<kbd>Space</kbd> | `cmp.mapping.complete()` | Start __completion__ |
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
 | Telescope | N | <kbd>f</kbd><kbd>f</kbd> | `<CMD>Telescope find_files<CR>` | __Telescope__ find files |
 | TodoComments | N | <kbd>[</kbd><kbd>T</kbd> | `require("todo-comments").jump_next()` | __Jump__ to next __todo__ |
 | Transparent | N | <kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |

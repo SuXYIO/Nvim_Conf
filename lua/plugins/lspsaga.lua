@@ -2,7 +2,7 @@ return {'nvimdev/lspsaga.nvim',
 	dependencies = {
 		'nvim-tree/nvim-web-devicons',
 	},
-	event = 'User IceLoad',
+	event = 'User LazyDash',
 	config = function()
 		require('lspsaga').setup({
 			ui = {

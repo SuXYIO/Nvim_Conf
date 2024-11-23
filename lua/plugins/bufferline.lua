@@ -1,6 +1,6 @@
 return {'akinsho/bufferline.nvim',
 	dependencies = 'nvim-tree/nvim-web-devicons',
-	event = 'VimEnter',
+	event = 'User LazyDash',
 	opts = {
 		options = {
 			mode = "buffers",
