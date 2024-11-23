@@ -149,8 +149,8 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
 | Codeium | N | <kbd>Leader</kbd>-<kbd>N</kbd> | `<CMD>Codeium Enable<CR>` | Enable __Codeium__ |
-| LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
-| LspSaga | N | <kbd>[</kbd><kbd>Shift</kbd>-<kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to previous __diagnostic__ |
+| LspSaga | N | <kbd>]</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
+| LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_prev<CR>` | __Jump__ to previous __diagnostic__ |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>V</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek __definition__ |
@@ -173,9 +173,10 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | Colorscheme |
 | ----------- |
 | [Catppuccin](https://github.com/catppuccin-mocha) |
+| [EverForest](https://github.com/sainnhe/everforest) |
 | [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
 | [Material](https://github.com/marko-cerovac/material.nvim) |
-| [Nightfox](https://github.com/EdenEast/nightfox.nvim) |
+| [NightFox](https://github.com/EdenEast/nightfox.nvim) |
 
 ### theme change :traffic_light:
 
