@@ -1,9 +1,6 @@
 return {'Exafunction/codeium.nvim',
 	lazy = true,
-	cmd = {"Codeium"},
-	keys = {
-		{'<Leader>n', '<CMD>Codeium Enable<CR>'}
-	},
+	cmd = "Codeium",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",
