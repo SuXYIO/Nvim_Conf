@@ -8,7 +8,7 @@ local function getBackground()
 
 	-- set using timesep
 	local timeh = tonumber(os.date("%H", os.time()))
-	if timeh <= tsep2[1] or timeh >= tsep2[2] then
+	if timeh <= Tsep2[1] or timeh >= Tsep2[2] then
 		return 'dark'
 	else
 		return 'light'
@@ -20,7 +20,7 @@ local function getColorscheme()
 	-- return string of a colorscheme name i.e. 'default'
 
 	-- set using random
-	local bglist = {'duskfox', 'kanagawa-dragon', 'catppuccin-mocha', 'material-palenight', 'everforest' }
+	local bglist = {'duskfox', 'kanagawa', 'catppuccin-mocha', 'material-palenight', 'everforest' }
 	return bglist[math.random(1, #bglist)]
 end
 

@@ -22,8 +22,7 @@ return {'hrsh7th/nvim-cmp',
 			},
 			mapping = cmp.mapping.preset.insert({
 				['<CR>'] = cmp.mapping.confirm({select = true}),
-				['<Esc>'] = cmp.mapping.abort(),
-				['<Leader><Space>'] = cmp.mapping.complete()
+				['<Esc>'] = cmp.mapping.abort()
 			}),
 			sources = cmp.config.sources({
 				{name = 'nvim_lsp'},

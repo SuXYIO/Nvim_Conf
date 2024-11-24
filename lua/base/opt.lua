@@ -10,7 +10,7 @@ vim.opt.history = 64
 vim.opt.autochdir = true
 vim.opt.mouse = 'a'
 vim.opt.showmode = false
-vim.opt.syntax = "sync"
+vim.opt.syntax = 'ON'
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
