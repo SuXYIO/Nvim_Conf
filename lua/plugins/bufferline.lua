@@ -72,4 +72,3 @@ return {'akinsho/bufferline.nvim',
 		}
 	}
 }
-

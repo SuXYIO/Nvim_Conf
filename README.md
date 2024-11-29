@@ -138,8 +138,6 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
 | N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch next __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>H</kbd> | `<CMD>bp<CR>` | Switch previous __buffer__ |
-| N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>bd<CR>` | Delete __buffer__ |
-| N | <kbd>Leader</kbd>-<kbd>Shift</kbd>-<kbd>K</kbd> | `<CMD>bd!<CR>` | Force delete __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | __Window__ control |
 | N | <kbd>Leader</kbd>-<kbd>Z</kbd> | `<CMD>set spell!<CR>` | Toggle __spellcheck__ |
 | N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
@@ -161,7 +159,8 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
 | NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
-| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>LazyGit<CR>` | Toggle __LazyGit__ |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>Snacks.lazygit()<CR>` | Toggle __LazyGit__ |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>Snacks.bufdelete<CR>` | Delete __buffer__ |
 | Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | __Telescope__ |
 | Transparent | N | <kbd>Shift<kbd>-<kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
 

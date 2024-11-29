@@ -5,6 +5,7 @@ return {'folke/snacks.nvim',
 		bigfile = { enabled = true, notify = true },
 		notifier = { enabled = true },
 		lazygit = { enabled = true, configure = true },
+		bufdelete = { enabled = true },
 		dashboard = {
 			enabled = true,
 			sections = {
@@ -38,5 +39,6 @@ return {'folke/snacks.nvim',
 	},
 	keys = {
 		{ "<Leader>d", function() Snacks.lazygit() end },
+		{ "<Leader>k", function() Snacks.bufdelete() end }
 	}
 }
