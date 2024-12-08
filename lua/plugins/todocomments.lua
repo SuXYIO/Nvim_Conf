@@ -1,6 +1,7 @@
 return {'folke/todo-comments.nvim',
 	dependencies = 'nvim-lua/plenary.nvim',
 	lazy = true,
+	cmd = 'TodoEnable',
 	opts = {
 		keywords = {
 			FIX = { icon = ' ', color = 'error', alt = { 'BUG', 'ERROR', 'ERRO' } },

@@ -9,11 +9,24 @@ return {'folke/snacks.nvim',
 		dashboard = {
 			enabled = true,
 			sections = {
-				{ section = 'header' },
+				{ section = 'header', indent = -2 },
 				{ section = 'keys', gap = 1, padding = 1 },
-				{ section = 'startup' },
-				{ pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
-				{ pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+				{ section = 'startup', icon = ' ' },
+				{ section = "recent_files", pane = 2, icon = " ", title = "Recent Files", indent = 2, padding = 1 },
+				{ section = "projects", pane = 2, icon = " ", title = "Projects", indent = 2, padding = 1 },
+				{
+					pane = 2,
+					icon = "󰊢 ",
+					title = "Git Status",
+					section = 'terminal',
+					enabled = function()
+						return Snacks.git.get_root() ~= nil
+					end,
+					cmd = 'hub --no-pager diff --stat -B -M -C 2> /dev/null || git status 2> /dev/null',
+					height = 5,
+					indent = 2,
+					padding = 1
+				},
 			},
 			preset = {
 				keys = {
