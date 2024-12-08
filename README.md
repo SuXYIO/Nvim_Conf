@@ -103,8 +103,8 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files | N |
 | [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments | Y |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim) | __Transparent__ background | N |
-| [Twilight](https://github.com/folke/twilight.nvim) | __Dim__ code | Y |
 | [Wilder](https://github.com/gelguy/wilder.nvim) | Provide __cmdline completion__ | N |
+| [ZenMode](https://github.com/folke/zen-mode.nvim) | Provide __zen mode__ | Y |
 
 </details>
 
@@ -195,10 +195,9 @@ The `colorscheme`, `background`, `lineseps` can be different on every startup ov
 <details>
 <summary>Self-defined command list</summary>
 
-| Command | Operation | Description |
-| ------- | --------- | ----------- |
-| `Hex` | `%!xxd` | Convert buffer raw to __hex__ code |
-| `Dehex` | `%!xxd -r` | Convert buffer hex code to __raw__ |
+| Command | Description |
+| ------- | ----------- |
+| `Hex` | Convert buffer __raw to hex__ code. Convert back using `Hex!`. You can also add args directly, for example `Hex -p` will pass the `-p` to `xxd`. Requires `xxd` installed. |
 
 </details>
 

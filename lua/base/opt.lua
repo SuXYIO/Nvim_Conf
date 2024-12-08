@@ -4,7 +4,7 @@
 vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.eb = false
-vim.opt.ruler = true
+vim.opt.ruler = false
 vim.opt.showcmd = true
 vim.opt.history = 64
 vim.opt.autochdir = true
@@ -13,6 +13,7 @@ vim.opt.showmode = false
 vim.opt.syntax = 'ON'
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.cursorline = true
 
 -- Indentation
 vim.opt.autoindent = true
