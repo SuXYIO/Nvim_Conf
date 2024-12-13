@@ -130,7 +130,6 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Cmd</kbd>-<kbd>V</kbd> | `"+P` | __Paste__ from system clipboard in normal mode |
 | I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | __Paste__ from system clipboard in insert mode |
 | N | <kbd>Leader</kbd>-<kbd>Q</kbd> | `<CMD>q<CR>` | __Quit__ |
-| N | <kbd>Leader</kbd>-<kbd>Shift<kbd>-<kbd>Q</kbd> | `<CMD>q!<CR>` | __Force quit__ |
 | N | <kbd>Leader</kbd>-<kbd>WW</kbd> | `<CMD>w<CR>` | __Save__ |
 | N | <kbd>Leader</kbd>-<kbd>WA</kbd> | `<CMD>wa<CR>` | __Save all__ |
 | N | <kbd>Leader</kbd>-<kbd>WQ</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
@@ -142,7 +141,6 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch next __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>H</kbd> | `<CMD>bp<CR>` | Switch previous __buffer__ |
 | N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | __Window__ control |
-| N | <kbd>Leader</kbd>-<kbd>Z</kbd> | `<CMD>set spell!<CR>` | Toggle __spellcheck__ |
 | N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
 | N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle __split__ |
 | T | <kbd>Esc</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
@@ -155,7 +153,6 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_prev<CR>` | __Jump__ to previous __diagnostic__ |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
-| LspSaga | N | <kbd>Leader</kbd>-<kbd>C</kbd> | `<CMD>Lspsaga show_line_diagnostics<CR>` | Show __line diagnostics__ |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>L</kbd> | `<CMD>Lspsaga term_toggle<CR>` | Toggle __terminal__ |
 | LspSaga | N | <kbd>Z</kbd>-<kbd>D</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek __definition__ |
 | MarkdownPreview | N | <kbd>Z</kbd>-<kbd>M</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
