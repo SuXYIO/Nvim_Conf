@@ -29,6 +29,6 @@ return {'nvim-tree/nvim-tree.lua',
 				}
 			}
 		})
-		vim.keymap.set('n', '<Leader>f', '<CMD>NvimTreeToggle<CR>')
+		vim.keymap.set('n', '<Leader>f', '<CMD>NvimTreeToggle<CR>', { noremap = true, desc = 'nvimtree toggle' })
 	end
 }

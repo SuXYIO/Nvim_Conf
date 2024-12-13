@@ -11,7 +11,7 @@ return {'folke/snacks.nvim',
 			sections = {
 				{ section = 'header', indent = -2 },
 				{ section = 'keys', gap = 1, padding = 1 },
-				{ section = 'startup', icon = ' ' },
+				{ section = 'startup', icon = '󰉁 ' },
 				{ section = "recent_files", pane = 2, icon = " ", title = "Recent Files", indent = 2, padding = 1 },
 				{ section = "projects", pane = 2, icon = " ", title = "Projects", indent = 2, padding = 1 },
 				{
@@ -51,7 +51,7 @@ return {'folke/snacks.nvim',
 		}
 	},
 	keys = {
-		{ "<Leader>d", function() Snacks.lazygit() end },
-		{ "<Leader>k", function() Snacks.bufdelete() end }
+		{ "<Leader>d", function() Snacks.lazygit() end, desc = 'lazygit' },
+		{ "<Leader>k", function() Snacks.bufdelete() end, desc = 'delete buffer' }
 	}
 }

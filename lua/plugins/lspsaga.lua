@@ -15,12 +15,11 @@ return {'nvimdev/lspsaga.nvim',
 					imp_sign = ' '
 			}
 		})
-		vim.keymap.set('n', ']e', '<CMD>Lspsaga diagnostic_jump_next<CR>')
-		vim.keymap.set('n', '[e', '<CMD>Lspsaga diagnostic_jump_prev<CR>')
-		vim.keymap.set('n', '<Leader>s', '<CMD>Lspsaga outline<CR>')
-		vim.keymap.set('n', '<Leader>a', '<CMD>Lspsaga code_action<CR>')
-		vim.keymap.set('n', '<Leader>v', '<CMD>Lspsaga peek_definition<CR>')
-		vim.keymap.set('n', '<Leader>c', '<CMD>Lspsaga show_line_diagnostics<CR>')
-		vim.keymap.set('n', '<Leader>l', '<CMD>Lspsaga term_toggle<CR>')
+		vim.keymap.set('n', ']e', '<CMD>Lspsaga diagnostic_jump_next<CR>', { noremap = true, desc = 'next diagnostic' })
+		vim.keymap.set('n', '[e', '<CMD>Lspsaga diagnostic_jump_prev<CR>', { noremap = true, desc = 'previous diagnostic' })
+		vim.keymap.set('n', '<Leader>s', '<CMD>Lspsaga outline<CR>', { noremap = true, desc = 'lsp outline' })
+		vim.keymap.set('n', '<Leader>a', '<CMD>Lspsaga code_action<CR>', { noremap = true, desc = 'lsp code action' })
+		vim.keymap.set('n', '<Leader>v', '<CMD>Lspsaga peek_definition<CR>', { noremap = true, desc = 'lsp peek definition' })
+		vim.keymap.set('n', '<Leader>l', '<CMD>Lspsaga term_toggle<CR>', { noremap = true, desc = 'terminal toggle' })
 	end
 }
