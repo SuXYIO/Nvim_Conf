@@ -153,14 +153,14 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_prev<CR>` | __Jump__ to previous __diagnostic__ |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
-| LspSaga | N | <kbd>Leader</kbd>-<kbd>L</kbd> | `<CMD>Lspsaga term_toggle<CR>` | Toggle __terminal__ |
+| LspSaga | N | <kbd>Leader</kbd>-<kbd>L</kbd> | `Snacks.terminal()` | Toggle __terminal__ |
 | LspSaga | N | <kbd>Z</kbd>-<kbd>D</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek __definition__ |
 | MarkdownPreview | N | <kbd>Z</kbd>-<kbd>M</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
 | NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
-| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `<CMD>Snacks.lazygit()<CR>` | Toggle __LazyGit__ |
-| Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `<CMD>Snacks.bufdelete<CR>` | Delete __buffer__ |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `Snacks.lazygit()` | Toggle __LazyGit__ |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `Snacks.bufdelete()` | Delete __buffer__ |
 | Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | __Telescope__ |
 | Transparent | N | <kbd>Shift<kbd>-<kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
 

@@ -6,6 +6,8 @@ return {'folke/snacks.nvim',
 		notifier = { enabled = true },
 		lazygit = { enabled = true, configure = true },
 		bufdelete = { enabled = true },
+		indent = { enabled = true },
+		terminal = { enabled = true },
 		dashboard = {
 			enabled = true,
 			sections = {
@@ -52,6 +54,7 @@ return {'folke/snacks.nvim',
 	},
 	keys = {
 		{ "<Leader>d", function() Snacks.lazygit() end, desc = 'lazygit' },
-		{ "<Leader>k", function() Snacks.bufdelete() end, desc = 'delete buffer' }
+		{ "<Leader>k", function() Snacks.bufdelete() end, desc = 'delete buffer' },
+		{ "<Leader>l", function() Snacks.terminal() end, desc = 'open terminal' }
 	}
 }
