@@ -1,7 +1,7 @@
 return {'iamcco/markdown-preview.nvim',
-	cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+	cmd = { "MarkdownPreviewToggle" },
 	ft = { "markdown" },
-	config = function()
-		vim.keymap.set('n', '<Leader>x', '<CMD>MarkdownPreviewToggle<CR>', { noremap = true, desc = 'markdown preview' })
-	end
+	keys = {
+		{'<Leader>x', '<CMD>MarkdownPreviewToggle<CR>', mode = n, ft = 'markdown', noremap = true, desc = 'markdown preview'}
+	}
 }

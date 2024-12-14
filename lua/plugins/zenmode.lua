@@ -1,7 +1,7 @@
 return {'folke/zen-mode.nvim',
 	lazy = true,
 	cmd = 'ZenMode',
-	dependencies = { 'https://github.com/folke/twilight.nvim' },
+	dependencies = { 'folke/twilight.nvim' },
 	opts = {
 		window = {
 			backdrop = 0.95,

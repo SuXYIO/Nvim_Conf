@@ -1,8 +1,8 @@
 return {'nvim-lualine/lualine.nvim',
 	event = 'User LazyDash',
 	dependencies = 'nvim-tree/nvim-web-devicons',
-	config = function()
-		require('lualine').setup({
+	opts = function()
+		return {
 			options = {
 				icons_enabled = true,
 				theme = 'auto',
@@ -16,7 +16,7 @@ return {'nvim-lualine/lualine.nvim',
 					tabline = 1000,
 					winbar = 1000,
 				},
-				disabled_filetypes = { 'NvimTree', 'snacks_dashboard' },
+				disabled_filetypes = { 'NvimTree', 'neo-tree', 'snacks_dashboard' },
 			},
 			sections = {
 				lualine_a = {
@@ -57,6 +57,6 @@ return {'nvim-lualine/lualine.nvim',
 			winbar = {},
 			inactive_winbar = {},
 			extensions = {}
-		})
-	end,
+		}
+	end
 }

@@ -97,6 +97,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ | N |
 | [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ | N |
 | [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files | N |
+| [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim) | Provide __tree__ view | Y |
 | [Notify](https://github.com/rcarriga/nvim-notify) | Notice __UI__ | N |
 | [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view | N |
 | [Snacks](https://github.com/folke/snacks.nvim) | Provide __useful stuff__ | N |
@@ -158,7 +159,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | MarkdownPreview | N | <kbd>Z</kbd>-<kbd>M</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
 | NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
-| NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NvimTreeToggle<CR>` | Toggle __tree__ view |
+| NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NeoTree<CR>` | Toggle __tree__ view |
 | Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `Snacks.lazygit()` | Toggle __LazyGit__ |
 | Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `Snacks.bufdelete()` | Delete __buffer__ |
 | Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | __Telescope__ |
