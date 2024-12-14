@@ -8,9 +8,9 @@ return {'hrsh7th/nvim-cmp',
 		'hrsh7th/cmp-cmdline',
 		'onsails/lspkind.nvim'
 	},
-	config = function()
+	opts = function ()
 		local cmp = require('cmp')
-		cmp.setup({
+		return {
 			window = {
 				completion = cmp.config.window.bordered(),
 				documentation = cmp.config.window.bordered()
@@ -41,6 +41,6 @@ return {'hrsh7th/nvim-cmp',
 					}
 				}),
 			}
-		})
+		}
 	end
 }

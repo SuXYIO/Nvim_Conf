@@ -2,23 +2,23 @@ return {'nvimdev/lspsaga.nvim',
 	dependencies = {
 		'nvim-tree/nvim-web-devicons',
 	},
+	keys = {
+		{']e', '<CMD>Lspsaga diagnostic_jump_next<CR>', mode = 'n', noremap = true, desc = 'next diagnostic'},
+		{'[e', '<CMD>Lspsaga diagnostic_jump_prev<CR>', mode = 'n', noremap = true, desc = 'previous diagnostic'},
+		{'<Leader>s', '<CMD>Lspsaga outline<CR>', mode = 'n', noremap = true, desc = 'lsp outline'},
+		{'<Leader>a', '<CMD>Lspsaga code_action<CR>', mode = 'n', noremap = true, desc = 'lsp code action'},
+		{'<Leader>v', '<CMD>Lspsaga peek_definition<CR>', mode = 'n', noremap = true, desc = 'lsp peek definition'}
+	},
 	event = 'User LazyDash',
-	config = function()
-		require('lspsaga').setup({
-			ui = {
-					border = 'single',
-					devicon = true,
-					title = true,
-					expand = ' ',
-					collapse = ' ',
-					code_action = '',
-					imp_sign = ' '
-			}
-		})
-		vim.keymap.set('n', ']e', '<CMD>Lspsaga diagnostic_jump_next<CR>', { noremap = true, desc = 'next diagnostic' })
-		vim.keymap.set('n', '[e', '<CMD>Lspsaga diagnostic_jump_prev<CR>', { noremap = true, desc = 'previous diagnostic' })
-		vim.keymap.set('n', '<Leader>s', '<CMD>Lspsaga outline<CR>', { noremap = true, desc = 'lsp outline' })
-		vim.keymap.set('n', '<Leader>a', '<CMD>Lspsaga code_action<CR>', { noremap = true, desc = 'lsp code action' })
-		vim.keymap.set('n', '<Leader>v', '<CMD>Lspsaga peek_definition<CR>', { noremap = true, desc = 'lsp peek definition' })
-	end
+	opts = {
+		ui = {
+			border = 'single',
+			devicon = true,
+			title = true,
+			expand = ' ',
+			collapse = ' ',
+			code_action = '',
+			imp_sign = ' '
+		}
+	}
 }
