@@ -18,5 +18,6 @@ vim.keymap.set("n", "<Leader>h", "<CMD>bp<CR>", { noremap = true, desc = 'previo
 vim.keymap.set("n", "<Leader>w", "<C-w>", { noremap = true, desc = 'choose window' })
 vim.keymap.set("n", "zl", "<CMD>vs<CR>", { noremap = true, desc = 'vertical split' })
 vim.keymap.set("n", "zj", "<CMD>sp<CR>", { noremap = true, desc = 'split' })
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { noremap = true, desc = 'terminal quit' })
+vim.keymap.set("n", "<Leader>l", "<CMD>terminal<CR>", { noremap = true, desc = 'open terminal' })
+vim.keymap.set("t", "<Leader><Esc>", "<C-\\><C-n>", { noremap = true, desc = 'terminal quit' })
 

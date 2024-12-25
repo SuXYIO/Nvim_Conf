@@ -1,4 +1,5 @@
-return {'iamcco/markdown-preview.nvim',
+return {
+	'iamcco/markdown-preview.nvim',
 	cmd = { "MarkdownPreviewToggle" },
 	ft = { "markdown" },
 	keys = {

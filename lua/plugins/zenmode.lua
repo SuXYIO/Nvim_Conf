@@ -1,4 +1,5 @@
-return {'folke/zen-mode.nvim',
+return {
+	'folke/zen-mode.nvim',
 	lazy = true,
 	cmd = 'ZenMode',
 	dependencies = { 'folke/twilight.nvim' },

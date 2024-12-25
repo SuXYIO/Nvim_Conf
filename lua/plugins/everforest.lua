@@ -1,4 +1,5 @@
-return {'sainnhe/everforest',
+return {
+	'sainnhe/everforest',
 	lazy = true,
 	config = function()
 		vim.g.everforest_enable_italic = true

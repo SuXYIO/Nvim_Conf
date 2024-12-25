@@ -1,4 +1,5 @@
-return {'gelguy/wilder.nvim',
+return {
+	'gelguy/wilder.nvim',
 	dependencies = 'kyazdani42/nvim-web-devicons',
 	event = {'VeryLazy', 'CmdlineEnter'},
 	config = function()

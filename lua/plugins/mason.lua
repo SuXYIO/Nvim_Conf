@@ -1,4 +1,5 @@
-return {'williamboman/mason.nvim',
+return {
+	'williamboman/mason.nvim',
 	event = 'User LazyDash',
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
