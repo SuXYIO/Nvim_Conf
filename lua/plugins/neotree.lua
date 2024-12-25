@@ -1,4 +1,5 @@
-return {'nvim-neo-tree/neo-tree.nvim',
+return {
+	'nvim-neo-tree/neo-tree.nvim',
 	lazy = true,
 	dependencies = {
 		"nvim-lua/plenary.nvim",

@@ -1,11 +1,10 @@
-return {'Exafunction/codeium.nvim',
-	lazy = true,
+return {
+	'Exafunction/codeium.nvim',
+	event = 'InsertEnter',
 	cmd = "Codeium",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",
 	},
-	opts = {
-		enable_chat = false,
-	}
+	opts = {}
 }

@@ -91,7 +91,7 @@ Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
 | [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ | N |
 | [Bufferline](https://github.com/akinsho/bufferline.nvim) | Provide __bufferline__ | N |
 | [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ | N |
-| [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | Y |
+| [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | N |
 | [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) | Well, __gitsigns__, literally | N |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ | N |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ | N |
@@ -144,7 +144,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | __Window__ control |
 | N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
 | N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle __split__ |
-| T | <kbd>Esc</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
+| T | <kbd>Leader</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
 #### Plugin :electric_plug:
 
@@ -154,7 +154,6 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_prev<CR>` | __Jump__ to previous __diagnostic__ |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
-| LspSaga | N | <kbd>Leader</kbd>-<kbd>L</kbd> | `Snacks.terminal()` | Toggle __terminal__ |
 | LspSaga | N | <kbd>Z</kbd>-<kbd>D</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek __definition__ |
 | MarkdownPreview | N | <kbd>Z</kbd>-<kbd>M</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
 | NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
@@ -162,6 +161,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NeoTree<CR>` | Toggle __tree__ view |
 | Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `Snacks.lazygit()` | Toggle __LazyGit__ |
 | Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `Snacks.bufdelete()` | Delete __buffer__ |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>L</kbd> | `Snacks.terminal()` | Toggle __terminal__ |
 | Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | __Telescope__ |
 | Transparent | N | <kbd>Shift<kbd>-<kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
 

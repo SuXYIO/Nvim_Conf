@@ -1,4 +1,5 @@
-return {'nvim-lualine/lualine.nvim',
+return {
+	'nvim-lualine/lualine.nvim',
 	event = 'User LazyDash',
 	dependencies = 'nvim-tree/nvim-web-devicons',
 	opts = function()

@@ -1,4 +1,5 @@
-return {'rebelot/kanagawa.nvim',
+return {
+	'rebelot/kanagawa.nvim',
 	lazy = true,
 	config = function()
 		vim.cmd('colorscheme kanagawa')
