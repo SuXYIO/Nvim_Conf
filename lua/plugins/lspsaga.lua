@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		'nvim-tree/nvim-web-devicons',
 	},
+	cmd = 'Lspsaga',
 	keys = {
 		{']e', '<CMD>Lspsaga diagnostic_jump_next<CR>', mode = 'n', noremap = true, desc = 'next diagnostic'},
 		{'[e', '<CMD>Lspsaga diagnostic_jump_prev<CR>', mode = 'n', noremap = true, desc = 'previous diagnostic'},
