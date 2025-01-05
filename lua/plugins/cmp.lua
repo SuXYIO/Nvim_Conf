@@ -10,8 +10,6 @@ return {
 		'neovim/nvim-lspconfig',
 		'hrsh7th/cmp-nvim-lsp',
 		'hrsh7th/cmp-buffer',
-		'hrsh7th/cmp-path',
-		'hrsh7th/cmp-cmdline',
 		'onsails/lspkind.nvim'
 	},
 	opts = function ()
@@ -45,10 +43,10 @@ return {
 				['<Esc>'] = cmp.mapping.abort()
 			}),
 			sources = cmp.config.sources({
-				{name = 'codeium'},
-				{name = 'nvim_lsp'}
+				{ name = 'codeium' },
+				{ name = 'nvim_lsp' }
 			}, {
-				{name = 'buffer'}
+				{ name = 'buffer' }
 			}),
 			formatting = {
 				format = require('lspkind').cmp_format({
@@ -60,6 +58,9 @@ return {
 						Codeium = " "
 					}
 				}),
+			},
+			view = {
+				entries = {name = 'custom', selection_order = 'near_cursor' }
 			}
 		}
 	end

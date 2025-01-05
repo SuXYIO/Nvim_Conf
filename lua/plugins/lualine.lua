@@ -13,9 +13,7 @@ return {
 				always_divide_middle = true,
 				globalstatus = false,
 				refresh = {
-					statusline = 1000,
-					tabline = 1000,
-					winbar = 1000,
+					statusline = 50,
 				},
 				disabled_filetypes = { 'NvimTree', 'neo-tree', 'snacks_dashboard' },
 			},
@@ -31,17 +29,6 @@ return {
 					{'filename', icon = '󰈔', symbols = {modified = '', readonly = '󰈡', unnamed = '󰡯', newfile = '󰝒'}},
 					'filetype',
 					'filesize',
-					{
-						-- LSP status
-						function()
-							local clients = vim.lsp.get_active_clients()
-							if next(clients) == nil then
-								return 'None'
-							end
-							return table.concat(vim.tbl_map(function(client) return client.name end, clients), ',')
-						end,
-						icon = '',
-					},
 					{'searchcount', icon = '', maxcount = 1024, timeout = 512}
 				},
 				lualine_x = {
@@ -54,10 +41,6 @@ return {
 					{'datetime', style = '%Y.%m.%d 󰤃 %H:%M:%S 󰤃 %a', icon = '󱑂'}
 				}
 			},
-			tabline = {},
-			winbar = {},
-			inactive_winbar = {},
-			extensions = {}
 		}
 	end
 }

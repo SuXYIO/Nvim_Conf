@@ -144,6 +144,7 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | __Window__ control |
 | N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
 | N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle __split__ |
+| N | <kbd>Leader</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
 | T | <kbd>Leader</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
 
 #### Plugin :electric_plug:
@@ -161,7 +162,6 @@ __Note__: The single __characters__ here are all __capital__, which represents t
 | NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NeoTree<CR>` | Toggle __tree__ view |
 | Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `Snacks.lazygit()` | Toggle __LazyGit__ |
 | Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `Snacks.bufdelete()` | Delete __buffer__ |
-| Snacks | N | <kbd>Leader</kbd>-<kbd>L</kbd> | `Snacks.terminal()` | Toggle __terminal__ |
 | Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | __Telescope__ |
 | Transparent | N | <kbd>Shift<kbd>-<kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
 
