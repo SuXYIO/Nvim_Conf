@@ -54,6 +54,5 @@ return {'folke/snacks.nvim',
 	keys = {
 		{"<Leader>d", function() Snacks.lazygit() end, mode = 'n', noremap = true, desc = 'lazygit'},
 		{"<Leader>k", function() Snacks.bufdelete() end, mode = 'n', noremap = true, desc = 'delete buffer'},
-		{"<Leader>l", function() Snacks.terminal() end, mode = 'n', noremap = true, desc = 'open terminal'}
 	}
 }
