@@ -2,26 +2,26 @@
 
 ## Intro :information_source:
 
-_SuXYIO_'s __Neovim__ config. 
+*SuXYIO*'s **Neovim** config. 
 
 ## Screenshots :fireworks:
 
 <details>
 <summary>Screenshots</summary>
 
-> Dashboard, _catppuccin_ colorscheme. 
+> Dashboard, *catppuccin* colorscheme. 
 ![Screenshot0](./media/Screenshot0.png)
 
-> Lazygit, _kanagawa_ colorscheme. 
+> Lazygit, *kanagawa* colorscheme. 
 ![Screenshot1](./media/Screenshot1.png)
 
-> Code inspecting, _duskfox_ colorscheme. 
+> Code inspecting, *duskfox* colorscheme. 
 ![Screenshot2](./media/Screenshot2.png)
 
-> Telescope, _everforest_ colorscheme. 
+> Telescope, *everforest* colorscheme. 
 ![Screenshot3](./media/Screenshot3.png)
 
-> Markdown preview, _material_ colorscheme. 
+> Markdown preview, *material* colorscheme. 
 ![Screenshot4](./media/Screenshot4.png)
 
 Note that these screenshots may not represent the actual effect, which is dependent on the terminal / NeoVim client config :computer:.  
@@ -35,13 +35,13 @@ Also, these screenshots might be outdated due to my laziness :sleeping:.
 
 #### Basic
 
-Install __[NeoVim](https://github.com/neovim/neovim)__ (Which I assume you have done since you're browsing this repo :sweat_smile:).  
-Install __[Nerdfont](https://nerdfonts.com)__ for your _terminal_ or _NeoVim client_ :computer:.  
-__[Git](https://git-scm.com)__ is recommended for cloning the repo, but you can also use tools like __wget__ or __curl__ :wrench:.  
+Install **[NeoVim](https://github.com/neovim/neovim)** (Which I assume you have done since you're browsing this repo :sweat_smile:).  
+Install **[Nerdfont](https://nerdfonts.com)** for your *terminal* or *NeoVim client* :computer:.  
+**[Git](https://git-scm.com)** is recommended for cloning the repo, but you can also use tools like **wget** or **curl** :wrench:.  
 
 ### Simple :star:
 
-:exclamation: Make sure you backup your current __NeoVim__ config :floppy_disk:.  
+:exclamation: Make sure you backup your current **NeoVim** config :floppy_disk:.  
 
 ```bash
 git clone https://github.com/suxyio/Nvim_Conf ~/.config/nvim
@@ -53,8 +53,8 @@ git clone https://github.com/suxyio/Nvim_Conf ~/.config/nvim
 
 <summary>This will be a bit verbose</summary>
 
-1. _Optional_  
-Backup your current __NeoVim__ config :floppy_disk:. 
+1. *Optional*  
+Backup your current **NeoVim** config :floppy_disk:. 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak
 ```
@@ -68,12 +68,12 @@ git clone https://github.com/suxyio/Nvim_Conf ~/.config/nvim
 ### Check Install :mag:
 
 You're done! :tada:  
-Startup __NeoVim__ to check if it works.  
-If installed correctly, a grey _Lazy_ window will show up to clone the plugins. 
+Startup **NeoVim** to check if it works.  
+If installed correctly, a grey *Lazy* window will show up to clone the plugins. 
 ```bash
 nvim
 ```
-If any help is needed, feel free to report it in __Issues__ :wink:. 
+If any help is needed, feel free to report it in **Issues** :wink:. 
 
 Enjoy! :blush:
 
@@ -81,89 +81,87 @@ Enjoy! :blush:
 
 ### Plugin :electric_plug:
 
-Manager: __[Lazy.nvim](https://github.com/folke/lazy.nvim)__ :zzz:
+Manager: **[Lazy.nvim](https://github.com/folke/lazy.nvim)** :zzz:
 
 <details>
 <summary>Plugin list</summary>
 
-| Plugin | Description | Idle (You have to toggle manually) |
-| ------ | ----------- | ---------------------------------- |
-| [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for __paired characters__ | N |
-| [Bufferline](https://github.com/akinsho/bufferline.nvim) | Provide __bufferline__ | N |
-| [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide __completion__ | N |
-| [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide __AI__ assist | N |
-| [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) | Well, __gitsigns__, literally | N |
-| [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better __LSP experience__ | N |
-| [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy __lines and tabs__ | N |
-| [Mason](https://github.com/williamboman/mason.nvim) | __Install LSPs__ | N |
-| [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview __markdown__ files | N |
-| [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim) | Provide __tree__ view | Y |
-| [Notify](https://github.com/rcarriga/nvim-notify) | Notice __UI__ | N |
-| [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide __tree__ view | N |
-| [Snacks](https://github.com/folke/snacks.nvim) | Provide __useful stuff__ | N |
-| [Telescope](https://github.com/nvim-telescope/telescope.nvim) | __Find__ files | N |
-| [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight __todo__ comments | Y |
-| [Transparent](https://github.com/xiyaowong/transparent.nvim) | __Transparent__ background | N |
-| [Wilder](https://github.com/gelguy/wilder.nvim) | Provide __cmdline completion__ | N |
-| [ZenMode](https://github.com/folke/zen-mode.nvim) | Provide __zen mode__ | Y |
+| Plugin | Description |
+| ------ | ----------- |
+| [Autopairs](https://github.com/windwp/nvim-autopairs) | Better insert experience for **paired characters** |
+| [Bufferline](https://github.com/akinsho/bufferline.nvim) | Provide **bufferline** |
+| [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide **completion** |
+| [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide **AI** assist |
+| [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) | Well, **gitsigns**, literally |
+| [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better **LSP experience** |
+| [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy **lines and tabs** |
+| [Mason](https://github.com/williamboman/mason.nvim) | **Install LSPs** |
+| [MarkdownPreview](https://github.com/iamcco/markdown-preview.nvim) | Preview **markdown** files |
+| [NvimTree](https://github.com/nvim-tree/nvim-tree.lua) | Provide **tree** view |
+| [Snacks](https://github.com/folke/snacks.nvim) | Provide **useful stuff** |
+| [Telescope](https://github.com/nvim-telescope/telescope.nvim) | **Find** files |
+| [TodoComments](https://github.com/folke/todo-comments.nvim) | Highlight **todo** comments |
+| [Transparent](https://github.com/xiyaowong/transparent.nvim) | **Transparent** background |
+| [Wilder](https://github.com/gelguy/wilder.nvim) | Provide **cmdline completion** |
+| [ZenMode](https://github.com/folke/zen-mode.nvim) | Provide **zen mode** |
 
 </details>
 
 ### LSP :closed_book:
 
-Manager: __[Mason.nvim](https://github.com/williamboman/mason.nvim)__
+Manager: **[Mason.nvim](https://github.com/williamboman/mason.nvim)**
 
-The __autoload__ feature in _Mason_ is __enabled__, just install the LSPs needed, no need to config every single one :relaxed:. 
+The **autoload** feature in *Mason* is **enabled**, just install the LSPs needed, no need to config every single one :relaxed:. 
 
 ### Keymap :musical_keyboard:
 
 <details>
 <summary>Keymap list</summary>
 
-__Note__: The single __characters__ here are all __capital__, which represents the key on the keyboard, capital key presses will be represented with <kbd>Shift</kbd>. 
+**Note**: The single **characters** here are all **capital**, which represents the key on the keyboard, capital key presses will be represented with <kbd>Shift</kbd>. 
 
 #### Base :star:
 
 | Mode | Key | Map | Description |
 | ---- | --- | --- | ----------- |
-| / | <kbd>;</kbd> | `leader` | __Leader__ key |
-| N | <kbd>Cmd</kbd>-<kbd>C</kbd> | `"+y` | __Copy__ to system clipboard |
-| N | <kbd>Cmd</kbd>-<kbd>V</kbd> | `"+P` | __Paste__ from system clipboard in normal mode |
-| I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | __Paste__ from system clipboard in insert mode |
-| N | <kbd>Leader</kbd>-<kbd>Q</kbd> | `<CMD>q<CR>` | __Quit__ |
-| N | <kbd>Leader</kbd>-<kbd>WW</kbd> | `<CMD>w<CR>` | __Save__ |
-| N | <kbd>Leader</kbd>-<kbd>WA</kbd> | `<CMD>wa<CR>` | __Save all__ |
-| N | <kbd>Leader</kbd>-<kbd>WQ</kbd> | `<CMD>wq<CR>` | __Save & Quit__ |
-| I | <kbd>J</kbd><kbd>K</kbd> | `<Esc>` | __Escape__ from insert mode |
-| N | <kbd>Space</kbd> | `:` | Go to __command__ mode |
-| N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | __Move line__ up |
-| N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | __Move line__ down |
-| N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove __highlight__ (clear search highlight) |
-| N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch next __buffer__ |
-| N | <kbd>Leader</kbd>-<kbd>H</kbd> | `<CMD>bp<CR>` | Switch previous __buffer__ |
-| N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | __Window__ control |
-| N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle __vertical split__ |
-| N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle __split__ |
-| N | <kbd>Leader</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open __terminal__ |
-| T | <kbd>Leader</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | __Escape__ from terminal mode |
+| / | <kbd>;</kbd> | `leader` | **Leader** key |
+| N | <kbd>Cmd</kbd>-<kbd>C</kbd> | `"+y` | **Copy** to system clipboard |
+| N | <kbd>Cmd</kbd>-<kbd>V</kbd> | `"+P` | **Paste** from system clipboard in normal mode |
+| I | <kbd>Cmd</kbd>-<kbd>V</kbd> | `<Esc>"+P` | **Paste** from system clipboard in insert mode |
+| N | <kbd>Leader</kbd>-<kbd>Q</kbd> | `<CMD>q<CR>` | **Quit** |
+| N | <kbd>Leader</kbd>-<kbd>WW</kbd> | `<CMD>w<CR>` | **Save** |
+| N | <kbd>Leader</kbd>-<kbd>WA</kbd> | `<CMD>wa<CR>` | **Save all** |
+| N | <kbd>Leader</kbd>-<kbd>WQ</kbd> | `<CMD>wq<CR>` | **Save & Quit** |
+| I | <kbd>J</kbd><kbd>K</kbd> | `<Esc>` | **Escape** from insert mode |
+| N | <kbd>Space</kbd> | `:` | Go to **command** mode |
+| N | <kbd>Ctrl</kbd>-<kbd>K</kbd> | `ddkP` | **Move line** up |
+| N | <kbd>Ctrl</kbd>-<kbd>J</kbd> | `ddp` | **Move line** down |
+| N | <kbd>Esc</kbd> | `<CMD>noh<CR>` | Remove **highlight** (clear search highlight) |
+| N | <kbd>Leader</kbd>-<kbd>J</kbd> | `<CMD>bn<CR>` | Switch next **buffer** |
+| N | <kbd>Leader</kbd>-<kbd>H</kbd> | `<CMD>bp<CR>` | Switch previous **buffer** |
+| N | <kbd>Leader</kbd>-<kbd>W</kbd> | `<C-w>` | **Window** control |
+| N | <kbd>Z</kbd><kbd>L</kbd> | `<CMD>vs<CR>` | Toggle **vertical split** |
+| N | <kbd>Z</kbd><kbd>J</kbd> | `<CMD>sp<CR>` | Toggle **split** |
+| N | <kbd>Leader</kbd>-<kbd>L</kbd> | `<CMD>terminal<CR>` | Open **terminal** |
+| T | <kbd>Leader</kbd><kbd>Esc</kbd> | `<C-\\><C-n>` | **Escape** from terminal mode |
 
 #### Plugin :electric_plug:
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
-| LspSaga | N | <kbd>]</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_next<CR>` | __Jump__ to next __diagnostic__ |
-| LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic_jump_prev<CR>` | __Jump__ to previous __diagnostic__ |
-| LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code_action<CR>` | Show __actions__ of code |
-| LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show __outline__(structure) of code |
-| LspSaga | N | <kbd>Z</kbd>-<kbd>D</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek __definition__ |
-| MarkdownPreview | N | <kbd>Z</kbd>-<kbd>M</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle __markdown__ preview |
-| NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm __completion__ |
-| NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort __completion__ |
-| NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NeoTree<CR>` | Toggle __tree__ view |
-| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `Snacks.lazygit()` | Toggle __LazyGit__ |
-| Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `Snacks.bufdelete()` | Delete __buffer__ |
-| Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | __Telescope__ |
-| Transparent | N | <kbd>Shift<kbd>-<kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | __Transparent__ toggle |
+| LspSaga | N | <kbd>]</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic*jump*next<CR>` | **Jump** to next **diagnostic** |
+| LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic*jump*prev<CR>` | **Jump** to previous **diagnostic** |
+| LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code*action<CR>` | Show **actions** of code |
+| LspSaga | N | <kbd>Leader</kbd>-<kbd>S</kbd> | `<CMD>Lspsaga outline<CR>` | Show **outline**(structure) of code |
+| LspSaga | N | <kbd>Z</kbd>-<kbd>D</kbd> | `<CMD>Lspsaga peek_definition<CR>` | Peek **definition** |
+| MarkdownPreview | N | <kbd>Z</kbd>-<kbd>M</kbd> | `<CMD>MarkdownPreviewToggle<CR>` | Toggle **markdown** preview |
+| NvimCmp | I | <kbd>Enter</kbd> | `cmp.mapping.confirm({select = true})` | Confirm **completion** |
+| NvimCmp | I | <kbd>Esc</kbd> | `cmp.mapping.abort()` | Abort **completion** |
+| NvimTree | N | <kbd>Leader</kbd>-<kbd>F</kbd> | `<CMD>NeoTree<CR>` | Toggle **tree** view |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>D</kbd> | `Snacks.lazygit()` | Toggle **LazyGit** |
+| Snacks | N | <kbd>Leader</kbd>-<kbd>K</kbd> | `Snacks.bufdelete()` | Delete **buffer** |
+| Telescope | N | <kbd>F</kbd><kbd>F</kbd> | `<CMD>Telescope<CR>` | **Telescope** |
+| Transparent | N | <kbd>Shift<kbd>-<kbd>T</kbd> | `<CMD>TransparentToggle<CR>` | **Transparent** toggle |
 
 </details>
 
@@ -195,7 +193,7 @@ The `colorscheme`, `background`, `lineseps` can be different on every startup ov
 
 | Command | Description |
 | ------- | ----------- |
-| `Hex` | Convert buffer __raw to hex__ code. Convert back using `Hex!`. You can also add args directly, for example `Hex -p` will pass the `-p` to `xxd`. Requires `xxd` installed. |
+| `Hex` | Convert buffer **raw to hex** code. Convert back using `Hex!`. You can also add args directly, for example `Hex -p` will pass the `-p` to `xxd`. Requires `xxd` installed. |
 
 </details>
 
@@ -205,10 +203,15 @@ Uses the built-in `SpellCheck`.
 
 #### Client support :computer:
 
-The client __[Neovide](https://neovide.dev/)__ is supported, see `lua/client.lua`. 
+The client **[Neovide](https://neovide.dev/)** is supported, see `lua/client.lua`. 
 
 ## Todo
 
 - [ ] Reduce startup time
 - [ ] Add system status in lualine
+
+## Notes
+
+This is just a repo, so im only using a `main` branch, at least until i get this to work as a big project, which is unlikely.  
+That means this repo is **really unstable**, so better *fork* it if you wanna use it yourself.  
 
