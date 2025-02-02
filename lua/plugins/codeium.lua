@@ -6,5 +6,12 @@ return {
 		"nvim-lua/plenary.nvim",
 		"hrsh7th/nvim-cmp",
 	},
-	opts = {}
+	opts = {
+		virtual_text = {
+			enabled = true,
+			filetypes = {
+    			markdown = false,
+			}
+		}
+	}
 }
