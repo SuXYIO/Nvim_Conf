@@ -25,25 +25,10 @@ return {
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
-				["<Tab>"] = vim.schedule_wrap(function(fallback)
-					if cmp.visible() and has_words_before() then
-						cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
-					else
-						fallback()
-					end
-				end),
-				["<S-Tab>"] = vim.schedule_wrap(function(fallback)
-					if cmp.visible() and has_words_before() then
-						cmp.select_prev_item({ behavior = cmp.SelectBehavior.Select })
-					else
-						fallback()
-					end
-				end),
 				['<CR>'] = cmp.mapping.confirm({select = true}),
 				['<Esc>'] = cmp.mapping.abort()
 			}),
 			sources = cmp.config.sources({
-				{ name = 'codeium' },
 				{ name = 'nvim_lsp' }
 			}, {
 				{ name = 'buffer' }
@@ -54,9 +39,6 @@ return {
 					maxwidth = 50,
 					ellipsis_char = '...',
 					preset = 'codicons',
-					symbol_map = {
-						Codeium = " "
-					}
 				}),
 			},
 			view = {
