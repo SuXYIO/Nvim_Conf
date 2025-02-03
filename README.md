@@ -171,7 +171,9 @@ The **autoload** feature in *Mason* is **enabled**, just install the LSPs needed
 | ----------- |
 | [Catppuccin](https://github.com/catppuccin-mocha) |
 | [EverForest](https://github.com/sainnhe/everforest) |
+| [GruvBox](https://github.com/ellisonleao/gruvbox.nvim) |
 | [Kanagawa](https://github.com/rebelot/kanagawa.nvim) |
+| [Material](https://github.com/slugbyte/lackluster.nvim) |
 | [Material](https://github.com/marko-cerovac/material.nvim) |
 | [NightFox](https://github.com/EdenEast/nightfox.nvim) |
 
@@ -203,7 +205,7 @@ Uses the built-in `SpellCheck`.
 
 #### Client support :computer:
 
-The client **[Neovide](https://neovide.dev/)** is supported, see `lua/client.lua`. 
+The client **[Neovide](https://neovide.dev/)** is supported. 
 
 ## Todo
 
