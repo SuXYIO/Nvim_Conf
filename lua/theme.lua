@@ -9,9 +9,9 @@ local function getBackground()
 	-- set using timesep
 	local timeh = tonumber(os.date("%H", os.time()))
 	if timeh <= Tsep2[1] or timeh >= Tsep2[2] then
-		return 'dark'
+		return "dark"
 	else
-		return 'light'
+		return "light"
 	end
 end
 
@@ -21,13 +21,13 @@ local function getColorscheme()
 
 	-- set using random
 	local bglist = {
-		'duskfox',
-		'kanagawa-wave',
-		'catppuccin-mocha',
-		'material-palenight',
-		'everforest',
-		'gruvbox',
-		'lackluster-hack'
+		"duskfox",
+		"kanagawa-wave",
+		"catppuccin-mocha",
+		"material-palenight",
+		"everforest",
+		"gruvbox",
+		"lackluster-hack",
 	}
 	return bglist[math.random(1, #bglist)]
 end
@@ -39,22 +39,21 @@ local function getLineSep()
 	-- set using random
 	local lineseplist = {
 		{
-			component_separators = { left = '', right = '' },
-			section_separators = { left = '', right = '' },
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
 		},
 		{
-			component_separators = { left = '', right = '' },
-			section_separators = { left = '', right = '' },
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
 		},
 		{
-			component_separators = { left = '', right = '' },
-			section_separators = { left = '', right = '' },
-		}
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
+		},
 	}
 	return lineseplist[math.random(1, #lineseplist)]
 end
 
 vim.o.background = getBackground()
-vim.cmd(string.format('colorscheme %s', getColorscheme()))
+vim.cmd(string.format("colorscheme %s", getColorscheme()))
 LineSep = getLineSep()
-

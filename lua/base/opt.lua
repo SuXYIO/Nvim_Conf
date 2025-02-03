@@ -8,9 +8,9 @@ vim.opt.ruler = false
 vim.opt.showcmd = true
 vim.opt.history = 64
 vim.opt.autochdir = true
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 vim.opt.showmode = false
-vim.opt.syntax = 'ON'
+vim.opt.syntax = "ON"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.cursorline = true
@@ -25,9 +25,9 @@ vim.opt.list = true
 vim.opt.listchars = "tab:│ ,trail:·,extends:󰞘"
 
 -- Filetype
-vim.cmd('filetype on')
-vim.cmd('filetype indent on')
-vim.cmd('filetype plugin on')
+vim.cmd("filetype on")
+vim.cmd("filetype indent on")
+vim.cmd("filetype plugin on")
 
 -- Search
 vim.opt.hlsearch = true
@@ -35,4 +35,3 @@ vim.opt.incsearch = true
 
 -- Cache
 vim.opt.backup = false
-

@@ -1,6 +1,5 @@
 -- Requires
-require('base.init')
-require('lazyinit')
-require('lspconf')
-require('theme')
-
+require("base.init")
+require("lazyinit")
+require("lspconf")
+require("theme")

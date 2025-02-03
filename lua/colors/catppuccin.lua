@@ -1,7 +1,7 @@
 return {
-	'catppuccin/nvim',
+	"catppuccin/nvim",
 	lazy = true,
 	config = function()
-		vim.cmd('colorscheme catppuccin')
-	end
+		vim.cmd("colorscheme catppuccin")
+	end,
 }

@@ -17,37 +17,36 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Lazy config
 -- require("lazy").setup({ { import = "[name].plugins" }, { import = "[name].plugins.lsp" } })
-require('lazy').setup({
+require("lazy").setup({
 	{
-		import = 'plugins'
+		import = "plugins",
 	},
 	{
-		import = 'colors'
+		import = "colors",
 	},
 	defaults = {
-		lazy = true
+		lazy = true,
 	},
 	install = {
-		colorscheme = { 'lunaperche' }
+		colorscheme = { "lunaperche" },
 	},
 	performance = {
 		rtp = {
 			disabled_plugins = {
-				'gzip',
-				'zipPlugin',
-				'tarPlugin',
-				'tohtml',
-				'tutor',
-				'editorconfig',
-				'rplugin',
+				"gzip",
+				"zipPlugin",
+				"tarPlugin",
+				"tohtml",
+				"tutor",
+				"editorconfig",
+				"rplugin",
 				-- 'man',
 				-- 'netrwPlugin',
 				-- 'spellfile',
 				-- 'shada',
 				-- 'matchit',
 				-- 'matchparen',
-			}
-		}
-	}
+			},
+		},
+	},
 })
-
