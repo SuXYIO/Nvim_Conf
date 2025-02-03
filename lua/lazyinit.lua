@@ -17,12 +17,12 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Lazy config
 require('lazy').setup({
-	spec = "plugins",
+	spec = 'plugins',
 	defaults = {
 		lazy = true
 	},
 	install = {
-		colorscheme = {'lunaperche'}
+		colorscheme = { 'lunaperche' }
 	},
 	performance = {
 		rtp = {
