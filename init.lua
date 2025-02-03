@@ -1,6 +1,6 @@
 -- Requires
 require('base.init')
-require('pluginit')
+require('lazyinit')
 require('lspconf')
 require('theme')
 
