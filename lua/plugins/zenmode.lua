@@ -1,8 +1,8 @@
 return {
-	'folke/zen-mode.nvim',
+	"folke/zen-mode.nvim",
 	lazy = true,
-	cmd = 'ZenMode',
-	dependencies = { 'folke/twilight.nvim' },
+	cmd = "ZenMode",
+	dependencies = { "folke/twilight.nvim" },
 	opts = {
 		window = {
 			backdrop = 0.95,
@@ -11,7 +11,7 @@ return {
 				number = false,
 				relativenumber = false,
 				cursorline = false,
-				cursorcolumn = false
+				cursorcolumn = false,
 			},
 		},
 		plugins = {
@@ -42,5 +42,5 @@ return {
 				scale = 1.2,
 			},
 		},
-	}
+	},
 }

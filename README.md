@@ -92,6 +92,7 @@ Manager: **[Lazy.nvim](https://github.com/folke/lazy.nvim)** :zzz:
 | [Bufferline](https://github.com/akinsho/bufferline.nvim) | Provide **bufferline** |
 | [Cmp](https://github.com/hrsh7th/nvim-cmp) | Provide **completion** |
 | [Codeium](https://github.com/Exafunction/codeium.nvim) | Provide **AI** assist |
+| [Conform](https://github.com/stevearc/conform.nvim) | Provide **linting** |
 | [Gitsigns](https://github.com/lewis6991/gitsigns.nvim) | Well, **gitsigns**, literally |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim) | Better **LSP experience** |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim) | Provide fancy **lines and tabs** |
@@ -149,6 +150,7 @@ The **autoload** feature in *Mason* is **enabled**, just install the LSPs needed
 
 | Plugin | Mode | Key | Map | Description |
 | ------ | ---- | --- | --- | ----------- |
+| Conform | N | <kbd>Leader</kbd><kbd>z</kbd> | `conform.format({lsp_fallback = true})` | **Lint** manually |
 | LspSaga | N | <kbd>]</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic*jump*next<CR>` | **Jump** to next **diagnostic** |
 | LspSaga | N | <kbd>[</kbd><kbd>E</kbd> | `<CMD>Lspsaga diagnostic*jump*prev<CR>` | **Jump** to previous **diagnostic** |
 | LspSaga | N | <kbd>Leader</kbd>-<kbd>A</kbd> | `<CMD>Lspsaga code*action<CR>` | Show **actions** of code |

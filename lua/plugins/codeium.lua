@@ -1,6 +1,6 @@
 return {
-	'Exafunction/codeium.nvim',
-	event = 'InsertEnter',
+	"Exafunction/codeium.nvim",
+	event = "InsertEnter",
 	cmd = "Codeium",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
@@ -10,8 +10,8 @@ return {
 		virtual_text = {
 			enabled = true,
 			filetypes = {
-    			markdown = false,
-			}
-		}
-	}
+				markdown = false,
+			},
+		},
+	},
 }
