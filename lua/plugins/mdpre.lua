@@ -6,7 +6,7 @@ return {
 		{
 			"<Leader>x",
 			"<CMD>MarkdownPreviewToggle<CR>",
-			mode = n,
+			mode = "n",
 			ft = "markdown",
 			noremap = true,
 			desc = "markdown preview",
