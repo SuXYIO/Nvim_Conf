@@ -12,11 +12,12 @@ return {
 			c = { "clang-format" },
 			cpp = { "clang-format" },
 			lua = { "stylua" },
-			python = { "isort" },
+			python = { "black" },
 		},
 		format_on_save = {
 			lsp_fallback = true,
 			async = false,
+			timeout_ms = 3000,
 		},
 	},
 	keys = {
