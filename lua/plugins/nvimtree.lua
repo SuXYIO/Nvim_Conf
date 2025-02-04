@@ -3,7 +3,7 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 	cmd = "NvimTreeToggle",
 	keys = {
-		{ "<Leader>f", "<CMD>NvimTreeToggle<CR>" },
+		{ "<Leader>f", "<CMD>NvimTreeToggle<CR>", mode = "n", noremap = true, desc = "toggle nvim tree" },
 	},
 	config = function()
 		require("nvim-tree").setup({
