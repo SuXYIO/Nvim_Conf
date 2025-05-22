@@ -7,11 +7,11 @@ return {
 		wilder.set_option("pipeline", {
 			wilder.branch(
 				wilder.cmdline_pipeline({
-					language = "vim",
+					language = "python",
 					fuzzy = 2,
 				}),
 				wilder.python_file_finder_pipeline({
-					language = "vim",
+					language = "python",
 					fuzzy = 2,
 					file_command = { "fd", "-tf" },
 					dir_command = { "fd", "-td" },
