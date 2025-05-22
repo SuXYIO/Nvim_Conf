@@ -14,6 +14,7 @@ vim.opt.syntax = "ON"
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.cursorline = true
+vim.opt.scrolloff = 8
 
 -- Indentation
 vim.opt.autoindent = true

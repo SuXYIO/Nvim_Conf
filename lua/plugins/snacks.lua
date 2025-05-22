@@ -47,6 +47,12 @@ return {
 						enabled = package.loaded.lazy ~= nil,
 					},
 					{
+						icon = " ",
+						key = "m",
+						desc = "Mason",
+						action = ":Mason",
+					},
+					{
 						icon = " ",
 						key = "c",
 						desc = "Config",

@@ -25,6 +25,7 @@ local function getColorscheme()
 		"kanagawa-wave",
 		"catppuccin-mocha",
 		"material-palenight",
+		"material-darker",
 		"everforest",
 		"gruvbox",
 		"lackluster-hack",
