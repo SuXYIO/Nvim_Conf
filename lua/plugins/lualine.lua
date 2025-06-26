@@ -15,7 +15,7 @@ return {
 				refresh = {
 					statusline = 50,
 				},
-				disabled_filetypes = { "NvimTree", "neo-tree", "snacks_dashboard" },
+				disabled_filetypes = { "NvimTree", "neo-tree", "snacks_dashboard", "sagaoutline" },
 			},
 			sections = {
 				lualine_a = {
