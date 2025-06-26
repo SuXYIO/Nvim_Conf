@@ -1,7 +1,8 @@
 return {
 	"gelguy/wilder.nvim",
 	dependencies = "kyazdani42/nvim-web-devicons",
-	event = { "VeryLazy", "CmdlineEnter" },
+	lazy = true,
+	-- event = { "VeryLazy", "CmdlineEnter" },
 	config = function()
 		local wilder = require("wilder")
 		wilder.set_option("pipeline", {
@@ -35,6 +36,6 @@ return {
 				[":"] = popupmenu_renderer,
 			})
 		)
-		wilder.setup({ modes = { ":" } })
+		-- wilder.setup({ modes = { ":" } })
 	end,
 }

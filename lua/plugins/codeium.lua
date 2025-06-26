@@ -1,6 +1,7 @@
 return {
 	"Exafunction/codeium.nvim",
-	event = "InsertEnter",
+	lazy = true,
+	-- event = "InsertEnter",
 	cmd = "Codeium",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
