@@ -22,13 +22,13 @@ local function getColorscheme()
 	-- set using random
 	local bglist = {
 		"duskfox",
+		"carbonfox",
 		"kanagawa-wave",
 		"catppuccin-mocha",
 		"material-palenight",
 		"material-darker",
 		"everforest",
 		"gruvbox",
-		"lackluster-hack",
 	}
 	return bglist[math.random(1, #bglist)]
 end
