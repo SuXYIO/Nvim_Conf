@@ -1,23 +1,16 @@
 return {
-	"williamboman/mason.nvim",
-	event = "User LazyDash",
+	"mason-org/mason.nvim",
+	event = "VeryLazy",
 	cmd = "Mason",
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig",
+		"mason-org/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig"
 	},
 	config = function()
 		require("mason").setup()
-		require("mason-lspconfig").setup()
-		require("mason-lspconfig").setup_handlers({
-			function(server_name)
-				require("lspconfig")[server_name].setup({
-					root_dir = function()
-						return vim.fn.getcwd()
-					end,
-				})
-			end,
+		require("mason-lspconfig").setup({
+			automatic_enable = true
 		})
-		vim.cmd("LspStart")
-	end,
+		vim.cmd('LspStart')
+	end
 }

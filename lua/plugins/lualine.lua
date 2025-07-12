@@ -1,6 +1,6 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	event = "User LazyDash",
+	event = "VeryLazy",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	opts = function()
 		return {

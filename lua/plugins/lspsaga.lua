@@ -11,7 +11,7 @@ return {
 		{ "<Leader>a", "<CMD>Lspsaga code_action<CR>", mode = "n", noremap = true, desc = "lsp code action" },
 		{ "<Leader>v", "<CMD>Lspsaga peek_definition<CR>", mode = "n", noremap = true, desc = "lsp peek definition" },
 	},
-	event = "User LazyDash",
+	event = "VeryLazy",
 	opts = {
 		ui = {
 			border = "single",
