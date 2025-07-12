@@ -2,7 +2,7 @@
 
 math.randomseed(os.time())
 
-local function getBackground()
+local function getBgTime()
 	-- Background
 	-- return string 'dark' or 'light'
 
@@ -15,7 +15,7 @@ local function getBackground()
 	end
 end
 
-local function getColorscheme()
+local function getColorsRand()
 	-- Colorscheme
 	-- return string of a colorscheme name i.e. 'default'
 
@@ -33,7 +33,7 @@ local function getColorscheme()
 	return bglist[math.random(1, #bglist)]
 end
 
-local function getLineSep()
+local function getLinesepRand()
 	-- Line seperator
 	-- return {component_separators, section_separators}
 
@@ -55,6 +55,7 @@ local function getLineSep()
 	return lineseplist[math.random(1, #lineseplist)]
 end
 
-vim.o.background = getBackground()
-vim.cmd(string.format("colorscheme %s", getColorscheme()))
-LineSep = getLineSep()
+-- vim.o.background = getBgTime()
+vim.o.background = "dark"
+vim.cmd(string.format("colorscheme %s", getColorsRand()))
+LineSep = getLinesepRand()
