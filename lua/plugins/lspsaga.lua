@@ -1,5 +1,6 @@
 return {
 	"nvimdev/lspsaga.nvim",
+	event = "VeryLazy",
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
@@ -11,7 +12,6 @@ return {
 		{ "<Leader>a", "<CMD>Lspsaga code_action<CR>", mode = "n", noremap = true, desc = "lsp code action" },
 		{ "<Leader>v", "<CMD>Lspsaga peek_definition<CR>", mode = "n", noremap = true, desc = "lsp peek definition" },
 	},
-	event = "VeryLazy",
 	opts = {
 		ui = {
 			border = "single",

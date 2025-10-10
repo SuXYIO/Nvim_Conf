@@ -1,6 +1,6 @@
 return {
 	"folke/snacks.nvim",
-	lazy = false,
+	event = "VimEnter",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	opts = {
 		styles = {},
