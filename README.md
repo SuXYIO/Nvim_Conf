@@ -35,8 +35,8 @@ Also, these screenshots might be outdated due to my laziness :sleeping:.
 
 #### Basic
 
-Install **[NeoVim](https://github.com/neovim/neovim)** (Which I assume you have done since you're browsing this repo :sweat_smile:).  
-Install **[Nerdfont](https://nerdfonts.com)** for your _terminal_ or _NeoVim client_ :computer:.  
+Install **[NeoVim](https://github.com/neovim/neovim)** (Which I assume you have done since you're browsing this repo :sweat*smile:).  
+Install **[Nerdfont](https://nerdfonts.com)** for your \_terminal* or _NeoVim client_ :computer:.  
 **[Git](https://git-scm.com)** is recommended for cloning the repo, but you can also use tools like **wget** or **curl** :wrench:.
 
 ### Simple :star:
@@ -83,6 +83,8 @@ If any help is needed, feel free to report it in **Issues** :wink:.
 Enjoy! :blush:
 
 ## Features :bar_chart:
+
+> Note that these info might not be up to date, since I always forget to update these.
 
 ### Plugin :electric_plug:
 
@@ -205,10 +207,6 @@ The `colorscheme`, `background`, `lineseps` can be different on every startup ov
 | `Hex`   | Convert buffer **raw to hex** code. Convert back using `Hex!`. You can also add args directly, for example `Hex -p` will pass the `-p` to `xxd`. Requires `xxd` installed. |
 
 </details>
-
-#### Grammar check :abc:
-
-Uses the built-in `SpellCheck`.
 
 #### Client support :computer:
 

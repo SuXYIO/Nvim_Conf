@@ -27,7 +27,25 @@ return {
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
-				["<CR>"] = cmp.mapping.confirm({ select = true }),
+				["<CR>"] = cmp.mapping.confirm(),
+				["<Tab>"] = function(fallback)
+					if not cmp.select_next_item() then
+						if vim.bo.buftype ~= "prompt" and has_words_before() then
+							cmp.complete()
+						else
+							fallback()
+						end
+					end
+				end,
+				["<S-Tab>"] = function(fallback)
+					if not cmp.select_prev_item() then
+						if vim.bo.buftype ~= "prompt" and has_words_before() then
+							cmp.complete()
+						else
+							fallback()
+						end
+					end
+				end,
 				["<Esc>"] = cmp.mapping.abort(),
 			}),
 			sources = cmp.config.sources({

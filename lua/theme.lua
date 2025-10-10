@@ -26,7 +26,6 @@ local function getColorsRand()
 		"kanagawa-wave",
 		"catppuccin-mocha",
 		"material-palenight",
-		"material-darker",
 		"everforest",
 		"gruvbox",
 	}
