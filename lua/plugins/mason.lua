@@ -1,13 +1,13 @@
 return {
-	"mason-org/mason.nvim",
+	"mason-org/mason-lspconfig.nvim",
 	event = "VeryLazy",
-	cmd = "Mason",
 	dependencies = {
-		"mason-org/mason-lspconfig.nvim",
+		{
+			"mason-org/mason.nvim",
+			cmd = "Mason",
+			opts = {},
+		},
 		"neovim/nvim-lspconfig",
 	},
-	config = function()
-		require("mason").setup()
-		require("mason-lspconfig").setup()
-	end,
+	opts = {},
 }

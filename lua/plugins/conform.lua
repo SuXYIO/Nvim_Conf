@@ -3,16 +3,14 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	opts = {
 		formatters_by_ft = {
-			-- json = { "prettier" },
-			-- c = { "clang-format" },
 			markdown = { "prettier" },
 			python = { "black" },
-			lua = { "stylua" }
+			lua = { "stylua" },
 		},
 		format_on_save = {
 			lsp_fallback = false,
 			async = false,
 			timeout_ms = 3000,
-		}
-	}
+		},
+	},
 }
