@@ -3,11 +3,9 @@ return {
 	event = "VimEnter",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	opts = {
-		styles = {},
 		bigfile = { notify = true },
 		notifier = {},
 		lazygit = { configure = true },
-		bufdelete = {},
 		indent = {},
 		dashboard = {
 			sections = {
@@ -76,15 +74,6 @@ return {
 			mode = "n",
 			noremap = true,
 			desc = "lazygit",
-		},
-		{
-			"<Leader>k",
-			function()
-				Snacks.bufdelete()
-			end,
-			mode = "n",
-			noremap = true,
-			desc = "delete buffer",
 		},
 	},
 }
