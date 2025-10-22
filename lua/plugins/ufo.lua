@@ -34,18 +34,6 @@ return {
 		vim.o.foldlevel = 99
 		vim.o.foldlevelstart = 99
 		vim.o.foldenable = true
-		-- use lsp
-		local capabilities = vim.lsp.protocol.make_client_capabilities()
-		capabilities.textDocument.foldingRange = {
-			dynamicRegistration = false,
-			lineFoldingOnly = true,
-		}
-		local language_servers = vim.lsp.get_clients()
-		for _, ls in ipairs(language_servers) do
-			require("lspconfig")[ls].setup({
-				capabilities = capabilities,
-			})
-		end
 		-- setup
 		require("ufo").setup({
 			fold_virt_text_handler = handler,
@@ -53,7 +41,7 @@ return {
 	end,
 	keys = {
 		{
-			"zr",
+			"zO",
 			function()
 				require("ufo").openAllFolds()
 			end,
@@ -62,7 +50,7 @@ return {
 			desc = "ufo open all fold",
 		},
 		{
-			"zm",
+			"zC",
 			function()
 				require("ufo").closeAllFolds()
 			end,
@@ -71,7 +59,7 @@ return {
 			desc = "ufo close all fold",
 		},
 		{
-			"K",
+			"zp",
 			function()
 				local winid = require("ufo").peekFoldedLinesUnderCursor()
 				if not winid then
