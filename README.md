@@ -9,20 +9,7 @@ _SuXYIO_'s **Neovim** config.
 <details>
 <summary>Screenshots</summary>
 
-> Dashboard, _catppuccin_ colorscheme.
-> ![Screenshot0](./media/Screenshot0.png)
-
-> Lazygit, _kanagawa_ colorscheme.
-> ![Screenshot1](./media/Screenshot1.png)
-
-> Code inspecting, _duskfox_ colorscheme.
-> ![Screenshot2](./media/Screenshot2.png)
-
-> Telescope, _everforest_ colorscheme.
-> ![Screenshot3](./media/Screenshot3.png)
-
-> Markdown preview, _material_ colorscheme.
-> ![Screenshot4](./media/Screenshot4.png)
+Currently not available.
 
 Note that these screenshots may not represent the actual effect, which is dependent on the terminal / NeoVim client config :computer:.  
 Also, these screenshots might be outdated due to my laziness :sleeping:.
