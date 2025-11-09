@@ -6,7 +6,7 @@ return {
 		bigfile = { notify = true },
 		notifier = {},
 		lazygit = { configure = true },
-		--indent = {},
+		indent = {},
 		dashboard = {
 			sections = {
 				{ section = "header", indent = -2 },

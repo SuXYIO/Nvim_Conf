@@ -9,5 +9,14 @@ return {
 		},
 		"neovim/nvim-lspconfig",
 	},
-	opts = {},
+	opts = {
+		automatic_enable = true,
+		ensure_installed = {
+			"lua_ls",
+			"pyright",
+			"ruff",
+			"stylua",
+			"clangd",
+		},
+	},
 }

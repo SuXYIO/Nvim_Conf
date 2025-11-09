@@ -25,15 +25,15 @@ local function getColorsRand()
 		"carbonfox",
 		"kanagawa-wave",
 		"catppuccin-mocha",
-		"material-palenight",
 		"everforest",
 		"gruvbox",
+		"ayu-dark",
 	}
 	return bglist[math.random(1, #bglist)]
 end
 
 local function getLinesepRand()
-	-- Line seperator
+	-- Line separator
 	-- return {component_separators, section_separators}
 
 	-- set using random

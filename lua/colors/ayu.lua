@@ -1,4 +1,4 @@
 return {
-	"catppuccin/nvim",
+	"Shatur/neovim-ayu",
 	lazy = true,
 }
