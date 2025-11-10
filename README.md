@@ -9,9 +9,23 @@ _SuXYIO_'s **Neovim** config.
 <details>
 <summary>Screenshots</summary>
 
-Currently not available.
+> <img width="1440" height="900" alt="Screenshot1" src="https://github.com/user-attachments/assets/a73ebbce-e6b0-4e66-8c9f-141895b81c79" />
+> Editing code, with treeview and peeking definition of function
 
-Note that these screenshots may not represent the actual effect, which is dependent on the terminal / NeoVim client config :computer:.  
+> <img width="1440" height="900" alt="Screenshot2" src="https://github.com/user-attachments/assets/74df05d5-22ee-46f6-94ab-4a5dc5e648fc" />
+> Using telescope live grep in the snacks dashboard
+
+> <img width="1440" height="900" alt="Screenshot3" src="https://github.com/user-attachments/assets/80991b3f-a617-4da6-a85a-7e025c775f8e" />
+> Editing code checking on an error, with code structure tree open
+
+> <img width="1440" height="900" alt="Screenshot4" src="https://github.com/user-attachments/assets/3c1b55ab-56a6-4675-8d6b-a392e3143f4b" />
+> Using lazygit, faster and more intuitive git operations
+
+> <img width="1440" height="900" alt="Screenshot5" src="https://github.com/user-attachments/assets/ca6b814c-ab2b-454a-9a42-5e70b125a620" />
+> Startup profile recorded by lazy, maintains a relatively high startup speed, even with many plugins, thanks to lazyloading
+> It really saved my old machine
+
+Note that these screenshots might not represent the actual effect, which is dependent on the terminal / NeoVim client config :computer:.  
 Also, these screenshots might be outdated due to my laziness :sleeping:.
 
 </details>
