@@ -12,9 +12,6 @@ return {
 				ignore_focus = {},
 				always_divide_middle = true,
 				globalstatus = false,
-				refresh = {
-					statusline = 50,
-				},
 				disabled_filetypes = { "NvimTree", "neo-tree", "snacks_dashboard", "sagaoutline" },
 			},
 			sections = {
@@ -29,26 +26,19 @@ return {
 				},
 				lualine_b = {
 					{ "branch", icon = "󰊢" },
-					"diff",
 				},
 				lualine_c = {
-					{
-						"filename",
-						icon = "󰈔",
-						symbols = { modified = "", readonly = "󰈡", unnamed = "󰡯", newfile = "󰝒" },
-					},
-					"filetype",
 					"filesize",
-					{ "searchcount", icon = "", maxcount = 1024, timeout = 512 },
 				},
 				lualine_x = {
+					{ "searchcount", icon = "", maxcount = 1024, timeout = 512 },
 					{ "progress", icon = "󰠞" },
 				},
 				lualine_y = {
 					{ "location", icon = "" },
 				},
 				lualine_z = {
-					{ "datetime", style = "%Y.%m.%d 󰤃 %H:%M:%S 󰤃 %a", icon = "󱑂" },
+					{ "datetime", style = "%H:%M", icon = "󱑂" },
 				},
 			},
 		}

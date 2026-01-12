@@ -8,7 +8,7 @@ return {
 			markdown = { "prettier" },
 			python = { "ruff_format" },
 			lua = { "stylua" },
-			["*"] = { "codespell" },
+			--["*"] = { "codespell" },
 		},
 		format_on_save = {
 			lsp_fallback = false,
