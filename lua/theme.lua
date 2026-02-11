@@ -27,6 +27,7 @@ local function getColorsRand()
 		"catppuccin-mocha",
 		"everforest",
 		"gruvbox",
+		"ayu",
 	}
 	return bglist[math.random(1, #bglist)]
 end

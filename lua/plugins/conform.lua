@@ -7,7 +7,9 @@ return {
 			cpp = { "clang_fmt" },
 			markdown = { "prettier" },
 			python = { "ruff_format" },
+			go = { "gofmt" },
 			lua = { "stylua" },
+			toml = { "taplo" },
 			--["*"] = { "codespell" },
 		},
 		format_on_save = {
