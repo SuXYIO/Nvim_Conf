@@ -12,11 +12,16 @@ return {
 	opts = {
 		automatic_enable = true,
 		ensure_installed = {
-			"lua_ls",
+			-- py
 			"pyright",
 			"ruff",
-			"stylua",
+			-- c
 			"clangd",
+			-- lua
+			"lua_ls",
+			"stylua",
+			-- go
+			"gopls",
 		},
 	},
 }

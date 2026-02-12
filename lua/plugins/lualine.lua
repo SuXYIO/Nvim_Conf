@@ -3,16 +3,13 @@ return {
 	event = "VeryLazy",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	opts = function()
+		-- Must use function format since using global vars
 		return {
 			options = {
-				icons_enabled = true,
-				theme = "auto",
 				component_separators = LineSep.component_separators,
 				section_separators = LineSep.section_separators,
-				ignore_focus = {},
-				always_divide_middle = true,
-				globalstatus = false,
-				disabled_filetypes = { "NvimTree", "neo-tree", "snacks_dashboard", "sagaoutline" },
+				globalstatus = true,
+				disabled_filetypes = { "NvimTree", "snacks_dashboard", "sagaoutline" },
 			},
 			sections = {
 				lualine_a = {
@@ -20,6 +17,7 @@ return {
 						"mode",
 						icon = "",
 						fmt = function(str)
+							-- Extract first 4 chars for shorter display
 							return str:sub(1, 4)
 						end,
 					},
@@ -28,12 +26,9 @@ return {
 					{ "branch", icon = "󰊢" },
 				},
 				lualine_c = {
-					"filesize",
+					"diagnostics",
 				},
-				lualine_x = {
-					{ "searchcount", icon = "", maxcount = 1024, timeout = 512 },
-					{ "progress", icon = "󰠞" },
-				},
+				lualine_x = {},
 				lualine_y = {
 					{ "location", icon = "" },
 				},

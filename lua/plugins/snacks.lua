@@ -3,30 +3,18 @@ return {
 	event = "VimEnter",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	opts = {
-		bigfile = { notify = true },
-		notifier = {},
-		lazygit = { configure = true },
-		indent = {},
+		bigfile = { enabled = true, notify = true },
+		notifier = { enabled = true },
+		lazygit = { enabled = true, configure = true },
+		indent = { enabled = true },
 		dashboard = {
+			enabled = true,
 			sections = {
 				{ section = "header", indent = -2 },
 				{ section = "keys", gap = 1, padding = 1 },
 				{ section = "startup", icon = "󰉁 " },
 				{ section = "recent_files", pane = 2, icon = " ", title = "Recent Files", indent = 2, padding = 1 },
 				{ section = "projects", pane = 2, icon = " ", title = "Projects", indent = 2, padding = 1 },
-				{
-					pane = 2,
-					icon = "󰊢 ",
-					title = "Git Status",
-					section = "terminal",
-					enabled = function()
-						return Snacks.git.get_root() ~= nil
-					end,
-					cmd = "hub --no-pager diff --stat -B -M -C 2> /dev/null || git status 2> /dev/null",
-					height = 5,
-					indent = 2,
-					padding = 1,
-				},
 			},
 			preset = {
 				keys = {

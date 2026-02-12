@@ -86,7 +86,6 @@ Manager: **[Lazy.nvim](https://github.com/folke/lazy.nvim)** :zzz: :package:
 | [Autopairs](https://github.com/windwp/nvim-autopairs)                          | Insert **paired characters**          |
 | [Blink](https://github.com/saghen/blink.cmp)                                   | **Completions**                       |
 | [Bufferline](https://github.com/akinsho/bufferline.nvim)                       | Provide **bufferline**                |
-| [Codeium](https://github.com/Exafunction/codeium.nvim)                         | Provide **AI** assist                 |
 | [Conform](https://github.com/stevearc/conform.nvim)                            | Provide **linting**                   |
 | [LspSaga](https://github.com/nvimdev/lspsaga.nvim)                             | Better **LSP experience**             |
 | [Lualine](https://github.com/nvim-lualine/lualine.nvim)                        | Provide fancy **lines and tabs**      |
@@ -97,8 +96,6 @@ Manager: **[Lazy.nvim](https://github.com/folke/lazy.nvim)** :zzz: :package:
 | [Telescope](https://github.com/nvim-telescope/telescope.nvim)                  | **Find** files                        |
 | [Transparent](https://github.com/xiyaowong/transparent.nvim)                   | **Transparent** background            |
 | [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)               | Well, just see it as a LSP dependency |
-| [UFO](https://github.com/kevinhwang91/nvim-ufo)                                | Code **folding**                      |
-| [ZenMode](https://github.com/folke/zen-mode.nvim)                              | Provide **zen mode**                  |
 
 </details>
 
@@ -111,55 +108,9 @@ Well, except for _Conform_ formatters, they have to be manually written in the c
 
 ### Keymap :musical_keyboard:
 
-<details>
-<summary>Keymap list</summary>
+Once takes track of the keymaps here, but since there's exactly `1` people using this on the whole world, not gonna keep this anymore. ~~(and not updated frequently before, so why not just quit writing this shit)~~
 
-**Note**: The single **characters** here are all **capital**, which represents the key on the keyboard, capital key presses will be represented with <kbd>Shift</kbd>.
-
-#### Base :star:
-
-| Mode | Key                             | Map                 | Description                                    |
-| ---- | ------------------------------- | ------------------- | ---------------------------------------------- |
-| /    | <kbd>;</kbd>                    | `leader`            | **Leader** key                                 |
-| v    | <kbd>Cmd</kbd>-<kbd>I</kbd>     | `"+y`               | **Copy** to system clipboard                   |
-| n    | <kbd>Cmd</kbd>-<kbd>O</kbd>     | `"+P`               | **Paste** from system clipboard in normal mode |
-| n    | <kbd>Leader</kbd>-<kbd>Q</kbd>  | `<CMD>q<CR>`        | **Quit**                                       |
-| n    | <kbd>Leader</kbd>-<kbd>WW</kbd> | `<CMD>w<CR>`        | **Save**                                       |
-| n    | <kbd>Leader</kbd>-<kbd>WA</kbd> | `<CMD>wa<CR>`       | **Save all**                                   |
-| n    | <kbd>Leader</kbd>-<kbd>WQ</kbd> | `<CMD>wq<CR>`       | **Save & Quit**                                |
-| i    | <kbd>J</kbd><kbd>K</kbd>        | `<Esc>`             | **Escape** from insert mode                    |
-| n    | <kbd>Space</kbd>                | `:`                 | Enter **command** mode                         |
-| n    | <kbd>Ctrl</kbd>-<kbd>K</kbd>    | `ddkP`              | **Move line** up                               |
-| n    | <kbd>Ctrl</kbd>-<kbd>J</kbd>    | `ddp`               | **Move line** down                             |
-| n    | <kbd>Esc</kbd>                  | `<CMD>noh<CR>`      | Remove **highlight** (clear search highlight)  |
-| n    | <kbd>Leader</kbd>-<kbd>J</kbd>  | `<CMD>bn<CR>`       | Switch next **buffer**                         |
-| n    | <kbd>Leader</kbd>-<kbd>H</kbd>  | `<CMD>bp<CR>`       | Switch previous **buffer**                     |
-| n    | <kbd>Leader</kbd>-<kbd>K</kbd>  | `<CMD>bd<CR>`       | Delete **buffer**                              |
-| n    | <kbd>Leader</kbd>-<kbd>W</kbd>  | `<C-w>`             | **Window** control                             |
-| n    | <kbd>Z</kbd><kbd>L</kbd>        | `<CMD>vs<CR>`       | Toggle **vertical split**                      |
-| n    | <kbd>Z</kbd><kbd>J</kbd>        | `<CMD>sp<CR>`       | Toggle **split**                               |
-| n    | <kbd>Leader</kbd>-<kbd>L</kbd>  | `<CMD>terminal<CR>` | Open **terminal**                              |
-| t    | <kbd>Leader</kbd><kbd>Esc</kbd> | `<C-\\><C-n>`       | **Escape** from terminal mode                  |
-
-#### Plugin :electric_plug:
-
-| Plugin      | Mode | Key                                        | Map                                           | Description                         |
-| ----------- | ---- | ------------------------------------------ | --------------------------------------------- | ----------------------------------- |
-| LspSaga     | n    | <kbd>]</kbd><kbd>E</kbd>                   | `<CMD>Lspsaga diagnostic*jump*next<CR>`       | **Jump** to next **diagnostic**     |
-| LspSaga     | n    | <kbd>[</kbd><kbd>E</kbd>                   | `<CMD>Lspsaga diagnostic*jump*prev<CR>`       | **Jump** to previous **diagnostic** |
-| LspSaga     | n    | <kbd>Leader</kbd>-<kbd>S</kbd>             | `<CMD>Lspsaga outline<CR>`                    | Show **outline**(structure) of code |
-| LspSaga     | n    | <kbd>Leader</kbd>-<kbd>A</kbd>             | `<CMD>Lspsaga peek_definition<CR>`            | Show **actions** of code            |
-| NvimTree    | n    | <kbd>Leader</kbd>-<kbd>F</kbd>             | `<CMD>NvimTreeToggle<CR>`                     | Toggle **tree** view                |
-| Snacks      | n    | <kbd>Leader</kbd>-<kbd>D</kbd>             | `Snacks.lazygit()`                            | Toggle **LazyGit**                  |
-| Telescope   | n    | <kbd>F</kbd><kbd>F</kbd>                   | `<CMD>Telescope<CR>`                          | **Telescope**                       |
-| Transparent | n    | <kbd>T</kbd>                               | `<CMD>TransparentToggle<CR>`                  | **Transparent** toggle              |
-| UFO         | n    | <kbd>Z</kbd>-<kbd>Shift</kbd>-<kbd>O</kbd> | plugin builtin                                | open **folds**                      |
-| UFO         | n    | <kbd>Z</kbd>-<kbd>Shift</kbd>-<kbd>C</kbd> | plugin builtin                                | close **fold**                      |
-| UFO         | n    | <kbd>Z</kbd>-<kbd>O</kbd>                  | `require("ufo").openAllFolds()`               | open all **fold**                   |
-| UFO         | n    | <kbd>Z</kbd>-<kbd>C</kbd>                  | `require("ufo").closeAllFolds()`              | close all **folds**                 |
-| UFO         | n    | <kbd>Z</kbd>-<kbd>P</kbd>                  | `require("ufo").peekFoldedLinesUnderCursor()` | peek **fold**                       |
-
-</details>
+Still, all the (implicit) keymap definitions are in `lua/base/keymap.lua` and scattered around `lua/plugins/*` (probs are it's in the `keys` table). Find them yourself, stranger ~~that chooses to dive deep into a nobody's neovim config~~.
 
 ### Colorscheme :rainbow:
 
@@ -201,7 +152,7 @@ Config for **[Neovide](https://neovide.dev/)** is written.
 
 ## Todo
 
-- [ ] Reduce startup time
+Nah.
 
 ## Notes
 

@@ -38,17 +38,23 @@ local function getLinesepRand()
 
 	-- set using random
 	local lineseplist = {
+		--[[
 		{
-			component_separators = { left = "", right = "" },
-			section_separators = { left = "", right = "" },
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
 		},
 		{
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
 		},
+		--]]
 		{
-			component_separators = { left = "", right = "" },
-			section_separators = { left = "", right = "" },
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
+		},
+		{
+			component_separators = { left = "", right = "" },
+			section_separators = { left = "", right = "" },
 		},
 	}
 	return lineseplist[math.random(1, #lineseplist)]
