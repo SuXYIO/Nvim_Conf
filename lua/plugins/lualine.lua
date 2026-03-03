@@ -26,6 +26,7 @@ return {
 					{ "branch", icon = "󰊢" },
 				},
 				lualine_c = {
+					"filetype",
 					"diagnostics",
 				},
 				lualine_x = {},

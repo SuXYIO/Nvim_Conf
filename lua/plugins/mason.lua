@@ -15,6 +15,8 @@ return {
 			-- py
 			"pyright",
 			"ruff",
+			-- bash
+			"bashls",
 			-- c
 			"clangd",
 			-- lua

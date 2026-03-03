@@ -3,8 +3,8 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	opts = {
 		formatters_by_ft = {
-			c = { "clang_fmt" },
-			cpp = { "clang_fmt" },
+			c = { "clang_format" },
+			cpp = { "clang_format" },
 			markdown = { "prettier" },
 			python = { "ruff_format" },
 			go = { "gofmt" },
