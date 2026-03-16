@@ -1,7 +1,7 @@
 return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = "nvim-tree/nvim-web-devicons",
-	cmd = "NvimTreeToggle",
+	lazy = false,
 	keys = {
 		{ "<Leader>f", "<CMD>NvimTreeToggle<CR>", mode = "n", noremap = true, desc = "toggle nvim tree" },
 	},
@@ -18,7 +18,7 @@ return {
 		},
 		filters = {
 			git_ignored = false,
-			custom = { ".git", ".DS_Store" },
+			custom = { "^\\.git", ".DS_Store" },
 		},
 	},
 }

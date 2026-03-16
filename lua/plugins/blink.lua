@@ -4,8 +4,8 @@ return {
 	opts = {
 		keymap = {
 			preset = "enter",
-			["<Tab>"] = { "show", "select_next", "fallback" },
-			["<S-Tab>"] = { "select_prev", "fallback" },
+			["<Tab>"] = { "select_next", "fallback" },
+			["<S-Tab>"] = { "show", "select_prev", "fallback" },
 		},
 		fuzzy = { implementation = "lua" },
 		completion = {
