@@ -1,6 +1,11 @@
 -- Key mappings
 
 vim.g.mapleader = ";"
+-- move
+vim.keymap.set("n", "K", "5k", { noremap = true, desc = "move up 5 lines" })
+vim.keymap.set("n", "J", "5j", { noremap = true, desc = "move down 5 lines" })
+vim.keymap.set("v", "K", "5k", { noremap = true, desc = "move up 5 lines" })
+vim.keymap.set("v", "J", "5j", { noremap = true, desc = "move down 5 lines" })
 -- copy & paste
 vim.keymap.set("v", "<Leader>i", '"+y', { noremap = true, desc = "system copy" })
 vim.keymap.set("n", "<Leader>o", '"+P', { noremap = true, desc = "system paste" })
