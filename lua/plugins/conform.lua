@@ -10,6 +10,7 @@ return {
 			go = { "gofmt" },
 			lua = { "stylua" },
 			toml = { "taplo" },
+			json = { "jq" },
 			--["*"] = { "codespell" },
 		},
 		format_on_save = {

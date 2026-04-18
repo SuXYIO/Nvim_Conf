@@ -3,7 +3,7 @@ return {
 	event = "VimEnter",
 	dependencies = "nvim-tree/nvim-web-devicons",
 	opts = {
-		theme = "doom",
+		theme = "hyper",
 		config = {
 			header = {
 				[[ _______             ____   ____.__         ]],
@@ -15,7 +15,7 @@ return {
 				"", -- added empty lines for spacing between header and actions
 				"",
 			},
-			center = {
+			shortcut = {
 				{
 					icon = " ",
 					key = "f",
@@ -41,7 +41,7 @@ return {
 					action = ":qa",
 				},
 			},
-			vertical_center = true,
+			footer = { "" },
 		},
 	},
 }

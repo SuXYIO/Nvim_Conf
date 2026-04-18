@@ -9,7 +9,7 @@ return {
 				component_separators = LineSep.component_separators,
 				section_separators = LineSep.section_separators,
 				globalstatus = true,
-				disabled_filetypes = { "NvimTree", "snacks_dashboard", "sagaoutline" },
+				disabled_filetypes = { "NvimTree", "snacks_dashboard", "sagaoutline", "dashboard" },
 			},
 			sections = {
 				lualine_a = {

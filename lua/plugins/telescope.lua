@@ -3,7 +3,15 @@ return {
 	dependencies = "nvim-lua/plenary.nvim",
 	cmd = "Telescope",
 	keys = {
-		{ "ff", "<CMD>Telescope<CR>", mode = "n", noremap = true, desc = "telescope" },
+		{
+			"<Leader>g",
+			"<CMD>Telescope builtin include_extensions=true<CR>",
+			mode = "n",
+			noremap = true,
+			desc = "telescope",
+		},
 	},
-	opts = {},
+	config = function()
+		require("telescope").load_extension("todo-comments")
+	end,
 }

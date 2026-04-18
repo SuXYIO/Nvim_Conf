@@ -21,11 +21,8 @@ local function getColorsRand()
 
 	-- set using random
 	local bglist = {
-		"duskfox",
 		"carbonfox",
 		"kanagawa-wave",
-		"catppuccin-mocha",
-		"everforest",
 		"gruvbox",
 		"ayu",
 	}
@@ -47,11 +44,11 @@ local function getLinesepRand()
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
 		},
-		--]]
 		{
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
 		},
+		--]]
 		{
 			component_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
