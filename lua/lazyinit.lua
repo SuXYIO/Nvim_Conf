@@ -31,6 +31,7 @@ require("lazy").setup({
 		colorscheme = { "lunaperche" },
 	},
 	performance = {
+		--[[
 		rtp = {
 			disabled_plugins = {
 				"gzip",
@@ -42,11 +43,12 @@ require("lazy").setup({
 				"rplugin",
 				"netrwPlugin",
 				"man",
-				-- "spellfile",
-				-- 'shada',
-				-- 'matchit',
-				-- 'matchparen',
+				"spellfile",
+				"shada",
+				"matchit",
+				"matchparen",
 			},
 		},
+		--]]
 	},
 })

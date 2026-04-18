@@ -1,3 +1,11 @@
+local function on_attach(bufnr)
+	local api = require("nvim-tree.api")
+	api.map.on_attach.default(bufnr)
+	vim.keymap.del("n", "f", { buffer = bufnr })
+	vim.keymap.del("n", "J", { buffer = bufnr })
+	vim.keymap.del("n", "K", { buffer = bufnr })
+end
+
 return {
 	"nvim-tree/nvim-tree.lua",
 	dependencies = "nvim-tree/nvim-web-devicons",
@@ -6,6 +14,7 @@ return {
 		{ "<Leader>f", "<CMD>NvimTreeToggle<CR>", mode = "n", noremap = true, desc = "toggle nvim tree" },
 	},
 	opts = {
+		on_attach = on_attach,
 		hijack_cursor = true,
 		respect_buf_cwd = true,
 		diagnostics = {
