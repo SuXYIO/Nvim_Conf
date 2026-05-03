@@ -6,7 +6,7 @@ return {
 			c = { "clang_format" },
 			cpp = { "clang_format" },
 			markdown = { "prettier" },
-			python = { "ruff_format" },
+			python = { "black" },
 			go = { "gofmt" },
 			lua = { "stylua" },
 			toml = { "taplo" },

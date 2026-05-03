@@ -15,21 +15,21 @@ local function getBgTime()
 	end
 end
 
-local function getColorsRand()
+local function getColors()
 	-- Colorscheme
 	-- return string of a colorscheme name i.e. 'default'
 
 	-- set using random
 	local bglist = {
-		"carbonfox",
-		"kanagawa-wave",
+		--"carbonfox",
+		--"kanagawa-wave",
+		--"ayu",
 		"gruvbox",
-		"ayu",
 	}
 	return bglist[math.random(1, #bglist)]
 end
 
-local function getLinesepRand()
+local function getLinesep()
 	-- Line separator
 	-- return {component_separators, section_separators}
 
@@ -57,7 +57,7 @@ local function getLinesepRand()
 	return lineseplist[math.random(1, #lineseplist)]
 end
 
--- vim.o.background = getBgTime()
-vim.o.background = "dark"
-vim.cmd(string.format("colorscheme %s", getColorsRand()))
-LineSep = getLinesepRand()
+vim.o.background = getBgTime()
+--vim.o.background = "dark"
+vim.cmd(string.format("colorscheme %s", getColors()))
+LineSep = getLinesep()

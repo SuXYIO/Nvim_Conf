@@ -10,6 +10,7 @@ return {
 		{ "[e", "<CMD>Lspsaga diagnostic_jump_prev<CR>", mode = "n", noremap = true, desc = "previous diagnostic" },
 		{ "<Leader>a", "<CMD>Lspsaga hover_doc<CR>", mode = "n", noremap = true, desc = "lsp hover doc" },
 		{ "<Leader>s", "<CMD>Lspsaga finder<CR>", mode = "n", noremap = true, desc = "lsp finder" },
+		{ "<Leader>e", "<CMD>Lspsaga rename<CR>", mode = "n", noremap = true, desc = "lsp rename" },
 	},
 	opts = {
 		ui = {

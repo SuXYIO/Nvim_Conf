@@ -12,6 +12,8 @@ vim.keymap.set("v", "<D-c>", '"+y', { noremap = true, desc = "system copy" })
 vim.keymap.set("v", "<Leader>i", '"+y', { noremap = true, desc = "system copy" })
 vim.keymap.set("n", "<D-v>", '"+p', { noremap = true, desc = "system paste normal" })
 vim.keymap.set("i", "<D-v>", '<ESC>"+pi', { noremap = true, desc = "system paste insert" })
+vim.keymap.set("n", "<Leader>o", '"+p', { noremap = true, desc = "system paste normal" })
+vim.keymap.set("i", "<Leader>o", '<ESC>"+pi', { noremap = true, desc = "system paste insert" })
 -- save & quit
 vim.keymap.set("n", "<Leader>q", "<CMD>q<CR>", { noremap = true, desc = "quit" })
 vim.keymap.set("n", "<Leader>ww", "<CMD>w<CR>", { noremap = true, desc = "write" })
