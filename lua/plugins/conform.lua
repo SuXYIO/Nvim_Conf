@@ -11,6 +11,7 @@ return {
 			lua = { "stylua" },
 			toml = { "taplo" },
 			json = { "jq" },
+			sh = { "shfmt" },
 			--["*"] = { "codespell" },
 		},
 		format_on_save = {

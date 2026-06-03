@@ -24,6 +24,7 @@ return {
 			},
 		},
 		filters = {
+			dotfiles = true,
 			git_ignored = false,
 			custom = { "^\\.git", ".DS_Store" },
 		},

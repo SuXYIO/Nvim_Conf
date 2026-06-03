@@ -24,8 +24,10 @@ vim.keymap.set("i", "jk", "<Esc>", { noremap = true, desc = "insert quit" })
 vim.keymap.set("n", "<Space>", ":", { noremap = true, desc = "command enter" })
 vim.keymap.set("t", "<Leader><Esc>", "<C-\\><C-n>", { noremap = true, desc = "terminal quit" })
 -- edit
-vim.keymap.set("n", "<A-k>", "ddkP", { noremap = true, desc = "move line up" })
-vim.keymap.set("n", "<A-j>", "ddp", { noremap = true, desc = "move line down" })
+vim.keymap.set("n", "<A-k>", "<CMD>m .-2<CR>V=", { noremap = true, desc = "move line up" })
+vim.keymap.set("n", "<A-j>", "<CMD>m .+1<CR>V=", { noremap = true, desc = "move line down" })
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "move selected lines up" })
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "move selected lines down" })
 -- buffer & window & tab & stuff
 vim.keymap.set("n", "<Leader>k", "<CMD>bd<CR>", { noremap = true, desc = "delete buffer" })
 vim.keymap.set("n", "<Leader>w", "<C-w>", { noremap = true, desc = "choose window" })
