@@ -6,7 +6,6 @@ vim.opt.termguicolors = true
 vim.opt.eb = false
 vim.opt.ruler = false
 vim.opt.showcmd = true
-vim.opt.history = 64
 vim.opt.autochdir = true
 vim.opt.mouse = "a"
 vim.opt.showmode = false
@@ -17,6 +16,9 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 8
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.wo.relativenumber = true
+vim.opt.history = 2048
+vim.opt.shada = "<2048,'32,h" -- 2048 lines max for reg, store marks for 32 recent files, don't load highlight search
 
 -- Indentation
 vim.opt.autoindent = true
@@ -36,5 +38,7 @@ vim.cmd("filetype plugin on")
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
--- Cache
-vim.opt.backup = false
+-- UI
+require("vim._core.ui2").enable({
+	enable = true,
+})

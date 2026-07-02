@@ -4,19 +4,17 @@ return {
 	opts = {
 		formatters_by_ft = {
 			c = { "clang_format" },
-			cpp = { "clang_format" },
-			markdown = { "prettier" },
-			python = { "black" },
+			python = { "ruff_format" },
 			go = { "gofmt" },
+			rust = { "rustfmt" },
 			lua = { "stylua" },
+
+			markdown = { "prettier" },
 			toml = { "taplo" },
 			json = { "jq" },
-			sh = { "shfmt" },
-			--["*"] = { "codespell" },
 		},
 		format_on_save = {
-			lsp_fallback = false,
-			async = false,
+			lsp_fallback = true,
 			timeout_ms = 3000,
 		},
 	},

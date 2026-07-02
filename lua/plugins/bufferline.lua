@@ -47,8 +47,8 @@ return {
 		},
 	},
 	keys = {
-		{ "<Tab>", "<CMD>BufferLineCycleNext<CR>", mode = "n", noremap = true, desc = "next buffer" },
-		{ "<S-Tab>", "<CMD>BufferLineCyclePrev<CR>", mode = "n", noremap = true, desc = "previous buffer" },
-		{ "<Leader>j", "<CMD>BufferLinePick<CR>", mode = "n", noremap = true, desc = "pick buffer" },
+		{ "<Tab>", "<CMD>BufferLineCycleNext<CR>", mode = "n", desc = "next buffer" },
+		{ "<S-Tab>", "<CMD>BufferLineCyclePrev<CR>", mode = "n", desc = "previous buffer" },
+		{ "<Leader>j", "<CMD>BufferLinePick<CR>", mode = "n", desc = "pick buffer" },
 	},
 }

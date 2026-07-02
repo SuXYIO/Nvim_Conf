@@ -1,7 +1,15 @@
 return {
-	"nvim-mini/mini.indentscope",
-	event = "BufEnter",
+	"lukas-reineke/indent-blankline.nvim",
+	main = "ibl",
 	opts = {
-		symbol = "│",
+		indent = {
+			char = "│",
+		},
+		exclude = {
+			filetypes = {
+				"NvimTree",
+				"dashboard",
+			},
+		},
 	},
 }

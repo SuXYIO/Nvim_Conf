@@ -6,18 +6,19 @@ return {
 	},
 	cmd = "Lspsaga",
 	keys = {
-		{ "]e", "<CMD>Lspsaga diagnostic_jump_next<CR>", mode = "n", noremap = true, desc = "next diagnostic" },
-		{ "[e", "<CMD>Lspsaga diagnostic_jump_prev<CR>", mode = "n", noremap = true, desc = "previous diagnostic" },
-		{ "<Leader>a", "<CMD>Lspsaga hover_doc<CR>", mode = "n", noremap = true, desc = "lsp hover doc" },
-		{ "<Leader>s", "<CMD>Lspsaga finder<CR>", mode = "n", noremap = true, desc = "lsp finder" },
-		{ "<Leader>r", "<CMD>Lspsaga rename<CR>", mode = "n", noremap = true, desc = "lsp rename" },
+		{ "]e", "<CMD>Lspsaga diagnostic_jump_next<CR>", mode = "n", desc = "next diagnostic" },
+		{ "[e", "<CMD>Lspsaga diagnostic_jump_prev<CR>", mode = "n", desc = "previous diagnostic" },
+		{ "<Leader>a", "<CMD>Lspsaga hover_doc<CR>", mode = "n", desc = "lsp hover doc" },
+		{ "<Leader>s", "<CMD>Lspsaga finder<CR>", mode = "n", desc = "lsp finder" },
+		{ "<Leader>r", "<CMD>Lspsaga rename<CR>", mode = "n", desc = "lsp rename" },
 	},
 	opts = {
+		implement = { enable = false },
+		lightbulb = { enable = false },
 		ui = {
-			border = "single",
+			border = "",
 			devicon = true,
 			title = true,
-			code_action = "",
 		},
 	},
 }

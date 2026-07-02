@@ -3,7 +3,7 @@ return {
 	dependencies = "nvim-tree/nvim-web-devicons",
 	lazy = false,
 	keys = {
-		{ "<Leader>f", "<CMD>NvimTreeToggle<CR>", mode = "n", noremap = true, desc = "toggle nvim tree" },
+		{ "<Leader>f", "<CMD>NvimTreeToggle<CR>", mode = "n", desc = "toggle nvim tree" },
 	},
 	opts = {
 		on_attach = function(bufnr)

@@ -1,5 +1,6 @@
 return {
 	"saghen/blink.cmp",
+	branch = "v1", -- TODO: maybe upgrade to V2?
 	events = { "InsertEnter", "CmdlineEnter" },
 	opts = {
 		keymap = {

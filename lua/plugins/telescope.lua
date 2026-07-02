@@ -7,7 +7,6 @@ return {
 			"<Leader>g",
 			"<CMD>Telescope builtin include_extensions=true<CR>",
 			mode = "n",
-			noremap = true,
 			desc = "telescope",
 		},
 	},

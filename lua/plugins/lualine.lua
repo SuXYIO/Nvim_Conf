@@ -7,7 +7,7 @@ return {
 			component_separators = "",
 			section_separators = "",
 			globalstatus = true,
-			disabled_filetypes = { "NvimTree", "snacks_dashboard", "sagaoutline", "dashboard" },
+			disabled_filetypes = { "NvimTree", "dashboard" },
 		},
 		sections = {
 			lualine_a = {

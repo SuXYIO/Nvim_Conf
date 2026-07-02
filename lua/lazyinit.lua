@@ -16,7 +16,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Lazy config
--- require("lazy").setup({ { import = "[name].plugins" }, { import = "[name].plugins.lsp" } })
 require("lazy").setup({
 	{
 		import = "plugins",
@@ -30,25 +29,7 @@ require("lazy").setup({
 	install = {
 		colorscheme = { "lunaperche" },
 	},
-	performance = {
-		--[[
-		rtp = {
-			disabled_plugins = {
-				"gzip",
-				"zipPlugin",
-				"tarPlugin",
-				"tohtml",
-				"tutor",
-				"editorconfig",
-				"rplugin",
-				"netrwPlugin",
-				"man",
-				"spellfile",
-				"shada",
-				"matchit",
-				"matchparen",
-			},
-		},
-		--]]
+	git = {
+		--url_format = "https://gh-proxy.org/https://github.com/%s.git",
 	},
 })

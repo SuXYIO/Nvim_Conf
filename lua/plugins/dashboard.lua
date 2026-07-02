@@ -18,9 +18,9 @@ return {
 			center = {
 				{
 					icon = " ",
-					key = "f",
+					key = "g",
 					desc = "Telescope",
-					action = ":Telescope",
+					action = ":Telescope builtin include_extensions=true",
 				},
 				{
 					icon = "󰒲 ",
